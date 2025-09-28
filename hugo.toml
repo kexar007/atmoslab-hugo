@@ -1,0 +1,77 @@
+baseURL = "https://kexar007.github.io/atmoshugo/"
+languageCode = "en-us"
+title = "Atmos Lab"
+
+# Site configuration
+copyright = "Atmos Lab"
+author = "Atmos Lab Team"
+
+# Build configuration
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# Content configuration
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
+archetypeDir = "archetypes"
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "People"
+  url = "/people/"
+  weight = 2
+
+[[menu.main]]
+  name = "About Us"
+  url = "/about/"
+  weight = 3
+
+[[menu.main]]
+  name = "Media"
+  url = "/media/"
+  weight = 4
+
+# Parameters
+[params]
+  description = "Leading research in atmospheric science and environmental monitoring"
+  keywords = ["atmospheric science", "environmental monitoring", "climate research", "research lab"]
+  favicon = "/favicon.ico"
+
+# Social media
+[[params.social]]
+  name = "Twitter"
+  url = "https://twitter.com/atmoslab"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://linkedin.com/company/atmoslab"
+
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/atmoslab"

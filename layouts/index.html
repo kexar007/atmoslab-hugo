@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Atmos Lab</h1>
+        <p class="hero-subtitle">Leading research in atmospheric science and environmental monitoring</p>
+    </section>
+
+    <!-- Announcements Grid -->
+    <section class="announcements-section">
+        <h2 class="section-title">Latest Announcements</h2>
+        <div class="announcements-grid">
+            {{ range .Site.Data.announcements }}
+            <div class="announcement-card" style="background: linear-gradient(135deg, {{ .color }}, {{ .color }}dd);">
+                <h3 class="announcement-title">{{ .title }}</h3>
+                <p class="announcement-content">{{ .content }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <h2 class="section-title">Featured Content</h2>
+        <div class="carousel">
+            <div class="carousel-container">
+                {{ range $index, $announcement := .Site.Data.announcements }}
+                <div class="carousel-slide" style="background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);">
+                    <div>
+                        <h3>{{ $announcement.title }}</h3>
+                        <p>{{ $announcement.content }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
+            <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <section class="news-ticker-section">
+        <h2 class="section-title">Latest News</h2>
+        <div class="news-ticker">
+            <div class="ticker-content">
+                {{ range .Site.Data.newsreports }}
+                <span class="ticker-item">{{ .title }} - {{ .publisher }}</span>
+                {{ end }}
+                <!-- Duplicate for seamless loop -->
+                {{ range .Site.Data.newsreports }}
+                <span class="ticker-item">{{ .title }} - {{ .publisher }}</span>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

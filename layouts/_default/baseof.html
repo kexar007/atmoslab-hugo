@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <link rel="icon" type="image/x-icon" href="{{ "images/logo/favicon.ico" | relURL }}">
+    
+    <!-- Main stylesheet -->
+    {{ $style := resources.Get "css/style.css" }}
+    {{ if $style }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ end }}
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Background animation stylesheet (using a new variable name for clarity) -->
+    {{ $bgStyle := resources.Get "css/background.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $bgStyle.RelPermalink }}">
+
+</head>
+<body>
+    <canvas id="animus"></canvas>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="{{ .Site.BaseURL }}" class="nav-logo">
+                    <img src="{{ "images/logo/atmos-lab-logo.png" | relURL }}" alt="Atmos Lab Logo" class="nav-logo-image">
+                    Atmos Lab
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="{{ .Site.BaseURL }}" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ .Site.BaseURL }}people/" class="nav-link">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ .Site.BaseURL }}about/" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ .Site.BaseURL }}media/" class="nav-link">Media</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Atmos Lab</h3>
+                    <p>Leading research in atmospheric science and environmental monitoring</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+                        <li><a href="{{ .Site.BaseURL }}people/">People</a></li>
+                        <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
+                        <li><a href="{{ .Site.BaseURL }}media/">Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>info@atmoslab.org</p>
+                    <p>123 Research Avenue<br>Science City, SC 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ now.Format "2006" }} Atmos Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main site script (for hamburger menu, etc.) -->
+    {{ $script := resources.Get "js/script.js" }}
+    {{ if $script }}
+    <script src="{{ $script.RelPermalink }}"></script>
+    {{ end }}
+
+    <!-- CORRECT: Removed the duplicate main block from here -->
+
+    <!-- Background animation script -->
+    <script defer src="{{ "/js/animus-background.js" | relURL }}"></script>
+</body>
+</html>

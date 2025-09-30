@@ -1,15 +1,271 @@
-- name: "Dr. Sarah Chen"
+- name: "Dr. Sarah Chennn"
   role: "Lead Researcher"
   slug: "sarah-chen"
 - name: "Prof. Michael Rodriguez"
   role: "Senior Scientist"
   slug: "michael-rodriguez"
-- name: "Dr. Emily Watson"
-  role: "Research Associate"
-  slug: "emily-watson"
-- name: "Dr. James Park"
-  role: "Data Analyst"
-  slug: "james-park"
-- name: "Dr. Lisa Thompson"
-  role: "Lab Manager"
-  slug: "lisa-thompson"
+
+- name: RONY PETER
+  slug: rony-peter
+  email: ronypeter8.@.gmail.com
+  roll_number: 18CL92P03
+  course: Air-sea interactions and trace gas exchanges.
+  image: https://static.wixstatic.com/media/61081f_98fc1b5eacda4699ba044c9e351be479~mv2.jpg
+  orcid: https://orcid.org/0000-0002-8847-3640
+  role: alumni
+- name: SURAJIT MURASINGH
+  slug: surajit-murasingh
+  email: smurasingh.@.gmail.com
+  roll_number: 15CL91R01
+  course: Impact of clmate change and Land use/land cover change on water resources.
+  image: https://static.wixstatic.com/media/61081f_0b273d8f25df49bd94398515b4540818~mv2.jpg
+  orcid: https://orcid.org/0000-0003-3200-6856
+  role: alumni
+- name: SUNANDA NARAYANAN
+  slug: sunanda-narayanan
+  email: sunanda.narayanan.@.gmail.com
+  roll_number: 18CL92P04
+  course: Atmospheric Pollution and ocean bio geochemistry
+  image: https://static.wixstatic.com/media/61081f_d4e65904eeaf4723b0e76df3c674f312~mv2.jpg
+  orcid: null
+  role: alumni
+- name: APARNA M
+  slug: aparna-m
+  email: null
+  roll_number: null
+  course: null
+  image: '#N/A'
+  orcid: null
+  role: alumni
+- name: KRISHNAJA P B
+  slug: krishnaja-p-b
+  email: krishnajapbalachandran000@gmail.com
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/61081f_b62437747b2747e89bb56f70a47984fa~mv2.jpg
+  orcid: null
+  role: alumni
+- name: VIKAS KUMAR PATEL
+  slug: vikas-kumar-patel
+  email: null
+  roll_number: 20CL91R09
+  course: Atmospheric Chemistry and Climate Interaction
+  image: '#N/A'
+  orcid: null
+  role: alumni
+- name: ABHISHEK RATHORE
+  slug: abhishek-rathore
+  email: abhishektoabhishek@gmail.com
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/61081f_ba88bd1ae0ff4641b669738f8b225009~mv2.jpg
+  orcid: null
+  role: alumni
+- name: RAINA ROY
+  slug: raina-roy
+  email: rainaroy2105.@.gmail.com
+  roll_number: null
+  course: Atmospheric Chemistry and Climatic Interactions
+  image: https://static.wixstatic.com/media/61081f_54d6f306b0bb48e2b2aefa41e8ff2453~mv2.jpg
+  orcid: null
+  role: alumni
+- name: MANSI PATHAK
+  slug: mansi-pathak
+  email: R.MANSIPATHAK.@.KGPIAN.IITKGP.AC.IN
+  roll_number: 20CL92R02
+  course: Atmospheric Chemistry and Climatic Interactions
+  image: https://static.wixstatic.com/media/61081f_65802985a0ab4c5599acebe0282ac6a6~mv2.jpg
+  orcid: null
+  role: alumni
+- name: RAHUL KUMAR
+  slug: rahul-kumar
+  email: Rahul.1si09cv038.@.kgpian.iitkgp.ac.in
+  roll_number: 20CL92R04
+  course: Atmospheric changes and Climate variability
+  image: https://static.wixstatic.com/media/61081f_ed700fa089184657aaf5b8115686eb79~mv2.jpg
+  orcid: null
+  role: alumni
+- name: AJAY SINGH
+  slug: ajay-singh
+  email: ajaydhanda1993.@.gmail.com
+  roll_number: 17AG91R01
+  course: Agricultural Emissions
+  image: https://static.wixstatic.com/media/61081f_9df1b962c2924a43b523c42b58df4bb1~mv2.jpg
+  orcid: https://orcid.org/0000-0002-9091-6949
+  role: alumni
+- name: PANKAJ KUMAR
+  slug: pankaj-kumar
+  email: pankaj.kmr1990.@.gmail.com
+  roll_number: 17CL91R07
+  course: Ozone and Climate
+  image: https://static.wixstatic.com/media/61081f_97b6e67e20824d74a6b7e94f4032d0ff~mv2.jpg
+  orcid: null
+  role: alumni
+- name: ATHUL S
+  slug: athul-s
+  email: vvsathul@gmail.com
+  roll_number: null
+  course: M.Sc Oceanography
+  image: https://static.wixstatic.com/media/9efcb1_812e7d53692849d0842acc4e124d198e~mv2.jpg
+  orcid: null
+  role: alumni
+- name: BABU RAM SHARMA
+  slug: babu-ram-sharma
+  email: baburamdeupur.@.gmail.com
+  roll_number: 20CL91A01
+  course: Atmospheric Pollution and Himalayas
+  image: https://static.wixstatic.com/media/61081f_d7be38d968ee4fbbaadf6906eeb56881~mv2.jpg
+  orcid: null
+  role: alumni
+- name: AKASH JOSHI
+  slug: akash-joshi
+  email: akash21@kgpian.iitkgp.ac.in
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/61081f_23a364f144bb4ce68d4162f42559ea19~mv2.jpeg
+  orcid: null
+  role: alumni
+- name: SARATH
+  slug: sarath
+  email: null
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/61081f_21fa04c5b9ea4cec807ca5f13c255bc6~mv2.jpeg
+  orcid: null
+  role: alumni
+- name: SANHITA GHOSH
+  slug: sanhita-ghosh
+  email: sanhitaghosh027.@.gmail.com
+  roll_number: 17AT91P02
+  course: Aerosol emissions over India and their impact on climate.
+  image: https://static.wixstatic.com/media/61081f_adba1b6e37b8499cb611729b953a400b~mv2.jpg
+  orcid: https://orcid.org/0000-0003-3616-8457
+  role: alumni
+- name: KUMAR ABBHISHEK
+  slug: kumar-abbhishek
+  email: kumar.abhi602.@.gmail.com
+  roll_number: 17CL91R04
+  course: Carbon Sequestration
+  image: https://static.wixstatic.com/media/61081f_b58f608ffe52410dae709fdd2e89647a~mv2.jpg
+  orcid: https://orcid.org/0000-0002-4865-4180
+  role: alumni
+- name: RAHUL KASHYAP
+  slug: rahul-kashyap
+  email: rahulkashyaprsm@gmail.com
+  roll_number: 21CL91R06
+  course: Atmosphere Land interactions
+  image: '#N/A'
+  orcid: null
+  role: alumni
+- name: AKHILA R S
+  slug: akhila-r-s
+  email: akhilarajeev08 .@.gmail.com
+  roll_number: 17CL92P01
+  course: Tropical cyclone and climate Change.
+  image: https://static.wixstatic.com/media/61081f_bd6c2ca41e4e446c8dd1b1de1574ae6e~mv2.jpg
+  orcid: null
+  role: alumni
+- name: ARDRA T S
+  slug: ardra-t-s
+  email: ardraputhenveedu@gmail.com
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/e9a0b2_4235e212032c44d7a9d6eabf40a0b413~mv2.jpg
+  orcid: null
+  role: alumni
+- name: ARDRA
+  slug: ardra
+  email: ardradivakaran888@gmail.com
+  roll_number: null
+  course: Atmospheric Chemistry and Climatic Interactions
+  image: https://static.wixstatic.com/media/61081f_1828ba723bd14b13800a4e5f01dc5181~mv2.jpeg
+  orcid: null
+  role: alumni
+- name: GOPIKRISHNAN G S
+  slug: gopikrishnan-g-s
+  email: gopikrishnan.gs44@gmail.com
+  roll_number: 21CL92R04
+  course: Atmospheric Chemistry and Climate Interaction
+  image: https://static.wixstatic.com/media/057ba0_a928c2ea07e146ffbd09e251f9ff3869~mv2.jpg
+  orcid: https://orcid.org/0000-0002-8120-0391
+  role: alumni
+- name: OINDRILA NATH
+  slug: oindrila-nath
+  email: oindrila.nath27@gmail.com
+  roll_number: .
+  course: Sudden Stratospheric Warmings – Teleconnection with the Tropics
+  image: https://static.wixstatic.com/media/61081f_505d284e26114db4b38b13887f2efb40~mv2.jpg
+  orcid: null
+  role: pdoc
+- name: SANGEETHA P
+  slug: sangeetha-p
+  email: sangeetha.gp7@gmail.com
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/42e758_fd20c9442b27412086b36ed39c32c6e5~mv2.jpg
+  orcid: null
+  role: pg
+- name: YENUGULA RASHMITHA
+  slug: yenugula-rashmitha
+  email: yenugularashmitha729@gmail.com
+  roll_number: 23CL60R06
+  course: Urban Greening
+  image: https://static.wixstatic.com/media/52577d_7b5aecfad6db408782a3ba5d91c09515~mv2.jpg
+  orcid: null
+  role: pg
+- name: ANAGHA K S
+  slug: anagha-k-s
+  email: anagha.anudevks@gmail.com
+  roll_number: 23CL91P01
+  course: Atmospheric chemistry and Agriculture
+  image: https://static.wixstatic.com/media/bfc024_07af90102f4a490db2feddc6be2f6b19~mv2.jpg
+  orcid: 0000-0001-5117-6514
+  role: phd
+- name: SYED MOOSA ALI
+  slug: syed-moosa-ali
+  email: moosa.ali2009.@.gmail.com
+  roll_number: 19CL91W03
+  course: Ocean colour remote sensing applications
+  image: https://static.wixstatic.com/media/61081f_a9d1fc0cefaf423b936bf08649fd5ae7~mv2.jpg
+  orcid: null
+  role: phd
+- name: ANJALI SATHYANATH
+  slug: anjali-sathyanath
+  email: anjalisathyanath94@gmail.com
+  roll_number: 23CL91R01
+  course: Atmospheric Chemistry and Climate Interactions
+  image: https://static.wixstatic.com/media/d1bf21_9f750910675642babb7e470a58de0aa5~mv2.jpg
+  orcid: 0000-0001-6999-7783
+  role: phd
+- name: ARPITA RASTOGI
+  slug: arpita-rastogi
+  email: rastogi.jan14.@.gmail.com
+  roll_number: 19CL92W01
+  course: Extreme weather and Climate Change
+  image: https://static.wixstatic.com/media/61081f_d23f65b010b946b581c4909fa3e7baa8~mv2.jpg
+  orcid: null
+  role: phd
+- name: ANJANEYAN P
+  slug: anjaneyan-p
+  email: http://aanjuanjaneyan@gmail.com
+  roll_number: 21CL91P01
+  course: Atmospheric Forcing and Climate Changes
+  image: https://static.wixstatic.com/media/61081f_532b486a78ef4ba4b1b1fbd33d7e8ef5~mv2.jpg
+  orcid: null
+  role: phd
+- name: SUBHADIP SARKAR
+  slug: subhadip-sarkar
+  email: subhadip.sarkar.iitkgp@gmail.com
+  roll_number: 18CL92R03
+  course: Precipitable water vapour variability and climate change
+  image: https://static.wixstatic.com/media/61081f_46f4c02adc554857b79cd42441a547de~mv2.jpg
+  orcid: 0009-0008-5534-2143
+  role: phd
+- name: JAYANARAYANAN KUTTIPURATH
+  slug: jayanarayanan-kuttipurath
+  email: null
+  roll_number: null
+  course: null
+  image: https://static.wixstatic.com/media/61081f_4861e7d6208d4a84b145db6f1317bfd2~mv2.jpg
+  orcid: null
+  role: SUPERVISOR

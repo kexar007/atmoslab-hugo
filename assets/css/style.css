@@ -286,6 +286,31 @@ body {
     transform: translateY(-2px);
 }
 
+.person-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 3px solid #e9ecef;
+}
+
+.person-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.person-image:hover img {
+    transform: scale(1.05);
+}
+
 .person-name {
     font-size: 1.2rem;
     font-weight: 600;

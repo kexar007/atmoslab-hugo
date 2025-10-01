@@ -14,8 +14,8 @@ body {
 
 /* Header and Navigation */
 .header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .nav-container {

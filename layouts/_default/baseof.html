@@ -17,6 +17,8 @@
     <!-- Background animation stylesheet (using a new variable name for clarity) -->
     {{ $bgStyle := resources.Get "css/background.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $bgStyle.RelPermalink }}">
+    
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 
 </head>
 <body>

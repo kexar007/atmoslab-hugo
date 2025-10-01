@@ -6,40 +6,7 @@
     </section>
 
     <section class="people-section">
-        <div class="people-grid">
-            {{ range .Site.Data.strapi_people_with_images.data }}
-            <div class="person-card">
-                <div class="card-header">
-                    {{ if .photo }}
-                    <div class="person-image">
-                        {{ $imageUrl := .photo.url }}
-                        {{ if and .photo.formats .photo.formats.thumbnail }}
-                            {{ $imageUrl = .photo.formats.thumbnail.url }}
-                        {{ end }}
-                        <img src="{{ $imageUrl }}" alt="{{ .photo.alternativeText | default .name }}" />
-                    </div>
-                    {{ end }}
-                    <h3 class="person-name">{{ .name }}</h3>
-                    <p class="person-role">{{ .role }}</p>
-                    {{ if .email }}
-                    <p class="person-email">{{ .email }}</p>
-                    {{ end }}
-                </div>
-                <div class="card-body">
-                    {{ if .roll_number }}
-                    <p class="person-info">
-                        <strong>Roll Number:</strong> {{ .roll_number }}
-                    </p>
-                    {{ end }}
-                    {{ if .course }}
-                    <p class="person-info">
-                        <strong>Course:</strong> {{ .course }}
-                    </p>
-                    {{ end }}
-                </div>
-            </div>
-            {{ end }}
-        </div>
+        {{ .Content }}
     </section>
 </div>
 {{ end }}

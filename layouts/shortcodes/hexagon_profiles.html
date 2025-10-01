@@ -1,0 +1,21 @@
+<div class="hexagon-grid">
+  {{ range .Site.Data.strapi_people_with_images.data }}
+    <div class="hexagon">
+      <div class="hexagon-inner">
+        <div class="hexagon-content">
+          {{ if .photo }}
+            {{ $imageUrl := .photo.url }}
+            {{ if and .photo.formats .photo.formats.thumbnail }}
+                {{ $imageUrl = .photo.formats.thumbnail.url }}
+            {{ end }}
+            <img src="{{ $imageUrl }}" alt="{{ .name }}">
+          {{ end }}
+          <div class="details">
+            <h3>{{ .name }}</h3>
+            <p>{{ .role }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>

@@ -10,9 +10,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  filter: drop-shadow(0 0  0.5px rgb(111, 111, 111));
+  gap: 30px;
+  padding: 10px;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.948));
+
 
 }
 
@@ -89,6 +90,8 @@
 
 .hexagon-content .info-text p {
   margin: 3px 3px 1px;
-  font-size: 0.7em; /* Changed from 0.9em */
+  font-size: 0.8em; /* Changed from 0.9em */
   overflow: wrap;
+  padding: 0px 30px 0px 30px;
+  color: rgb(107, 106, 106);
 }

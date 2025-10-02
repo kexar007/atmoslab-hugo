@@ -1,0 +1,27 @@
+.magazine-gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.magazine-gallery img {
+    height: 100px; /* Adjust as needed */
+    margin: 0 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    animation: scroll-left 20s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust based on total width of images */
+    }
+}

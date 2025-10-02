@@ -2,7 +2,11 @@
 <div class="container">
     <section class="hero-section">
         <h2>WE PUBLISH IN TOPMOST JOURNALS</h2>
-       
+        <div class="magazine-gallery">
+            {{ range .Site.Data.magazines }}
+            <img src="{{ $.Site.BaseURL }}images/magazines/{{ . }}" alt="Magazine Cover">
+            {{ end }}
+        </div>
     </section>
 
     <section class="papers-list-section">

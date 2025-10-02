@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="{{ $bgStyle.RelPermalink }}">
     
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+    {{ $galleryStyle := resources.Get "css/gallery.css" }}
+    {{ if $galleryStyle }}
+    <link rel="stylesheet" href="{{ $galleryStyle.RelPermalink }}">
+    {{ end }}
 
 </head>
 <body>

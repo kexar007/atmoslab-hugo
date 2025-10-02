@@ -14,11 +14,10 @@ body {
 
 /* Header and Navigation */
 .header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-container {
@@ -28,13 +27,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 96px;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #007bff;
     text-decoration: none;
@@ -42,8 +41,8 @@ body {
 }
 
 .nav-logo-image {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -52,7 +51,19 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+       
+
+    
 }
+
+
+.nav-menu.active {
+        left: 0;
+        background-color: rgb(230, 230, 230);
+    }
+
+
+
 
 .nav-link {
     color: #333;
@@ -69,6 +80,7 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+
 }
 
 .hamburger .bar {
@@ -392,6 +404,7 @@ body {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0,0,0,0.05);
         padding: 2rem 0;
+        z-index: 1000;
     }
 
     .nav-menu.active {

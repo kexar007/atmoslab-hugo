@@ -57,6 +57,17 @@ archetypeDir = "archetypes"
   url = "/media/"
   weight = 4
 
+[[menu.main]]
+  name = "Publications"
+  identifier = "publications"
+  weight = 5
+
+[[menu.main]]
+  name = "Journal"
+  url = "/publications/journal/"
+  parent = "publications"
+  weight = 1
+
 # Parameters
 [params]
   description = "Leading research in atmospheric science and environmental monitoring"

@@ -51,9 +51,43 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
-       
+}
 
-    
+/* Dropdown menu styles */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    list-style: none;
+    min-width: 160px;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    top: 100%; /* Position below the parent */
+    left: 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .nav-item {
+    padding: 0; /* Reset padding from parent .nav-item */
+}
+
+.dropdown-menu .nav-link {
+    padding: 0.5rem 1rem;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu .nav-link:hover {
+    background-color: #f8f9fa;
 }
 
 
@@ -405,6 +439,27 @@ body {
         box-shadow: 0 10px 27px rgba(0,0,0,0.05);
         padding: 2rem 0;
         z-index: 1000;
+    }
+
+    /* Mobile dropdown styles */
+    .nav-item.dropdown .nav-link {
+        /* Ensure parent link is clickable if it has a URL */
+        pointer-events: auto;
+    }
+
+    .dropdown-menu {
+        position: static; /* Remove absolute positioning */
+        display: block; /* Always show in mobile menu */
+        background-color: #f0f0f0; /* Slightly different background for sub-items */
+        box-shadow: none;
+        padding: 0.5rem 0;
+        border-radius: 0;
+        margin-left: 1rem; /* Indent sub-items */
+        text-align: center;
+    }
+
+    .dropdown-menu .nav-link {
+        padding: 0.5rem 1rem;
     }
 
     .nav-menu.active {

@@ -58,12 +58,18 @@
 .hexagon-content img {
   width: 30%; /* Changed from 40% */
   height: 30%; /* Changed from 40% */
-  border-radius: 50%;
+  border-radius: 10%;
   position: absolute;
   top: 20%; /* Changed from 35% */
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px grey solid;
+  border: 1px rgb(188, 185, 185) solid;
+  
+}
+
+.hexagon:hover .hexagon-content img {
+  
+  filter: grayscale(100%);
 }
 
 .hexagon-content .info-text {

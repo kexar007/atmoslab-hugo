@@ -1,15 +1,294 @@
-- title: "Atmospheric CO2 Monitoring Using Satellite Data"
-  author_slug: "sarah-chen"
-  date_published: "2024-01-15"
-- title: "Climate Model Predictions for 2050"
-  author_slug: "michael-rodriguez"
-  date_published: "2024-02-20"
-- title: "Air Quality Index Analysis in Urban Areas"
-  author_slug: "emily-watson"
-  date_published: "2024-03-10"
-- title: "Machine Learning Applications in Weather Forecasting"
-  author_slug: "james-park"
-  date_published: "2024-04-05"
-- title: "Sustainable Energy Solutions for Research Facilities"
-  author_slug: "lisa-thompson"
-  date_published: "2024-05-12"
+- "paper": |-
+    Sunanda, N, J Kuttippurath, and A. Chakraborty: Estimation of Net Primary Productivity in the north  Indian Ocean using different algorithms and comparison with bio-argo measurements, Discover  Oceans, Accepted 8 July 2025.
+- "paper": |-
+    Kashyap R. and J. Kuttippurath: Weakening forest carbon stocks due to declining Ecosystem  Photosynthetic Efficiency under the current and future climate change scenarios in India, Resources,  Conservation & Recycling, Accepted, 19 June 2025.
+- "paper": |-
+    Kumar R., GS Gopikrishnan, and J Kuttippurath: Rapid changes in warm and cold extremes in recent  decades and their future projections for India, Journal of Environmental Management,  https://doi.org/10.1016/j.jenvman.2025.125832, 14 May 2025.
+- "paper": |-
+    Sharma, BR, J Kuttippurath and GS Gopikrishanan: Tropospheric ozone as an atmospheric pollutant  and short-lived climate forcer in the Third Pole, Chemosphere, doi:  10.1016/j.chemosphere.2025.144474, 5 May 2025.
+- "paper": |-
+    Gopikrishnan, GS, D Westervelt, J Kuttippurath: Aerosol inhibition on photochemical surface ozone  formation under future climate and air quality scenarios, npj Climate and Atmospheric Science, doi:  10.1038/s41612-025-01048-2, 14 April 2025.
+- "paper": |-
+    Kashyap, R., J. Kuttippurath and VK Patel: Agriculture intensification and moisture-induced Thar  Desert Greening: Implications for energy balance, socio-economy, and biodiversity, GIScience &  Remote Sensing, doi: 10.1080/15481603.2025.2483458, 19 March 2025.
+- "paper": |-
+    Gopikrishnan GS, Ardra TS and J. Kuttippurath: Exposure to surface ozone and its associated health  effects and economic burden in India, Global Transitions, Accepted, 13 March 2025.
+- "paper": |-
+    Anagha, KS. and J Kuttippurath: Surface ozone pollution-driven risks for the yield of major food crops  under future climate change scenarios in India, Environmental Research, doi:  10.1016/j.envres.2025.121390, 12 March 2025.
+- "paper": |-
+    Kashyap, R and J Kuttippurath: Tropical Cyclones enhance photosynthesis in moisture stressed  regions of India, npj Climate and Atmospheric Science, doi: 10.1038/s41612-025-00988-z, 1 March  2025.
+- "paper": |-
+    Peter, R., J Kuttippurath, N Sunanda, and K. Chakraborty: Effect of thermal and non-thermal  processes on the variability of ocean surface pCO2 and buffering capacity in the North Indian Ocean,  Progress in Oceanography, https://doi.org/10.1016/j.pocean.2025.103442, 18 February 2025.
+- "paper": |-
+    Gopikrishanan GS and J Kuttippurath: Impact of the National Clean Air Programme (NCAP) on the  particulate matter pollution and associated reduction in human mortalities in Indian cities, Science  of the Total Environment, https://doi.org/10.1016/j.scitotenv.2025.178787, 6 February 2025.
+- "paper": |-
+    Sangeetha, P, GS Gopikrishanan, J Kuttippurath and PK Thapliyal: Evaluation of total column ozone  measurements from INSAT-3D/3DR with satellite-based AIRS and CAMS reanalysis data, Journal of  the Indian Society of Remote Sensing, doi: 10.1007/s12524-025-02147-6, 04 February 2025.
+- "paper": |-
+    Akhila, RS, J. Kuttippurath, A. Chakraborty, N. Sunanda, and R. Peter: Rapid Intensification of the  Super Cyclone Amphan: environmental drivers and its future projections, Tropical Cyclone Research  and Review, Accepted, 13 January 2025.
+- "paper": |-
+    George, C. A., H. Varikoden, J. Kuttippurath, C.H. Roja, and C. A. Babu: Assessment of droughts and  floods during the Indian Summer Monsoon using the CMIP6 historical and future simulations,  International Journal of Climatology, doi: 10.1002/joc.8729, 9 December 2024.
+- "paper": |-
+    Ali, S. M., J. Kuttippurath, A. V. Krishna, A. Gupta, P. Anjaneyan, M. Raman, K. N. Babu: An in-depth  analysis of the impact of environmental drivers on the variability of phytoplankton community in  Arabian Sea in 2010–2021, Environmental Science: Processes & Impacts, doi:   10.1039/D4EM00385C, 30 November 2024.
+- "paper": |-
+    Pachore, A., R. Ramesan, and J. Kuttippurath: Flash drought teleconnection with the large-scale  climate drivers in the homogeneous rainfall regions of India, International Journal of Climatology,  doi: 10.1002/joc.8711, 25 November 2024.
+- "paper": |-
+    Dey, S., K. Abbhishek, S. Saraswathibatla, J. Kuttippurath, PK Singh, D. Das: Can cropping systems be  energy efficient: Performance measure for various rice-based systems in Peninsular India, Journal of  Agriculture and Food Research, doi: 10.1016/j.jafr.2024.101516, 12 November 2024.
+- "paper": |-
+    Athul, S., J. Kuttippurath, and V. K. Patel: Changes in global NO2 pollution by shipping during the  COVID-19 lockdown: Implication for sustainable marine operations, Journal of Hazardous Materials,  doi: 10.1016/j.jhazmat.2024.136482, 09 November 2024.
+- "paper": |-
+    Pathak, M., J. Kuttippurath, and R. Kumar: Long-term changes in black carbon aerosols and their  health effects in rural India during the past two decades (2000–2019), Journal of Hazardous  Materials Advances, https://doi.org/10.1016/j.hazadv.2024.100519, 01 November 2024.
+- "paper": |-
+    Kashyap, R and J Kuttippurath: Warming induced soil moisture stress threatens food security in India,  Environmental Science and Pollution Research, doi:10.1007/s11356-024-35107-7, 18 September  2024.
+- "paper": |-
+    Gopikrishnan, GS, J Kuttippurath, PK Thapliyal: Assessment of relative humidity measurements from  INSAT–3D/3DR sounder with radiosonde and satellite measurements over India, Journal of the  Indian Society of Remote Sensing, doi: 10.1007/s12524-024-02010-0, 10 September 2024.
+- "paper": |-
+    Gopikrishanan GS and J. Kuttippurath: Global tropical and extra-tropical tropospheric ozone trends  and radiative forcing deduced from satellite and ozonesonde measurements for the period 2005– 2020, Environmental Pollution, doi: 10.1016/j.envpol.2024.124869, 30 August 2024.
+- "paper": |-
+    Sunanda, N., J. Kuttippurath, R. Peter and A. Chakraborty: An Atmosphere–Ocean Coupled Model for  simulating physical and biogeochemical state of North Indian Ocean: Customisation and validation,  Ocean Modelling, doi: 10.1016/j.ocemod.2024.102419, 08 August 2024.
+- "paper": |-
+    Patel, V and J. Kuttippurath: Trends in atmospheric water vapour over the Thar desert during Indian  Summer Monsoon period of 2003–2020, Environmental Science and Pollution Research, doi:  10.1007/s11356-024-34508-y, 23 July 2024.
+- "paper": |-
+    Kumar, R. and J. Kuttippurath: Long-term changes in tropospheric temperature in India: Insights from  radiosonde measurements, reanalysis data and CMIP6 model projections, Atmospheric Research,  doi: 10.1016/j.atmosres.2024.107583, 10 July 2024.
+- "paper": |-
+    Amrita, S., H. Varikoden, V K Patel, J. Kuttippurath and G S Gopikrishnan: Global, regional and city  scale changes in atmospheric NO2 with environmental laws and policies, Sustainable Cities and  Society, doi: 10.1016/j.scs.2024.105207, 20 June 2024.
+- "paper": |-
+    Amrita, S., V K Patel, J. Kuttippurath and H. Varikoden: The COVID-19 lockdown induced changes of  SO2 pollution in its human-made global hotspots, Global Transitions,  https://doi.org/10.1016/j.glt.2024.06.003, 20 June 2024.
+- "paper": |-
+    Patel, V., J. Kuttippurath and R. Kashyap: Rise in water vapour driven by moisture transport facilitates  water availability for the greening of global deserts, Science of the Total Environment, doi:  10.1016/j.scitotenv.2024.174111, 17 June 2024.
+- "paper": |-
+    Kuttippurath, J., V K Patel and BR Sharma: Observed changes in the climate and snow dynamics of  the Third Pole, npj Climate and Atmospheric Science, doi:10.1038/s41612-024-00710-5, 4 June  2024.
+- "paper": |-
+    Patel, V., J. Kuttippurath and R. Kashyap: Increased global cropland greening as a response to the  unusual reduction in atmospheric PM₂.₅ concentrations during  the COVID-19 lockdown period,  Chemosphere, doi: 10.1016/j.chemosphere.2024.142147, 24 April 2024.
+- "paper": |-
+    Kuttippurath, J., G. S. Gopikrishnan, R. Mueller, S. Godin-Beekmann and J. Brioude: No severe ozone  depletion in the tropical stratosphere in recent decades, Atmospheric Chemistry and Physics,  https://doi.org/10.5194/acp-24-6743-2024, 15 April 2024.
+- "paper": |-
+    Rastogi, A., J. Kuttippurath and V. K. Patel: Spatio-temporal changes in the thunderstorm activities of  the northeast India during the past four decades, Environmental Science: Atmosphere, doi:   10.1039/D3EA00133D, 04 April 2024.
+- "paper": |-
+    Pathak, M. and J. Kuttippurath: Elucidating the changing particulate matter pollution and associated  health effects in rural India during 2000–2019, Environmental Pollution,  doi:10.1016/j.envpol.2024.123830, 19 March 2024.
+- "paper": |-
+    Kashyap, R. and J. Kuttippurath: Unravelling the sensitivity and response of ecosystems to rising  moisture stress in India, Ecosystem Health and Sustainability, doi:10.34133/ehs.0180, 08 March  2004.
+- "paper": |-
+    Sharma, BR, J. Kuttippurath, VK Patel and GS Gopikrishanan: Regional sources of NH3, SO2 and CO in  the Third Pole, Environmental Research, 10.1016/j.envres.2024.118317, 24 January 2024.
+- "paper": |-
+    Roy, R., Kumar, P., Kuttippurath, J., and Lefevre, F.: Chemical ozone loss and chlorine activation in the  Antarctic winters 2013–2020, 23 January 2024.
+- "paper": |-
+    Gopikrishnan GS and J. Kuttippurath: Four Years of National Clean Air Programme (NCAP) in Indian  cities: Assessment of the impact on surface ozone during the period 2018–2022, Sustainable Cities  and Society, https://doi.org/10.1016/j.scs.2024.105207, 12 January 2024.
+- "paper": |-
+    Kuttippurath, J., V. K. Patel, R. Kashyap, A. Singh and C. Clerbaux: Anomalous increase in global  atmospheric ammonia during COVID-19 lockdown: need for policies to curb agricultural emissions,  Journal of Cleaner Production, doi: 10.1016/j.jclepro.2023.140424, 25 December 2023.
+- "paper": |-
+    Anagha, K. S., J. Kuttippurath, Mamta Sharma J. Cuesta: A comprehensive assessment of yield loss in  rice due to surface ozone pollution in India during 2005–2020: A great concern for food security,  Agricultural Systems, https://doi.org/10.1016/j.agsy.2023.103849, 25 December 2023.
+- "paper": |-
+    Krishnaja, P. B., R. S. Akhila, J. Kuttippurath, N. Sunanda: Tropical Cyclone-driven rainfall in the  northeast Indian Ocean and adjoining land regions during the period 2000–2020, Journal of  Hydrology, https://doi.org/10.1016/j.jhydrol.2024.130610, 24 November 2023.
+- "paper": |-
+    Kuttippurath, J., V. K. Patel, R. Roy and P. Kumar: Sources, variability, long-term trends and radiative  forcing of the aerosols in the Arctic: Implications for the Arctic amplification, Environmental Science  and Pollution Research, doi: 10.1007/s11356-023-31245-6, 22 November 2023
+- "paper": |-
+    Krishnapriya, M. S., H. Varikoden, P. Anjaneyan, and J. Kuttippurath: Marine heatwaves during the  pre-monsoon season and their impact on Chlorophyll-a in the north Indian Ocean in 1982–2021,  Marine Pollution Bulletin, doi: 10.1016/j.marpolbul.2023.115783, 11 November 2023.
+- "paper": |-
+    Sunanda, N, J. Kuttippurath, R. Peter and A. Chakraborty: Stressors of primary productivity in the  north Indian Ocean revealed by satellite, reanalysis and CMIP6 data, Progress in Oceanography, doi:  10.1016/j.pocean.2023.103164, 1 November 2023.
+- "paper": |-
+    Gopikrishnan, GS, J. Kuttippurath, P. K. Thapliyal, M. V. Shukla: Validation of INSAT-3D and INSAT-3DR  temperature profile retrievals using ground-based, satellite and reanalysis data, Journal of  Geophysical Research, doi:10.1029/2023JD038912, 19 October 2023.
+- "paper": |-
+    Kuttippurath, J. and R. Kashyap: Greening of India: Forests or Croplands? Applied Geography, doi:  https://doi.org/10.1016/j.apgeog.2023.103115, 10 October 2023.
+- "paper": |-
+    Kumar, R., J. Kuttippurath, GS Gopikrishnan, P. Kumar and H. Varikoden: Enhanced surface  temperature over India during 1980–2020 and future projections: Causal links of the drivers and  trends, npj Climate and Atmospheric Science, doi: 10.1038/s41612-023-00494-0, 18 September  2023.
+- "paper": |-
+    Sharma, B.R., J. Kuttippurath and V. K. Patel: A gradual increase of aerosol pollution in the Third Pole  during the past four decades: implication for regional climate change, Environmental Research,  https://doi.org/10.1016/j.envres.2023.117105, 06 September 2023.
+- "paper": |-
+    Sathish, T., J. Kuttippurath, P. Aishwarya, K. S. Amal, R. Mohan, L. John, L. C. Thomas and K. B.  Padmakumar: Observed evidence for the impact of coastal currents on the recurrent Noctiluca  scintillans blooms in the northwest Indian Ocean coast, Marine Pollution Bulletin, doi:  10.1016/j.marpolbul.2023.115426, 15 August 2023.
+- "paper": |-
+    Pathak, M., V. K. Patel., J. Kuttippurath: Spatial heterogeneity in global atmospheric CO during the  COVID–19 lockdown: implications for global and regional air quality policies, Environmental  Pollution, https://doi.org/10.1016/j.envpol.2023.122269, 25 July 2023.
+- "paper": |-
+    Rathore, A., G. S. Gopikrishnan, and J. Kuttippurath: Changes in tropospheric ozone over India:  Variability, long-term trends and climate forcing, Atmospheric Environment,  https://doi.org/10.1016/j.atmosenv.2023.119959, 14 July 2023.
+- "paper": |-
+    Nath, O., J. Kuttippurath, S. Sridharan, and W. Feng: Seasonal, interannual and long-term changes in  the middle atmospheric Carbon Monoxide in the tropics, Atmospheric Environment,  https://doi.org/10.1016/j.atmosenv.2023.119958, 14 July 2023.
+- "paper": |-
+    Kuttippurath, J., S. Maishal, P. Anjaneyan, N. Sunanda, and Kunal Chakraborty: Recent changes in  atmospheric input and primary productivity in the north Indian Ocean, Heliyon, doi:  10.1016/j.heliyon.2023.e17940, 03 July 2023.
+- "paper": |-
+    Joshi, A., M. Pathak., J. Kuttippurath., and V. K. Patel: Adoption of cleaner technologies and reduction  in fire events in the hotspots lead to global decline in carbon monoxide, Chemosphere,  https://doi.org/10.1016/j.chemosphere.2023.139259, 16 June 2023.
+- "paper": |-
+    Kuttippurath, J., K. Abbhishek, Chander, G., Dixit, S., Singh, A. Das, D., and Dey, S.: Biochar-based  nutrient management as a futuristic scalable strategy for C-sequestration in Semi-arid-Tropics,  Agronomy Journal, doi: 10.1002/agj2.21424, 12 June 2023.
+- "paper": |-
+    Das, B. K., T. S. Anandh, A. Chakraborty and J. Kuttippurath: Summertime discontinuity of Western  Boundary Current in the Bay of Bengal during contrasting Indian Ocean Dipole events of 2008 and  2010, Regional Studies in Marine Science, https://doi.org/10.1016/j.rsma.2023.103049, 10 June  2023.
+- "paper": |-
+    Patel, V. and J. Kuttippurath: Increase in tropospheric water vapour triggers enhanced global  warming and climate change, spj Ocean-Land-Atmosphere-Research, doi: 10.34133/olar.0015,  Accepted, 23 April 2023.
+- "paper": |-
+    Kuttippurath, J., V K Patel, G S Gopikrishnan and H. Varikoden: Changes in air quality, meteorology  and energy consumption during the COVID–19 lockdown and unlock periods in India, Air, 07 April  2023.
+- "paper": |-
+    Sharma, B.R, J. Kuttippurath, G S Gopikrishnan, and M. Pathak: Trends in atmospheric pollution in the  Third Pole: Analyses of tropospheric NO2 for the period 2005–2020, Environmental Science:  Atmosphere, doi: 10.1039/D2EA00075J, 19 March 2023.
+- "paper": |-
+    Peter, R., J. Kuttippurath, N. Sunanda and K. Chakraborty: A high CO2 concentration pool over the  Indo-Pacific Warm Pool, Scientific Reports, doi: 10.1038/s41598-023-31468-0, 13 March 2023.
+- "paper": |-
+    Kashyap, R., J. Kuttippurath, and P. Kumar: Browning of vegetation in efficient carbon sink regions of  India during the past two decades is driven by climate change and anthropogenic intrusions, Journal  of Environmental Management, 336, https://doi.org/10.1016/j.jenvman.2023.117655, 1 March  2023.
+- "paper": |-
+    Kuttippurath, J., BR Sharma, GS Gopikrishnan: Trends and variability of Total Column Ozone in the  Third Pole, Frontiers in Climate, doi:10.3389/fclim.2023.1129660, 22 February 2023.
+- "paper": |-
+    Sarkar, S., J. Kuttippurath, and V. Patel: Long-term changes in precipitable water vapour over India  derived from satellite and reanalyses data for the past four decades (1980–2020), Environmental  Science: Atmospheres, doi: 10.1039/D2EA00139J, 06 February 2023.
+- "paper": |-
+    Anjaneyan, P., J. Kuttippurath, Hareesh Kumar P. V., S. M. Ali and M. Raman: Spatio-temporal changes  of winter and spring phytoplankton blooms in Arabian Sea during the period 1997–2020, Journal of  Environmental Management, https://doi.org/10.1016/j.jenvman.2023.117435, 31 January 2023.
+- "paper": |-
+    Kashyap, R., J. Kuttippurath, and V K Patel: Improved air quality leads to enhanced vegetation growth  during the COVID–19 lockdown in India, Applied Geography,  https://doi.org/10.1016/j.apgeog.2022.102869, 2022.
+- "paper": |-
+    Kuttippurath, J., Ardra D., S. Raj and W. Feng: A seasonal OH minimum region over the Indian Ocean?  Atmospheric Environment, https://doi.org/10.1016/j.atmosenv.2022.119536, 2022.
+- "paper": |-
+    Pathak, M. and J. Kuttippurath: Air quality trends in rural India: analysis of NO2 pollution using  satellite measurements, Environmental Science: Processes and Impacts,  https://doi.org/10.1039/D2EM00293K, 2022.
+- "paper": |-
+    Moosa Ali, S., A. Krishna, J. Kuttippurath, A. Gupta, A. Tirkey, M. Raman and A. Sahay: Improvement  in estimation of phytoplankton size class in Arabian Sea using remote sensing measurements, IEEE  Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3223161, 2022.
+- "paper": |-
+    Kuttippurath, J., R. Peter, A. Singh, and S. Raj: The increasing atmospheric CO2 over India:  Comparison to global trends, iScience, https://doi.org/10.1016/j.isci.2022.104863, 2022.
+- "paper": |-
+    Abbhishek, K., D. K. Swain, A. Singh, S. Dey, J. Kuttippurath, G. Chander, and K. Ashok Kumar: Nutrient  management may reduce the global warming potential of rice cultivation in subtropical India,  Current Research in Environmental Sustainability, 7 June 2022,  https://doi.org/10.1016/j.crsust.2022.100169.
+- "paper": |-
+    Kuttippurath, J., V. Patel, M. Pathak and A. Singh: Improvements in SO2 pollution in India: Role of  technology and environmental regulations, Environmental Science and Pollution Research, doi:  10.1007/s11356-022-21319-2, 2022.
+- "paper": |-
+    Patel, V. and J. Kuttippurath: Significant increase in water vapour over India and Indian Ocean:  Implications for tropospheric warming and regional climate forcing, Science of Total Environment,  https://doi.org/10.1016/j.scitotenv.2022.155885, 08 May 2022.
+- "paper": |-
+    Gopikrishanan, G. S., J. Kuttippurath, S. Raj, A. Singh and K. Abbhishek: Air quality during the COVID– 19 lockdown and unlock periods in India, Environmental Processes, doi: 10.1007/s40710-022- 00585-9, 2022.
+- "paper": |-
+    Akhila, R. S., J. Kuttippurath, B. Balan Sarojini, A. Chakraborty, and R. Rahul: Observed tropical  cyclone driven cold wakes in the context of rapid warming of Arabian Sea, Journal of Operational  Oceanography, doi: 10.1080/1755876X.2022.2068260, 04 April 2022.
+- "paper": |-
+    Kashyap, R., A.C. Pandey, J. Kuttippurath: Photosynthetic trends in India derived from remote sensing  measurements during 2000–2019: vegetation dynamics and key climatic drivers, Geocarto  International, doi: 10.1080/10106049.2022.2060325, 2022.
+- "paper": |-
+    Akhila, R. S., J. Kuttippurath, R. Rahul, and A. Chakraborty: Genesis and Simultaneous Occurrences of  the Super Cyclone Kyarr and Extremely Severe Cyclone Maha in the Arabian Sea in October 2019,  Natural Hazards, doi: 10.1007/s11069-022-05340-9, 2022.
+- "paper": |-
+    Roy, R., J. Kuttippurath, F. Lefevre, P. Kumar and S. Raj: The Sudden Stratospheric Warming and  Chemical ozone loss in the Antarctic winter 2019: Comparison with the winters of 1988 and 2002,  Theoretical and Applied Climatology, doi: 10.1007/s00704-022-04031-6, 25 March 2022.
+- "paper": |-
+    Singh, A., K. Abbhishek, J. Kuttippurath, S. Raj, N. Mallick, G. Chander and S. Dixit: Decadal variations  in CO2 during agricultural seasons in India and role of management as sustainable approach,  Environmental Technology & Innovation, doi: 10.1016/j.eti.2022.102498, 2022.
+- "paper": |-
+    Murasingh, S., J. Kuttippurath, S. Sandeep Dash, S. Raj, R. Remesan, Madan K. Jha, P. Kumar: Long- term trends and projections of hydrological fluxes under RCP climate change scenarios for a  mountainous river catchment of northeast India, Journal of Water and Climate, doi:  10.2166/wcc.2022.424, 2022.
+- "paper": |-
+    Roy, R. and J. Kuttippurath: The dynamical evolution of Sudden Stratospheric Warmings of the Arctic  winters in the past decade 2011–2021, SN Applied Sciences, doi: 10.1007/s42452-022-04983-4,  2022.
+- "paper": |-
+    Kuttippurath, J., R. S. Akhila, M. V. Martin, M. S. Girish Kumar, M. Mohapatra, B. Balan Sarojini, K.  Mogensen, N. Sunanda, and A. Chakraborty: Tropical cyclone–induced cold wakes in the northeast  Indian Ocean, Environmental Science: Atmosphere, https://doi.org/10.1039/D1EA00066G, 2022.
+- "paper": |-
+    Ardra, D., J. Kuttippurath, R. Roy, P. Kumar, S. Raj, R. Mueller, W. Feng: The unprecedented ozone loss  in the Arctic winter and spring of 2010/2011 and 2019/2020, doi:  10.1021/acsearthspacechem.1c0033, ACS Earth and Space Chemistry, 2022.
+- "paper": |-
+    Kuttippurath, J., K. Abbhishek, G. S. Gopikrishnan, and M. Pathak: Investigation of long-term trends  and major sources of atmospheric HCHO over India, Environmental Challenges,  https://doi.org/10.1016/j.envc.2022.100477, 2022.
+- "paper": |-
+    Kumar, P., J. Kuttippurath, and A.Mitra: Causal discovery of drivers of surface ozone variability in  Antarctica using a deep learning algorithm, Environmental Science: Processes and Impacts, doi:  10.1039/D1EM00383F, 2022.
+- "paper": |-
+    Murasingh, S., J. Kuttippurath, S. Raj, Madan K. Jha, H. Varikoden, S. Debnath: Trends and variability  of rainfall in Tripura state of India in 1986–2019 and key drivers, Pure and Applied Geophysics, doi:  10.1007/s00024-022-02965-6, 2022.
+- "paper": |-
+    Sathish, T, M. Lakshmi, L. Thomas, J. Kuttippurath and K. B. Padmakumar: Spatial variability in the  community structure of microphytoplankton along the southeastern Arabian Sea during an  unusually warm winter monsoon season, Regional Studies in Marine Science,  https://doi.org/10.1016/j.rsma.2021.102078, 2021.
+- "paper": |-
+    Kuttippurath, J., Feng, W., Müller, R., Kumar, P., Raj, S., Gopikrishnan, G. P., and Roy, R.: Exceptional  loss in ozone in the Arctic winter/spring of 2019/2020, Atmos. Chem. Phys., doi:  https://doi.org/10.5194/acp-21-14019-2021,2021.
+- "paper": |-
+    Rahul, R., J. Kuttippurath, A. Chakraborty, and R. Akhila: The inverse influence of MJO on the  cyclogenesis in the north Indian Ocean, Atmospheric Research,  https://doi.org/10.1016/j.atmosres.2021.105880, 2021.
+- "paper": |-
+    Hrudya, PH., H. Varikoden, Vishnu, R., and J. Kuttippurath: Changes in the ENSO-ISMR relationship in  the historical and future projection periods based on coupled models, International Journal of  Climatology, doi: 10.1002/joc.7362, 2021
+- "paper": |-
+    Chaluvadi, R., H. Varikoden, M. Majumdar, S T. Ingle, and J. Kuttippurath: Changes in large-scale  circulation over Indo-Pacific region and its association with 2018 Kerala extreme rainfall event,  Atmospheric Research, https://doi.org/10.1016/j.atmosres.2021.105809, 2021.
+- "paper": |-
+    Sunanda, N., J. Kuttippurath, R. Peter, K. Chakraborty, and A. Chakraborty: The impact of SARS2  COVID-19 lockdown on the primary productivity of north Indian Ocean, Frontiers in Marine Science,  doi: 10.3389/fmars.2021.669415, 2021.
+- "paper": |-
+    Dandapat, S., A. Chakraborty, J. Kuttippurath, et al.: A numerical study on the role of atmospheric  forcing on Mixed layer Depth (MLD) variability in the Bay of Bengal using regional ocean model,  Ocean Dynamics, https://doi.org/10.1007/s10236-021-01475-8, 2021.
+- "paper": |-
+    Abbhishek, K., G. Chander, S. Dixit, J. Kuttippurath, A. Singh, and D. Das: Legume biochar fertilizer can  be an efficient alternative to compost in integrated nutrient management of paddy (Oryza sativa L.),  Journal of Soil Science and Plant Nutrition, doi: 10.1007/s42729-021-00555-4, 2021.
+- "paper": |-
+    Kuttippurath, J., F. Lefevre, S. Raj, P. Kumar, and K. Abbhishek: The ozone hole measurements at  Maitri station in Antarctica, Polar Science, https://doi.org/10.1016/j.polar.2021.100701, May 2021.
+- "paper": |-
+    Kumar P., J. Kuttippurath, P. von Gathen et al.: The increasing surface and tropospheric ozone in  Antarctica and their possible drivers, Environmental Science and Technology,  https://doi.org/10.1021/acs.est.0c08491, 2021.
+- "paper": |-
+    Kuttippurath, J., N. Sunanda, M. V. Martin, and Kunal Chakraborty: Tropical storms trigger  phytoplankton blooms in the deserts of north Indian Ocean, npj Climate and Atmospheric Science,  doi:10.1038/s41612-021-00166-x, 2021.
+- "paper": |-
+    Gosh, S., S. Verma, J. Kuttippurath and L. Menut: Wintertime radiative effects of black carbon (BC)  over Indo-Gangetic Plain as modelled with new BC emission inventories in CHIMERE, Atmos. Chem.  Phys., 21, 7671–7694, https://doi.org/10.5194/acp-21-7671-2021, 2021.
+- "paper": |-
+    Singh, A., J. Kuttippurath, K. Abbhishek, S. Raj., G. Chander, S. Dixit: Biogenic link to the recent  increase in atmospheric methane over India, J Environmental Management, 289,  https://doi.org/10.1016/j.jenvman.2021.112526, 2021.
+- "paper": |-
+    Kuttippurath, J and S. Raj: Two decades of aerosol observations by AATSR, MISR, MODIS and MERRA- 2 over India and Indian Ocean, Remote sensing of Environment, doi:10.1016/j.rse.2021.112363,  2021.
+- "paper": |-
+    Peter, R., J. Kuttippurath, K. Chakraborty, and N. Sunanda: Temporal evolution of mid-tropospheric  CO2 over the Indian Ocean, Atmospheric Environment, 10.1016/j.atmosenv.2021.118475, 2021.
+- "paper": |-
+    Kuttippurath, J., S. Murasingh, P. A. Stott, B. Balan Sarojini, M. K. Jha, P. Kumar, P. J. Nair, H. Varikoden,  S. Raj, P. A. Francis, and P. C. Pandey: Observed rainfall changes in the past century (1901–2019) over  northeast India and the wettest place on the Earth, Environmental Research Letters,  https://doi.org/10.1088/1748-9326/abcf78, 2020.
+- "paper": |-
+    Gopikrishnan G S and J. Kuttippurath: A decade of satellite observations reveal significant increase in  atmospheric formaldehyde from shipping in Indian Ocean, Atmospheric Environment,  https://doi.org/10.1016/j.atmosenv.2020.118095, 2020.
+- "paper": |-
+    Kuttippurath, J. et al.: Record-high levels of atmospheric ammonia over India: Spatial and temporal  analyses, Science of the Total Environment, https://doi.org/10.1016/j.scitotenv.2020, 2020.
+- "paper": |-
+    Das, B. K., T. S. Anandh, J. Kuttippurath, and A. Chakraborty, Influence of river discharge and tides on  the summertime discontinuity of Western Boundary Current in the Bay of Bengal. J. Phys.  Oceanography, doi: https://doi.org/10.1175/JPO-D-20-0133.1, 2020.
+- "paper": |-
+    Hrudya, PH., H. Varikoden, Vishnu, R., and J. Kuttippurath: Changes in ENSO-monsoon relations from  early to recent decades during onset, peak and withdrawal phases of Indian summer monsoon,  Climate Dynamics, https://doi.org/10.1007/s00382-020-05335-x, 2020
+- "paper": |-
+    Anandh T S, B. K. Das, J. Kuttippurath and A. Chakraborty: A comparative analysis of the Bay of  Bengal Ocean state using standalone and coupled numerical models, Asia-Pacific Journal of  Atmospheric Sciences, https://doi.org/10.1007/s13143-020-00197-z, 2020.
+- "paper": |-
+    Anandh T S, B. K. Das, J. Kuttippurath and A. Chakraborty: A coupled model analyses on the  interaction between oceanic eddies and tropical cyclones over the Bay of Bengal region, Ocean  Dynamics, https://doi.org/10.1007/s10236-019-01330-x, 2019.
+- "paper": |-
+    Seetha, C.J., Varikoden, H., Babu, C.A. and J. Kuttippurath: Significant changes in the ENSO-monsoon  relationship and associated circulation features on multi-decadal timescale. Climate Dynamics,  doi:10.1007/s00382-019-05071-x, 2019.
+- "paper": |-
+    Raj, S., Paul, S., Chakraborty, A., and J. Kuttippurath.  Anthropogenic forcing exacerbating the urban  heat islands in India. J Environmental Management.  https://doi.org/10.1016/j.jenvman.2019.110006, 2019.
+- "paper": |-
+    Das, B. K., Anandh. T. S., J. Kuttippurath and A. Chakraborty: Characteristics of the Discontinuity of  Western Boundary Current in the Bay of Bengal, J Geophysical Research, doi:  10.1029/2019JC015235, 2019.
+- "paper": |-
+    Kuttippurath, J., P. Kumar, P. J. Nair, and P. C. Pandey: Emergence of ozone recovery evidenced by  reduction in Antarctic ozone loss saturation, npj Climate and Atmospheric Science, 1:42, doi:  10.1038/s41612-018-0052-6, 2018.
+- "paper": |-
+    Kuttippurath, J., P. Kumar, P. J. Nair and A. Chakraborty: Accuracy of satellite measurements in polar  vortex conditions: Comparisons with ground-based measurements, Remote Sensing of Environment,  209, 648—659, 2018.
+- "paper": |-
+    Varikoden, H., J. Ravedekar, J. Kuttippurath, and C. A. Babu: Contrasting Trends in Southwest  Monsoon Rainfall over the Western Ghats Region of India, Climate Dynamics, 2018.
+- "paper": |-
+    Anandh, T. S., B. K. Das, V. Kumar, A. Chakraborty and J. Kuttippurath: Analyses of Oceanic Heat  Content during 1980–2014 and satellite-era cyclones over Bay of Bengal, International Journal of  Climatology, doi:10.1002/joc.5767, 2018.
+- "paper": |-
+    Sharma, M., A. Chakraborty, J. Kuttippurath, and A. K. Yadav: Potential power production from  salinity gradient at the Hoogly estuary system, Innovative energy and Research, doi:10.4172/2576- 1463.1000210, 2018.
+- "paper": |-
+    Dandapat, S., A. Chakraborty, and J. Kuttippurath: Interannual variability and characteristics of the  East India Coastal Current associated with Indian Ocean Dipole events using a high resolution  regional ocean mode, Ocean Dynamics, 2018.
+- "paper": |-
+    Sharma, M., P. Mondal, A. Chakraborty, J. Kuttippurath, M. Purkait: Effect of different molecular  weight polyethylene glycol on flat sheet cellulose acetate membranes for evaluating power density  performance in pressure retarded osmosis study, Journal of Water Process Engineering,  doi:10.1016/j.jwpe.2018.05.011, 2018.
+- "paper": |-
+    Nair P. J., A. Chakraborty, H. Varikoden, P. A. Francis, and J. Kuttippurath: The local and global climate  forcings induced inhomogeneity of Indian rainfall, Scientific Reports, doi: 10.1038/s41598-018- 24021-x, 2018.
+- "paper": |-
+    Kuttippurath, J. and P. J. Nair: The signs of Antarctic ozone recovery, Scientific Reports, doi:  10.1038/s41598-017-00722-7, 2017.
+- "paper": |-
+    Nair, P. J., L. Froidevaux, J. Kuttippurath, et al.: Subtropical and mid-latitude ozone trends:  implications for recovery, J. Geophys. Res., 120, 7247–7257, doi:10.1002/2014JD022371, 2015.
+- "paper": |-
+    Kuttippurath, J., Godin-Beekmann, S., Lefèvre, F., Santee, M. L., Froidevaux, L., and Hauchecorne, A.:  Variability of Antarctic ozone loss in the last decade (2004–2013): high resolution simulations  compared to Aura MLS observations, Atmos. Chem. Phys., 15, 10385-10397, doi:10.5194/acp-15- 10385-2015, 2015.
+- "paper": |-
+    Kuttippurath, J., G. Bodeker, H. Roscoe, and P.J. Nair: A cautionary note on the use of EESC-based  regression for ozone trend analysis, Geophys. Res. Lett., doi: 10.1002/2014GL062142, 2014.
+- "paper": |-
+    Kuttippurath, J., F. Lefevre, J.-P. Pommereau, H. K. Roscoe, A. Pazmiño, and J. D. Shanklin:  The  Antarctic ozone loss in 1979—2010: First sign of ozone recovery, Atmos. Chem. Phys., 13, 1625— 1635, 2013.
+- "paper": |-
+    Gazeaux, J. C. Clerbaux, M. George, J. Hadji-Lazaro, J. Kuttippurath, P.-F. Coheur, D. Hurtmans, T.  Deshler, M. Kovilakam, P. Campbell, V. Guidard, F. Rabier, and J.-N. Thepaut: Intercomparison of polar  ozone profiles by IASI/MetOp sounder with 2010 Concordiasi ozonesonde observations, Atmos.  Meas. Tech., 6, 613—620, 2013.
+- "paper": |-
+    Nair, P. J., S. Godin-Beekmann, J. Kuttippurath, G. Ancellet, F. Goutail, A. Pazmiño, L. Froidevaux, J. M.  Zawodny, R. D. Evans, and M. Pastel: Ozone trends derived from the total column and vertical  profiles at a northern mid-latitude station, Atmos. Chem. Phys., 13, 10373—10384, 2013.
+- "paper": |-
+    von Hobe et al. (including J. Kuttippurath): Reconciliation of essential process parameters for an  enhanced predictability of Arctic stratospheric ozone loss and its climate interactions, Atmos. Chem.  Phys.,13, 9233—9268, 2013.
+- "paper": |-
+    Kuttippurath, J. and G. Nikulin: A comparative study of the major sudden stratospheric warmings in  the Arctic winters 2003/2004—2009/2010, Atmos. Chem. Phys., 12, 8115—8129, 2012.
+- "paper": |-
+    Kuttippurath, J., S. Godin-Beekmann, F. Lefevre, M. L. Santee, and L. Froidevaux: Record-breaking  ozone loss in the Arctic winter 2010/2011: comparison with 1996/1997, Atmos. Chem. Phys., 12,  7073—7085, 2012.
+- "paper": |-
+    Wolfram, E. A., J. Salvador, F. Orte, R. D Elia, S. Godin-Beekmann, J. Kuttippurath, A. Pazmino, F.  Goutail, C. Casiccia, F. Zamorano, N. Paes Leme, E. J. Quel: The unusual persistence of ozone hole  over a southern mid-latitude station during the Antarctic spring 2009: A multi-instrument study,  Ann. Geophys., 30, 1435—1440, 2012.
+- "paper": |-
+    Kuttippurath, J., A. Kleinboehl, M. Sinnhuber, H. Bremer, H. Kuellmann, J. Notholt, S. Godin- Beekmann, O. P. Tripathi, and G. Nikulin: Arctic ozone depletion in 2002—2003 measured by ASUR  and comparison with POAM observations, J. Geophys. Res., doi:10.1029/2011JD016020, 2011.
+- "paper": |-
+    Kuttippurath, J., A. Kleinboehl, H. Bremer, H. Kuellmann, J. Notholt, B.-M. Sinnhuber, W. Feng, and M.  Chipperfield: Aircraft measurements and model simulations of stratospheric ozone and N2O:  Implications for chemistry and transport processes in the models, J. Atmos. Chem.,  doi:10.1007/s10874-011-9191-4, 2011.
+- "paper": |-
+    Kuttippurath, J., S. Godin-Beekmann, F. Lefèvre, and F. Goutail: Spatial, temporal, and vertical  variability of polar stratospheric ozone loss in the Arctic winters 2004/2005—2009/2010, Atmos.  Chem. Phys., 10, 9915—9930, 2010.
+- "paper": |-
+    Kuttippurath, J., F. Goutail, J.-P. Pommereau, F. Lefèvre, H. K. Roscoe, A. Pazmiño, W. Feng, and M. P.  Chipperfield: Estimation of Antarctic ozone loss from ground-based total column measurements,  Atmos. Chem. Phys., 10, 6569—6581, doi:10.5194/acp-10-6569-2010, 2010.
+- "paper": |-
+    Kuttippurath, J., S. Godin-Beekmann, F. Lefevre, and A. Pazmino: Ozone depletion in the Arctic winter  2007/08, Int. J Remote Sens., 30, 4071—4082, doi:10.1080/01431160902821965, 2009.
+- "paper": |-
+    Lott, F., J. Kuttippurath, and F. Vial: A climatology of the gravest waves in the equatorial lower and  middle stratosphere: method and results for the ERA-40 re-analysis and the LMDz GCM, J. Atmos.  Sci., 66, 1327—1346, 2009.
+- "paper": |-
+    Dupuy, E., J. Kuttippurath et al.: Validation of ozone measurements from the Atmospheric Chemistry  Experiment (ACE), Atmos. Chem. Phys., 9, 287—343, 2009.
+- "paper": |-
+    Payan, S., C. J. Kuttippurath et al.: Validation of version-4.61 methane and nitrous oxide observed by  MIPAS, Atmos. Chem. Phys., 9, 413—442, 2009.
+- "paper": |-
+    Santee, M., A. Lambert, W. Read, N. Livesey, R. Coeld, D. Cuddy, W. Daffer, B. Drouin, L. Froidevaux, R.  Fuller, R. Jarnot, B. Knosp, G. Manney, V. Perun, W. Snyder, P. Stek, R. Thurstans, P. Wagner, J. Waters,  J. Urban, D. Murtagh, P. Ricaud, B. Barret, A. Kleinböhl, J. Kuttippurath, H. Küllmann, G. Toon, R.  Stachnik: Validation of the Aura Microwave limb Sounder ClO Measurements, J. Geophys. Res., 113  (D15S22), 2009.
+- "paper": |-
+    Solomon, S. J., G. W. Schade, J. Kuttippurath, A. Ladstätter-Weissenmayer and J. P. Burrows: VOC  Concentrations in an Indoor Workplace Environment of a University Building, Indoor and Built  Environ., 17, 260—268, 2008.
+- "paper": |-
+    Strong, K.  J. Kuttippurath et al.: Validation of ACE-FTS N2O measurements, Atmos. Chem. Phys., 8,  4759—4786, 2008.
+- "paper": |-
+    Wolff, M. A. J. Kuttippurath et al.: Validation of HNO3, ClONO2, and N2O5 from the Atmospheric  Chemistry Experiment Fourier Transform Spectrometer (ACE-FTS), Atmos. Chem. Phys., 8, 3529— 3562, 2008.
+- "paper": |-
+    Kuttippurath, J., et al.: Intercomparison of ozone profile measurements from ASUR, SCIAMACHY,  MIPAS, OSIRIS, and SMR, J. Geophys. Res., 112, doi:10.1029/2006JD007830, 2007.
+- "paper": |-
+    Cortesi, U., J. J. Kuttippurath et al.: Geophysical validation of MIPAS-ENVISAT operational ozone data,  Atmos. Chem. Phys., 7, 4807—4867, 2007.
+- "paper": |-
+    Wang, D. J. Kuttippurath et al.: Validation of MIPAS HNO3 operational data, Atmos. Chem. Phys., 7,  4905—4934, 2007.
+- "paper": |-
+    Kleinböhl, A., J. Kuttippurath, M. Sinnhuber, B.-M. Sinnhuber, H. Küllmann, K. Künzi, and J. Notholt:  Rapid meridional transport of tropical airmasses to the Arctic during the major stratospheric  warming in January 2003, Atmos. Chem. Phys., 5, 1291—1299, 2005.
+- "paper": |-
+    Kleinböhl, A., H. Bremer, H. Küllmann, J. Kuttippurath, E. V. Browell, T. Canty, R. J. Salawitch, G. C.  Toon, J. Notholt: Denitrification in the Arctic mid-winter 2004/2005 observed by airborne  submillimeter radiometry, Geophys. Res. Lett., 32, L19811, doi:10.1029/2005GL023408, 2005.
+- "paper": |-
+    Fix, A., G. Ehret, H. Flentje, G. Poberaj, M. Gottwald, H. Finkenzeller, H. Bremer, M. Bruns, J. P.  Burrows, A. Kleinböhl, H. Küllmann, J. Kuttippurath, A. Richter, P. Wang, K.-P. Heue, U. Platt, I. Pundt,  and T. Wagner: SCIAMACHY validation by aircraft remote sensing: design, execution, and first  measurement results of the SCIA-VALUE mission, Atmos. Chem. Phys., 5, 1273—1290, 2005.
+- "paper": |-
+    Urban, J., N. Lautié, E. Le Flochmoën, J. Jiménez, P. Eriksson, J. De La Noë, E. Dupuy, L. El Amraoui, U.  Frisk, F. Jégou, D. Murtagh, M. Olberg, P. Ricaud, C. Camy-Peyret, G. Dufour, S. Payan, N. Huret, M.  Pirre, A. D Robinson, N. R. P. Harris, H. Bremer, A. Kleinboehl, H. Kuellmann, K. Kunzi, J. Kuttippurath,  et al.: Odin/SMR limb observations of stratospheric trace gases: Validation of N2O, J. Geophys.  Res.110, D09301, 2005.

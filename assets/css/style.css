@@ -591,3 +591,48 @@ body {
     --card-color: #007bff;
     --card-color-light: #0056b3;
 }
+
+/* Papers List Section */
+.papers-list-section {
+    padding: 2rem 0;
+}
+
+.papers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.paper-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paper-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.paper-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Responsive adjustments for papers list */
+@media screen and (max-width: 768px) {
+    .papers-list {
+        gap: 1rem;
+    }
+
+    .paper-item {
+        padding: 1rem;
+    }
+
+    .paper-content {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container">
+    <section class="hero-section">
+        <h2>WE PUBLISH IN TOPMOST JOURNALS</h2>
+       
+    </section>
+
+    <section class="papers-list-section">
+        <div class="papers-list">
+            {{ range .Site.Data.papers }}
+            <div class="paper-item">
+                <p class="paper-content">{{ .paper }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}

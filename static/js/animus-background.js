@@ -43,7 +43,7 @@ function animate() {
             let dy = points[i].y - points[j].y;
             let dist = Math.sqrt(dx * dx + dy * dy);
             if (dist < MAX_DIST) {
-                ctx.strokeStyle = "rgba(100, 100, 100, " + (1 - dist / MAX_DIST) + ")";
+                ctx.strokeStyle = "rgba(173, 216, 230, " + (1 - dist / MAX_DIST) + ")";
                 ctx.beginPath();
                 ctx.moveTo(points[i].x, points[i].y);
                 ctx.lineTo(points[j].x, points[j].y);
@@ -51,7 +51,7 @@ function animate() {
             }
         }
     }
-    ctx.fillStyle = "rgba(154, 150, 150, 0.76)";
+    ctx.fillStyle = "rgba(173, 216, 230, 0.76)";
     const marginX = canvas.width * MARGIN_PERCENT;
     const marginY = canvas.height * MARGIN_PERCENT;
     for (let p of points) {

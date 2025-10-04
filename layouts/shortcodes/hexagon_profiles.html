@@ -1,23 +1,25 @@
-<div class="hexagon-grid">
+<div class="profile_card-grid">
   {{ range .Site.Data.strapi_people_with_images.data }}
-    <div class="hexagon">
-      <div class="hexagon-inner">
-        <div class="hexagon-content">
+  <figure class="profile_card">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+    
+      
+        
           {{ if .photo }}
             {{ $imageUrl := .photo.url }}
             {{ if and .photo.formats .photo.formats.thumbnail }}
                 {{ $imageUrl = .photo.formats.thumbnail.url }}
             {{ end }}
-            <img src="{{ $imageUrl }}" alt="{{ .name }}">
+            <figcaption>
+            <img src="{{ $imageUrl }}" alt="{{ .name }}" class="profile">
           {{ end }}
-          <div class="info-text">
-            <h3>{{ .name }}</h3>
-            <p>{{ .course }}</p>
-            <p>{{ .roll_number }}</p>            
-            <p>{{ .email }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+         
+          <h2>  {{ .name }}  
+          <span>  {{ .role }} </span> </h2>
+          <p>  {{ .course }} </p>
+            
+          </figcaption>
+      
+  </figure>  
   {{ end }}
 </div>

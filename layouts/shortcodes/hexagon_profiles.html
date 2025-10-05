@@ -1,7 +1,7 @@
 <div class="profile_card-grid">
   {{ range .Site.Data.strapi_people_with_images.data }}
   <figure class="profile_card">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+    
     
       
         
@@ -10,13 +10,13 @@
             {{ if and .photo.formats .photo.formats.thumbnail }}
                 {{ $imageUrl = .photo.formats.thumbnail.url }}
             {{ end }}
-            <figcaption>
-            <img src="{{ $imageUrl }}" alt="{{ .name }}" class="profile">
+            
+            <img src="{{ $imageUrl }}" alt="{{ .name }}" class="profile-card__image">
           {{ end }}
-         
-          <h2>  {{ .name }}  
-          <span>  {{ .role }} </span> </h2>
-          <p>  {{ .course }} </p>
+         <figcaption class="profile-card__caption">
+          <h3 class="profile-card__name">  {{ .name }}  </h3>
+          <div class="profile-card__role">  {{ .role }} </div>
+          <div class="profile-card__course">  {{ .course }} </div>
             
           </figcaption>
       

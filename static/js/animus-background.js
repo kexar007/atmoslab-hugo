@@ -4,9 +4,9 @@ const canvas = document.getElementById("animus");
 const ctx = canvas.getContext("2d");
 
 // --- Configuration ---
-const MAX_DIST = 130;
-const DENSITY_DIVISOR = 40; 
-const MARGIN_PERCENT = 0.30; 
+const MAX_DIST = 150;
+const DENSITY_DIVISOR = 20; 
+const MARGIN_PERCENT = 0.20; 
 
 let points = [];
 let numPoints;

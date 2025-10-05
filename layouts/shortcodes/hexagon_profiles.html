@@ -1,25 +1,60 @@
 <div class="profile_card-grid">
-  {{ range .Site.Data.strapi_people_with_images.data }}
-  <figure class="profile_card">
-    
-    
-      
-        
-          {{ if .photo }}
-            {{ $imageUrl := .photo.url }}
-            {{ if and .photo.formats .photo.formats.thumbnail }}
-                {{ $imageUrl = .photo.formats.thumbnail.url }}
+  
+{{ range $index, $person := .Site.Data.strapi_people_with_images.data }}
+    {{ $gradients := (slice
+        "linear-gradient(120deg, #43CBFF 0%, #9708CC 100%)"
+        "linear-gradient(120deg, #F97794 0%, #623AA2 100%)"
+        "linear-gradient(120deg, #81FFEF 0%, #F067B4 100%)"
+        "linear-gradient(120deg, #F6D242 0%, #FF52E5 100%)"
+        "linear-gradient(120deg, #F0FF00 0%, #58CFFB 100%)"
+        "linear-gradient(120deg, #EECE13 0%, #B210FF 100%)"
+        "linear-gradient(120deg, #52E5E7 0%, #130CB7 100%)"
+        "linear-gradient(120deg, #92FFC0 0%, #002661 100%)"
+        "linear-gradient(120deg, #EEAD92 0%, #6018DC 100%)"
+        "linear-gradient(120deg, #EE9AE5 0%, #5961F9 100%)"
+        "linear-gradient(120deg, #FFCF71 0%, #2376DD 100%)"
+        "linear-gradient(120deg, #FDD819 0%, #E80505 100%)"
+    ) | shuffle }}
+    {{ $currentGradient := index $gradients (mod $index (len $gradients)) }}
+<div class="profile_card" style="--card-gradient: {{ $currentGradient | safeCSS }};">
+
+     {{ if $person.photo }}
+            {{ $imageUrl := $person.photo.url }}
+            {{ if and $person.photo.formats $person.photo.formats.thumbnail }}
+                {{ $imageUrl = $person.photo.formats.thumbnail.url }}
             {{ end }}
+
+
+    <div class="banner">
+        <svg viewBox="0 0 100 100">
             
-            <img src="{{ $imageUrl }}" alt="{{ .name }}" class="profile-card__image">
-          {{ end }}
-         <figcaption class="profile-card__caption">
-          <h3 class="profile-card__name">  {{ .name }}  </h3>
-          <div class="profile-card__role">  {{ .role }} </div>
-          <div class="profile-card__course">  {{ .course }} </div>
-            
-          </figcaption>
-      
-  </figure>  
-  {{ end }}
+            <image xlink:href="{{ $imageUrl }}" width="100" height="100" preserveAspectRatio="xMidYMid slice" clip-path="url(#hexagon-clip)"></image>
+        </svg>
+    </div>
+     {{ end }}
+     <span><br></span>
+     <span><br></span>
+     <span><br></span>
+     
+    <h3 class="name">  {{ $person.name }}  </h3>
+    <div class="title">{{$person.role}}</div>
+   <!--  <div class="actions">
+
+
+
+
+
+        <div class="follow-info">
+            <h2><a href="#"><span>12</span><small>Followers</small></a></h2>
+            <h2><a href="#"><span>1000</span><small>Following</small></a></h2>
+        </div>
+        <div class="follow-btn">
+            <button>Follow</button>
+        </div>
+    </div> -->
+    <div class="desc">  {{ $person.course }}  </div>
+</div>
+{{ end }}
+
+
 </div>

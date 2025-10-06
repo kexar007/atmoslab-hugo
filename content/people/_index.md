@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## Associate Professor
-{{< hexagon_profiles role="Associate Professor" >}}
+{{< hexagon_profiles role="supervisor" >}}
 
 ## PhD Students
 {{< hexagon_profiles role="phd student" >}}

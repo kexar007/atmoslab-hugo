@@ -26,6 +26,9 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Install jq for JSON parsing
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Fetch Strapi Data
         env:
           STRAPI_BASE_URL: ${{ secrets.STRAPI_BASE_URL }}
@@ -38,11 +41,13 @@ jobs:
                -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
                -H "Content-Type: application/json")
           
-          # Extract total using bash string manipulation instead of jq
-          TOTAL=$(echo "$COUNT_RESPONSE" | grep -o '"total":[0-9]*' | cut -d: -f2)
+          echo "Debug: Response received"
+          echo "$COUNT_RESPONSE" | head -20  # Show first 20 lines for debugging
+          
+          TOTAL=$(echo "$COUNT_RESPONSE" | jq -r '.meta.pagination.total // 0')
           echo "Total items found: $TOTAL"
           
-          if [ -z "$TOTAL" ] || [ "$TOTAL" -eq 0 ]; then
+          if [ "$TOTAL" -eq 0 ]; then
             echo "No items found, creating empty response"
             echo '{"data":[],"meta":{"pagination":{"page":1,"pageSize":25,"pageCount":0,"total":0}}}' > data/strapi_people_with_images.json
           else

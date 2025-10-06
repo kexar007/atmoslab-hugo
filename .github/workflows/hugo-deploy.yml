@@ -28,8 +28,8 @@ jobs:
 
       - name: Fetch Strapi Data
         run: |
-          mkdir -p data # Ensure the data directory exists
-          curl -X GET "https://fortunate-nest-b13a1e6068.strapiapp.com/api/people?populate=*&pagination[pageSize]=-1" \
+          mkdir -p data
+          curl -X GET 'https://fortunate-nest-b13a1e6068.strapiapp.com/api/people?populate=*&pagination[pageSize]=-1' \
                -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
                -o data/strapi_people_with_images.json
         env:

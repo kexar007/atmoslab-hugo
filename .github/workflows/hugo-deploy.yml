@@ -1,3 +1,4 @@
+
 name: Deploy Hugo site to Pages
 
 on:
@@ -27,13 +28,30 @@ jobs:
           submodules: recursive
 
       - name: Fetch Strapi Data
-        run: |
-          mkdir -p data # Ensure the data directory exists
-          curl -X GET "https://fortunate-nest-b13a1e6068.strapiapp.com/api/people?populate=*" \
-               -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
-               -o data/strapi_people_with_images.json
         env:
-          STRAPI_API_TOKEN: ${{ secrets.STRAPI_API_TOKEN }} # Make the secret available as an environment variable
+          STRAPI_BASE_URL: ${{ secrets.STRAPI_BASE_URL }}
+          STRAPI_API_TOKEN: ${{ secrets.STRAPI_API_TOKEN }}
+        run: |
+          mkdir -p data
+          
+          # First get total count with pageSize=1
+          COUNT_RESPONSE=$(curl -f -s -X GET "${{ secrets.STRAPI_BASE_URL }}/people?populate=*&pagination[pageSize]=1" \
+               -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
+               -H "Content-Type: application/json")
+          
+          TOTAL=$(echo "$COUNT_RESPONSE" | jq -r '.meta.pagination.total // 0')
+          echo "Total items found: $TOTAL"
+          
+          if [ "$TOTAL" -eq 0 ]; then
+            echo "No items found, creating empty response"
+            echo '{"data":[],"meta":{"pagination":{"page":1,"pageSize":25,"pageCount":0,"total":0}}}' > data/strapi_people_with_images.json
+          else
+            # Fetch all items in one request using the total count
+            curl -f -X GET "${{ secrets.STRAPI_BASE_URL }}/people?populate=*&pagination[pageSize]=$TOTAL" \
+                 -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
+                 -H "Content-Type: application/json" \
+                 -o data/strapi_people_with_images.json
+          fi
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

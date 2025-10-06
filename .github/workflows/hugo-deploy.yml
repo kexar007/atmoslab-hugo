@@ -1,20 +1,27 @@
 name: Deploy Hugo site to Pages
 
 on:
+  # Runs on pushes targeting the main branch
   push:
     branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
+  # Build job
   deploy:
     environment:
       name: github-pages
@@ -29,9 +36,12 @@ jobs:
       - name: Fetch Strapi Data
         run: |
           mkdir -p data
-          curl -X GET 'https://fortunate-nest-b13a1e6068.strapiapp.com/api/people?populate=*&pagination[pageSize]=-1' \
-               -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
-               -o data/strapi_people_with_images.json
+          curl -G \
+            -H "Authorization: Bearer ${{ secrets.STRAPI_API_TOKEN }}" \
+            --data-urlencode "populate=*" \
+            --data-urlencode "pagination[pageSize]=100" \
+            "https://fortunate-nest-b13a1e6068.strapiapp.com/api/people" \
+            -o data/strapi_people_with_images.json
         env:
           STRAPI_API_TOKEN: ${{ secrets.STRAPI_API_TOKEN }}
 

@@ -1,6 +1,18 @@
+
+
+
+{{ $role := .Get "role" }}
+{{ $all_people := .Site.Data.strapi_people_with_images.data }}
+{{ $people_to_display := $all_people }}
+
+{{ if $role }}
+    {{ $people_to_display = where $all_people "role" $role }}
+{{ end }}
+
+
 <div class="profile_card-grid">
   
-{{ range $index, $person := .Site.Data.strapi_people_with_images.data }}
+{{ range $index, $person := $people_to_display }}
     {{ $gradients := (slice
         "linear-gradient(120deg, #43CBFF 0%, #9708CC 100%)"
         "linear-gradient(120deg, #F97794 0%, #623AA2 100%)"

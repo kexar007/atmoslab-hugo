@@ -16,13 +16,28 @@
 
 .profile_card-grid {
   display: grid  ;  
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
 
 
   
   gap: 2rem;
   padding: 2rem;
   justify-items: center;
+   justify-content: center;
+}
+
+
+.people-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem; /* Adds space above the heading */
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #f0f0f0;
+    letter-spacing: 2px;
 }
 
 

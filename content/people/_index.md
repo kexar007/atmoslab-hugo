@@ -4,4 +4,20 @@ date: 2024-09-23
 draft: false
 ---
 
-{{< hexagon_profiles >}}
+## Associate Professor
+{{< hexagon_profiles role="Associate Professor" >}}
+
+## PhD Students
+{{< hexagon_profiles role="phd student" >}}
+
+## Post Doc
+{{< hexagon_profiles role="post doc" >}}
+
+## PG Students
+{{< hexagon_profiles role="pg students" >}}
+
+## Alumni
+{{< hexagon_profiles role="alumni" >}}
+
+
+

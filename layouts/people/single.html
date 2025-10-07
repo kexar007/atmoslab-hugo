@@ -9,26 +9,9 @@
                 {{ end }}
                 {{ .Content }}
             </div>
-            <div class="profile-sidebar">
-                {{ if .Params.image }}
-                    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="profile-image">
-                {{ end }}
-                <h2>Contact</h2>
-                <ul class="contact-list">
-                    {{ if .Params.mobile }}
-                        <li><span class="contact-label">Mobile:</span> {{ .Params.mobile }}</li>
-                    {{ end }}
-                    {{ if .Params.office }}
-                        <li><span class="contact-label">Office:</span> {{ .Params.office }}</li>
-                    {{ end }}
-                    {{ if .Params.residence }}
-                        <li><span class="contact-label">Residence:</span> {{ .Params.residence }}</li>
-                    {{ end }}
-                    {{ if .Params.email }}
-                        <li><span class="contact-label">Email:</span> <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
+          
+
+            
         </div>
     </article>
 </div>

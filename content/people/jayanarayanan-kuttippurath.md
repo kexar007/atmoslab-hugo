@@ -10,110 +10,128 @@ residence = "+91 - 3222 - 281995"
 email = "jayan@coral.iitkgp.ernet.in"
 +++
 
-Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),
-Indian Institute of Technology Kharagpur
-Kharagpur, India - 721302
+{{< rawhtml >}}
+<!-- This parent container ensures all CSS styles are scoped to this page only -->
+<div class="jayan-portfolio-page">
 
----
+  <div class="portfolio-container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="profile-header">
+          <img src="/atmoslab-hugo/images/people/Jayanarayanan_Kuttipurath.jpg" alt="Jayanarayanan Kuttippurath" class="profile-image">
+          <h1 class="profile-name">Jayanarayanan Kuttippurath</h1>
+          <p class="profile-title">Assistant Professor, IIT Kharagpur</p>
+        </div>
 
-## Research Interests
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:jayan@coral.iitkgp.ernet.in">jayan@coral.iitkgp.ernet.in</a></span>
+          </div>
+          <div class="contact-item">
+            <span class="label">Phone (Office)</span>
+            <span class="value">+91 - 3222 - 281994</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">Location</span>
+            <span class="value">Kharagpur, India</span>
+          </div>
+        </div>
 
-*   Numerical modelling of Atmosphere, Ocean, Chemistry and Climate
-*   Atmospheric Chemistry and Air Pollution/Air Quality Monitoring and Modelling
-*   Atmospheric and Oceanic Remote sensing
-*   Physical Oceanography
+        <div class="skills-section">
+          <h2 class="sidebar-heading">Skills</h2>
+          <ul class="skills-list">
+            <li><strong>Languages:</strong> Malayalam, Tamil, English, German, French</li>
+            <li><strong>Programming:</strong> Fortran, Matlab, IDL</li>
+            <li><strong>OS:</strong> Mac-OS, Unix/Linux, Windows</li>
+            <li><strong>Graphics:</strong> GrADS, XmGRACE, Origin</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
 
----
+    <!-- Main Content -->
+    <main class="main-content">
+      <section id="about" class="content-section">
+        <h2 class="section-title">About</h2>
+        <p>
+          Assistant Professor at the Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL), Indian Institute of Technology Kharagpur. My work focuses on the numerical modelling of atmospheric and oceanic processes, climate, and chemistry.
+        </p>
+      </section>
 
-## Experience
+      <section id="research" class="content-section">
+        <h2 class="section-title">Research Interests</h2>
+        <ul>
+          <li>Numerical modelling of Atmosphere, Ocean, Chemistry and Climate</li>
+          <li>Atmospheric Chemistry and Air Pollution/Air Quality Monitoring and Modelling</li>
+          <li>Atmospheric and Oceanic Remote sensing</li>
+          <li>Physical Oceanography</li>
+        </ul>
+      </section>
 
-*   **April 2015 onwards:** Assistant Professor, IIT Kharagpur, India.
-*   **August 2012 – March 2015:** CNRS Scientist (Permanent), LATMOS/CNRS, Paris, France.
-*   **October 2007 – July 2012:** CNRS Research Scientist, LATMOS/CNRS, Paris, France.
-*   **October 2005–September 2007:** CNRS post-doctoral fellow, LMD/CNRS, Paris, France.
-*   **April 2005 – September 2005:** Research Associate, University of Bremen, Bremen, Germany.
-*   **November 2001 – March 2005:** Ph.D. student, University of Bremen, Bremen, Germany.
-*   **May 2001 – July 2001:** Research Assistant, Cochin University of Science and Technology (CUSAT), India.
+      <section id="experience" class="content-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2015 - Present</div>
+            <div class="timeline-content">
+              <h3>Assistant Professor</h3>
+              <p>IIT Kharagpur, India</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2012 - 2015</div>
+            <div class="timeline-content">
+              <h3>CNRS Scientist (Permanent)</h3>
+              <p>LATMOS/CNRS, Paris, France</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2007 - 2012</div>
+            <div class="timeline-content">
+              <h3>CNRS Research Scientist</h3>
+              <p>LATMOS/CNRS, Paris, France</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2005 - 2007</div>
+            <div class="timeline-content">
+              <h3>CNRS post-doctoral fellow</h3>
+              <p>LMD/CNRS, Paris, France</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
----
+      <section id="education" class="content-section">
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+              <div class="timeline-item">
+                  <div class="timeline-date">2013</div>
+                  <div class="timeline-content">
+                      <h3>Habilitation (D. Sc.) in Atmospheric Physics</h3>
+                      <p>University of Pierre and Marie Curie Paris 6, Paris, France</p>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  <div class="timeline-date">2005</div>
+                  <div class="timeline-content">
+                      <h3>Dr. rer. nat. in Atmospheric Physics</h3>
+                      <p>University of Bremen, Bremen, Germany</p>
+                  </div>
+              </div>
+              <div class="timeline-item">
+                  <div class="timeline-date">2000</div>
+                  <div class="timeline-content">
+                      <h3>M. Sc. in Physical Oceanography</h3>
+                      <p>Cochin University of Science and Technology, Kochi, India</p>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-## Education
-
-*   **Habilitation (Equivalent to D. Sc.) in Physics/ Atmospheric Physics:** March 2013, University of Pierre and Marie Curie Paris 6, Paris, France.
-*   **Dr. rer. nat. in Physics/ Atmospheric Physics:** April 2005 (Dec. 2001 – Mar. 2005), International Postgraduate Programme in Physics (PIP), University of Bremen, Bremen, Germany.
-*   **M. Tech. in Atmospheric Science:** 2000 October – 2001 May, Cochin University of Science and Technology, Kochi, India (Discontinued to pursue Ph.D.).
-*   **M. Sc. in Physical Oceanography:** 2000, Cochin University of Science and Technology, Kochi, India.
-
----
-
-## Skills
-
-*   **Languages:** Malayalam, Tamil, English, German, and French.
-*   **Programming:** Fortran, Matlab and IDL.
-*   **Familiar OSs:** Mac-OS, Unix/Linux, and Windows
-*   **Graphics Tools:** GrADS and XmGRACE on Linux, and Origin on Windows
-
----
-
-## Awards/Recognitions
-
-*   **Bharat Vikas Award in Climate Science:** Institute of Self Reliance, Bhubaneswar, 2019.
-*   **NASA Post-doctoral fellowship:** JPL/NASA, Caltech, California, USA, 2007 (declined).
-*   **CNRS Post-doctoral fellowship:** National Centre for Scientific Research (CNRS) France, 2005—2007. A fellowship for non-French citizens for their first post- doctoral study.
-*   **PhD grant:** Graduate School - Physics International Postgraduate Programme, Department of Physics, University of Bremen, Bremen, Germany, 2001.
-*   **Ph.D. scholarship/selection:** International Max-Planck Research School for Earth System Modelling (IMPRS), Hamburg, Germany, 2001.
-*   **Selection for M. Tech in Atmospheric Science and appeared for a semester:** Cochin University of Science and Technology, Kochi, India, 2000—2001.
-*   **CSIR-Junior Research Fellowship:** Council of Scientific and Industrial Research (CSIR), University Grants Commission (UGC), India, 2001.
-*   **UGC-National Eligibility Test Lectureship:** Awarded by CSIR—UGC, India, 2001.
-*   **Jawaharlal Nehru Foundation award for outstanding university student:** Jawaharlal Nehru Foundation, New Delhi, 2001.
-*   **Prof. C. V. Kurian Endowment prize for the First Rank in M. Sc. Physical Oceanography:** 2000.
-*   **Krishnankutty Nair Memorial prize and Edapatta Panchayath Award:** for the second place in School for the Secondary School Leaving Certificate examination, A. S.M. High SchoolVelliyanchery, Malappuram, India, 1992.
-*   **Peer-recognition:** Reviewer of several atmospheric and environmental science journals.
-
----
-
-## Numerical Modelling Experience
-
-*   Working experience with the Chemistry Climate Model (CCM) LMDz-repro, REPROBUS Chemical Transport Model (CTM), MIMOSA-CHIM CTM, BREMEN CTM and MIMOSA dynamical model, for several studies for the interpretation of atmospheric chemistry, dynamics, and climate processes.
-*   First simulation and validation (of stratospheric ozone and N2O profiles) of the Bremen CTM (a part of the Ph.D. work).
-*   Retrieval/Inversion of stratospheric trace gases from sub-millimetre wave measurements.
-
----
-
-## Expertise With Specific Scientific Instruments
-
-*   **The airborne sub-millimetre radiometer (ASUR):** A passive heterodyne microwave sensor for stratospheric and mesospheric sounding, University of Bremen, Bremen, Germany (2001—2005).
-*   **The Automatic Sediment Analyser:** An instrument to analyse grain size of sediments. Calibration and validation of the instrument were performed as a part of my post-graduate (M. Sc.) project, Department of Physical Oceanography, CUSAT, Kochi (1998—2000).
-
----
-
-## Field Campaign Experience
-
-*   **SCIAVALUE (2002--2003):** Operated ASUR on-board the Falcon-20 research aircraft to measure stratospheric and mesospheric trace gases (during September 2002 and February—March 2003).
-*   **EuPLEx (2003):** Operated ASUR on-board the Falcon-20 research aircraft to measure stratospheric and mesospheric trace gases (polar vortex measurements in January 2003).
-*   **OFFSHORE and BACKWATER cruise:** for sediment sampling to calibrate and validate the Automatic Sediment Analyser (a part of the M. Sc. project).
-
----
-
-## Professional Memberships
-
-*   European Geophysical Union / EGU
-*   Ocean Society of India / OSI
-*   Indian Society of Geomatics /ISG
-*   Indian Meteorological Society /IMS
-*   Association of Polar Early Career Scientists /APECS
-
----
-
-## Professional References
-
-*   **Dr. Justus Notholt**
-    *   Department of Physics, University of Bremen, Germany
-    *   Phone: +49-421-218-62190
-    *   Fax: +49-421-218-4555
-    *   E-mail: jnotholt@iup.physik.uni-bremen.de
-*   **Dr. Harry Kuellmann**
-    *   Department of Physics, University of Bremen, Germany
-    *   Phone: +49-421-218-62175
-    *   Fax: +49-421-218-4555
-    *   E-mail: Harry.Kuellmann@iup.physik.uni-bremen.de
+    </main>
+  </div>
+</div>
+{{< /rawhtml >}}

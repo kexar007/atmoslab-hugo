@@ -57,6 +57,11 @@
     transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Added transition for smooth hover */
 }
 
+
+.profile_card-grid a {
+    text-decoration: none;
+}
+
 .profile_card:hover {
     transform: translateY(-0.5rem);
     box-shadow: 0px 1.5rem 2rem rgba(0, 0, 0, 0.6);
@@ -200,236 +205,236 @@
 
 
 
-
-
-
-
 /* --- Google Fonts Import --- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* --- Scoped Container for the Portfolio Page --- */
 .jayan-portfolio-page {
-    --primary-color: #FFB400; /* Gold accent color */
-    --sidebar-bg: #111111;
-    --content-bg: #FFFFFF;
-    --text-color-light: #F0F0F0;
-    --text-color-dark: #333333;
-    --border-color: #252525;
-    --card-bg: #F8F8F8;
+    --accent-color: #E93B81;
+    --background-gradient: linear-gradient(to right top, #f4e5f5, #e6e5f8, #d7e5f9, #c9e5f7, #bde4f2);
+    --card-bg: #FFFFFF;
+    --text-color-dark: #333;
+    --text-color-light: #888;
+    --border-color: #F0F0F6;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color-dark);
-    line-height: 1.7;
-    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-gradient);
+    padding: 40px 15px;
 }
 
 /* --- Main Layout --- */
 .jayan-portfolio-page .portfolio-container {
     display: flex;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    background: var(--content-bg);
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 /* --- Sidebar (Left Column) --- */
 .jayan-portfolio-page .sidebar {
-    width: 320px;
-    background: var(--sidebar-bg);
-    color: var(--text-color-light);
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 300px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 30px;
     text-align: center;
+    position: sticky;
+    top: 40px;
     flex-shrink: 0;
+}
+
+.jayan-portfolio-page .profile-header {
+    margin-top: -90px;
+    margin-bottom: 20px;
 }
 
 .jayan-portfolio-page .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    border: 5px solid var(--border-color);
-    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
     object-fit: cover;
 }
 
 .jayan-portfolio-page .profile-name {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
+    color: var(--text-color-dark);
     margin: 0;
-    color: #FFFFFF;
 }
 
 .jayan-portfolio-page .profile-title {
-    font-size: 1rem;
-    color: var(--primary-color);
-    margin-bottom: 30px;
-}
-
-.jayan-portfolio-page .contact-info {
-    width: 100%;
-    border-top: 1px solid var(--border-color);
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-.jayan-portfolio-page .contact-item {
-    text-align: left;
-    margin-bottom: 15px;
-}
-.jayan-portfolio-page .contact-item .label {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #FFFFFF;
-    display: block;
-    font-size: 0.9rem;
-}
-.jayan-portfolio-page .contact-item .value {
-    font-size: 0.9rem;
-    color: #AAAAAA;
-}
-.jayan-portfolio-page .contact-item a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-.jayan-portfolio-page .contact-item a:hover {
-    color: #FFFFFF;
-}
-
-
-.jayan-portfolio-page .sidebar-heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    width: 100%;
-    text-align: left;
-    border-top: 1px solid var(--border-color);
-    padding-top: 20px;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-}
-
-.jayan-portfolio-page .skills-list {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-    text-align: left;
-}
-.jayan-portfolio-page .skills-list li {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    color: #AAAAAA;
-}
-.jayan-portfolio-page .skills-list strong {
+    font-size: 0.95rem;
     color: var(--text-color-light);
+}
+
+.jayan-portfolio-page .contact-info-box {
+    background: #F8F8F8;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.jayan-portfolio-page .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding: 10px 0;
+}
+.jayan-portfolio-page .contact-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+.jayan-portfolio-page .icon-box {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+.jayan-portfolio-page .text-box .label {
+    font-size: 0.8rem;
+    color: var(--text-color-light);
+    margin: 0;
+}
+.jayan-portfolio-page .text-box .value {
+    font-size: 0.9rem;
+    color: var(--text-color-dark);
+    margin: 0;
+    word-break: break-all;
+}
+.jayan-portfolio-page .text-box a {
+    color: inherit; text-decoration: none;
+}
+.jayan-portfolio-page .text-box a:hover {
+    color: var(--accent-color);
+}
+
+
+.jayan-portfolio-page .download-cv-btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.jayan-portfolio-page .download-cv-btn:hover {
+    background: #d62c6e;
+    box-shadow: 0 5px 15px rgba(233, 59, 129, 0.4);
 }
 
 
 /* --- Main Content (Right Column) --- */
 .jayan-portfolio-page .main-content {
     flex-grow: 1;
-    padding: 50px;
-    overflow-y: auto;
-}
-
-.jayan-portfolio-page .content-section {
-    margin-bottom: 50px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 40px;
 }
 
 .jayan-portfolio-page .section-title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 30px;
     position: relative;
-    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .jayan-portfolio-page .section-title::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: var(--primary-color);
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
 }
 
-.jayan-portfolio-page .main-content ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.jayan-portfolio-page .main-content ul li {
-    padding-left: 25px;
-    position: relative;
-    margin-bottom: 10px;
-}
-.jayan-portfolio-page .main-content ul li::before {
-    content: '■';
-    position: absolute;
-    left: 0;
-    color: var(--primary-color);
+.jayan-portfolio-page .resume-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-
-/* --- Timeline for Experience & Education --- */
-.jayan-portfolio-page .timeline {
-    position: relative;
-    padding-left: 30px;
-    border-left: 2px solid #E0E0E0;
-}
-
-.jayan-portfolio-page .timeline-item {
-    position: relative;
+.jayan-portfolio-page .column-title {
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
-.jayan-portfolio-page .timeline-item:last-child {
-    margin-bottom: 0;
-}
-
-.jayan-portfolio-page .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -39px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    background: var(--content-bg);
-    border: 3px solid var(--primary-color);
-    border-radius: 50%;
-    z-index: 1;
-}
-
 .jayan-portfolio-page .timeline-card {
-    background: var(--card-bg);
+    background: #FFF4F8;
     padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
+.jayan-portfolio-page #experience .timeline-card {
+    background: #EEF5FA;
+}
+
 .jayan-portfolio-page .timeline-date {
     font-size: 0.85rem;
-    padding: 3px 10px;
-    background-color: var(--primary-color);
-    color: #000;
-    border-radius: 15px;
-    display: inline-block;
-    margin-bottom: 10px;
+    color: var(--text-color-light);
+    margin-bottom: 5px;
 }
 
 .jayan-portfolio-page .timeline-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin: 0 0 5px 0;
 }
 .jayan-portfolio-page .timeline-org {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
     margin: 0;
-    font-size: 0.95rem;
-    color: #777777;
+}
+
+/* Skills Section */
+.jayan-portfolio-page .skills-section {
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+.jayan-portfolio-page .skill-bar-item {
+    margin-bottom: 15px;
+}
+.jayan-portfolio-page .skill-bar-item p {
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+.jayan-portfolio-page .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 10px;
+}
+.jayan-portfolio-page .progress {
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+
+.jayan-portfolio-page .knowledges {
+    margin-top: 30px;
+}
+.jayan-portfolio-page .knowledge-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.jayan-portfolio-page .knowledge-list li {
+    background: var(--border-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color-light);
 }
 
 /* --- Responsive Design --- */
@@ -439,9 +444,15 @@
     }
     .jayan-portfolio-page .sidebar {
         width: 100%;
-        border-right: none;
+        position: static;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .jayan-portfolio-page .resume-columns {
+        grid-template-columns: 1fr;
     }
     .jayan-portfolio-page .main-content {
-        padding: 30px;
+        padding: 25px;
     }
 }

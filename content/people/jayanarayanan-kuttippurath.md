@@ -48,6 +48,7 @@ email = "jayan@coral.iitkgp.ernet.in"
             <li><strong>Graphics:</strong> GrADS, XmGRACE, Origin</li>
           </ul>
         </div>
+
       </div>
     </aside>
 
@@ -74,31 +75,24 @@ email = "jayan@coral.iitkgp.ernet.in"
         <h2 class="section-title">Experience</h2>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-date">2015 - Present</div>
-            <div class="timeline-content">
-              <h3>Assistant Professor</h3>
-              <p>IIT Kharagpur, India</p>
+            <div class="timeline-card">
+              <p class="timeline-date">2015 - Present</p>
+              <h3 class="timeline-title">Assistant Professor</h3>
+              <p class="timeline-org">IIT Kharagpur, India</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-date">2012 - 2015</div>
-            <div class="timeline-content">
-              <h3>CNRS Scientist (Permanent)</h3>
-              <p>LATMOS/CNRS, Paris, France</p>
+            <div class="timeline-card">
+              <p class="timeline-date">2012 - 2015</p>
+              <h3 class="timeline-title">CNRS Scientist (Permanent)</h3>
+              <p class="timeline-org">LATMOS/CNRS, Paris, France</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-date">2007 - 2012</div>
-            <div class="timeline-content">
-              <h3>CNRS Research Scientist</h3>
-              <p>LATMOS/CNRS, Paris, France</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2005 - 2007</div>
-            <div class="timeline-content">
-              <h3>CNRS post-doctoral fellow</h3>
-              <p>LMD/CNRS, Paris, France</p>
+            <div class="timeline-card">
+              <p class="timeline-date">2007 - 2012</p>
+              <h3 class="timeline-title">CNRS Research Scientist</h3>
+              <p class="timeline-org">LATMOS/CNRS, Paris, France</p>
             </div>
           </div>
         </div>
@@ -108,25 +102,25 @@ email = "jayan@coral.iitkgp.ernet.in"
           <h2 class="section-title">Education</h2>
           <div class="timeline">
               <div class="timeline-item">
-                  <div class="timeline-date">2013</div>
-                  <div class="timeline-content">
-                      <h3>Habilitation (D. Sc.) in Atmospheric Physics</h3>
-                      <p>University of Pierre and Marie Curie Paris 6, Paris, France</p>
-                  </div>
+                <div class="timeline-card">
+                  <p class="timeline-date">2013</p>
+                  <h3 class="timeline-title">Habilitation (D. Sc.) in Atmospheric Physics</h3>
+                  <p class="timeline-org">University of Pierre and Marie Curie Paris 6, Paris, France</p>
+                </div>
               </div>
               <div class="timeline-item">
-                  <div class="timeline-date">2005</div>
-                  <div class="timeline-content">
-                      <h3>Dr. rer. nat. in Atmospheric Physics</h3>
-                      <p>University of Bremen, Bremen, Germany</p>
-                  </div>
+                <div class="timeline-card">
+                  <p class="timeline-date">2005</p>
+                  <h3 class="timeline-title">Dr. rer. nat. in Atmospheric Physics</h3>
+                  <p class="timeline-org">University of Bremen, Bremen, Germany</p>
+                </div>
               </div>
               <div class="timeline-item">
-                  <div class="timeline-date">2000</div>
-                  <div class="timeline-content">
-                      <h3>M. Sc. in Physical Oceanography</h3>
-                      <p>Cochin University of Science and Technology, Kochi, India</p>
-                  </div>
+                <div class="timeline-card">
+                  <p class="timeline-date">2000</p>
+                  <h3 class="timeline-title">M. Sc. in Physical Oceanography</h3>
+                  <p class="timeline-org">Cochin University of Science and Technology, Kochi, India</p>
+                </div>
               </div>
           </div>
       </section>

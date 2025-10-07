@@ -204,36 +204,23 @@
 
 
 
+/* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
 /* --- Scoped Container for the Portfolio Page --- */
 .jayan-portfolio-page {
+    --primary-color: #FFB400; /* Gold accent color */
+    --sidebar-bg: #111111;
+    --content-bg: #FFFFFF;
+    --text-color-light: #F0F0F0;
+    --text-color-dark: #333333;
+    --border-color: #252525;
+    --card-bg: #F8F8F8;
+
     font-family: 'Roboto', sans-serif;
-    color: #495057;
-    line-height: 1.6;
-    margin: 20px 0; /* Provides spacing from other site content */
-}
-
-/* --- Typography (Scoped) --- */
-.jayan-portfolio-page h1,
-.jayan-portfolio-page h2,
-.jayan-portfolio-page h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #212529;
-}
-
-.jayan-portfolio-page ul {
-    padding-left: 20px;
-    list-style: disc;
-}
-
-.jayan-portfolio-page a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.jayan-portfolio-page a:hover {
-    color: #0056b3;
+    color: var(--text-color-dark);
+    line-height: 1.7;
+    margin: 20px 0;
 }
 
 /* --- Main Layout --- */
@@ -241,124 +228,163 @@
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--content-bg);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 /* --- Sidebar (Left Column) --- */
 .jayan-portfolio-page .sidebar {
     width: 320px;
-    background: #ffffff;
-    border-right: 1px solid #e9ecef;
-    padding: 30px;
+    background: var(--sidebar-bg);
+    color: var(--text-color-light);
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     flex-shrink: 0;
 }
 
-.jayan-portfolio-page .profile-header {
-    text-align: center;
-    border-bottom: 1px solid #e9ecef;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-}
-
 .jayan-portfolio-page .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 4px solid #dee2e6;
-    margin-bottom: 15px;
+    border: 5px solid var(--border-color);
+    margin-bottom: 20px;
     object-fit: cover;
 }
 
 .jayan-portfolio-page .profile-name {
-    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
     margin: 0;
+    color: #FFFFFF;
 }
 
 .jayan-portfolio-page .profile-title {
     font-size: 1rem;
-    color: #6c757d;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 30px;
 }
 
-.jayan-portfolio-page .contact-info .contact-item {
+.jayan-portfolio-page .contact-info {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.jayan-portfolio-page .contact-item {
+    text-align: left;
     margin-bottom: 15px;
 }
-
-.jayan-portfolio-page .contact-info .label {
+.jayan-portfolio-page .contact-item .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
     display: block;
-    font-weight: 500;
-    color: #343a40;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.jayan-portfolio-page .contact-item .value {
+    font-size: 0.9rem;
+    color: #AAAAAA;
+}
+.jayan-portfolio-page .contact-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.jayan-portfolio-page .contact-item a:hover {
+    color: #FFFFFF;
 }
 
-.jayan-portfolio-page .contact-info .value {
-    font-size: 0.95rem;
-}
 
 .jayan-portfolio-page .sidebar-heading {
-    font-size: 1.2rem;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 8px;
-    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
     margin-bottom: 15px;
+    color: #FFFFFF;
 }
 
 .jayan-portfolio-page .skills-list {
     list-style: none;
     padding: 0;
+    width: 100%;
+    text-align: left;
+}
+.jayan-portfolio-page .skills-list li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #AAAAAA;
+}
+.jayan-portfolio-page .skills-list strong {
+    color: var(--text-color-light);
 }
 
-.jayan-portfolio-page .skills-list li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-}
 
 /* --- Main Content (Right Column) --- */
 .jayan-portfolio-page .main-content {
     flex-grow: 1;
-    padding: 40px;
+    padding: 50px;
     overflow-y: auto;
 }
 
 .jayan-portfolio-page .content-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .jayan-portfolio-page .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
     position: relative;
-    padding-bottom: 10px;
+    display: inline-block;
 }
 
 .jayan-portfolio-page .section-title::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
-    width: 50px;
-    height: 3px;
-    background-color: #007bff;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
 }
+
+.jayan-portfolio-page .main-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.jayan-portfolio-page .main-content ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.jayan-portfolio-page .main-content ul li::before {
+    content: '■';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
 
 /* --- Timeline for Experience & Education --- */
 .jayan-portfolio-page .timeline {
     position: relative;
     padding-left: 30px;
-    border-left: 2px solid #e9ecef;
+    border-left: 2px solid #E0E0E0;
 }
 
 .jayan-portfolio-page .timeline-item {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .jayan-portfolio-page .timeline-item:last-child {
@@ -372,26 +398,38 @@
     top: 5px;
     width: 14px;
     height: 14px;
-    background: #fff;
-    border: 3px solid #007bff;
+    background: var(--content-bg);
+    border: 3px solid var(--primary-color);
     border-radius: 50%;
+    z-index: 1;
 }
 
+.jayan-portfolio-page .timeline-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #EEEEEE;
+}
 .jayan-portfolio-page .timeline-date {
-    font-weight: 500;
-    color: #6c757d;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
+    font-size: 0.85rem;
+    padding: 3px 10px;
+    background-color: var(--primary-color);
+    color: #000;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.jayan-portfolio-page .timeline-content h3 {
+.jayan-portfolio-page .timeline-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     font-size: 1.2rem;
     margin: 0 0 5px 0;
 }
-
-.jayan-portfolio-page .timeline-content p {
+.jayan-portfolio-page .timeline-org {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    color: #777777;
 }
 
 /* --- Responsive Design --- */
@@ -399,13 +437,10 @@
     .jayan-portfolio-page .portfolio-container {
         flex-direction: column;
     }
-
     .jayan-portfolio-page .sidebar {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #e9ecef;
     }
-
     .jayan-portfolio-page .main-content {
         padding: 30px;
     }

@@ -4,8 +4,8 @@ const canvas = document.getElementById("animus");
 const ctx = canvas.getContext("2d");
 
 // --- Configuration ---
-const MAX_DIST = 150;
-const DENSITY_DIVISOR = 20; 
+const MAX_DIST = 155;
+const DENSITY_DIVISOR = 30; 
 const MARGIN_PERCENT = 0.20; 
 
 let points = [];
@@ -43,7 +43,7 @@ function animate() {
             let dy = points[i].y - points[j].y;
             let dist = Math.sqrt(dx * dx + dy * dy);
             if (dist < MAX_DIST) {
-                ctx.strokeStyle = "rgba(103, 170, 230, " + (1 - dist / MAX_DIST) + ")";
+                ctx.strokeStyle = "rgba(100, 170, 230, " + (1 - dist / MAX_DIST) + ")";
                 ctx.beginPath();
                 ctx.moveTo(points[i].x, points[i].y);
                 ctx.lineTo(points[j].x, points[j].y);
@@ -51,7 +51,7 @@ function animate() {
             }
         }
     }
-    ctx.fillStyle = "rgba(103, 170, 193, 0.76)";
+    ctx.fillStyle = "rgba(100, 153, 225, 0.58)";
     const marginX = canvas.width * MARGIN_PERCENT;
     const marginY = canvas.height * MARGIN_PERCENT;
     for (let p of points) {

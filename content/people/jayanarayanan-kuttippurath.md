@@ -21,7 +21,6 @@ email = "jayan@coral.iitkgp.ernet.in"
           <h1 class="profile-name">Jayanarayanan Kuttippurath</h1>
           <p class="profile-title">(Dr. rer. nat.-habil.)</p>
         </div>
-
         <div class="contact-info-box">
           <div class="contact-item">
             <div class="icon-box">
@@ -54,7 +53,6 @@ email = "jayan@coral.iitkgp.ernet.in"
         <a href="#" class="download-cv-btn">Download CV</a>
       </div>
     </aside>
-
     <!-- Main Content -->
     <main class="main-content">
       <h2 class="section-title">About</h2>
@@ -84,7 +82,6 @@ Kharagpur, India - 721302</p>
               </div>
           </div>
         </section>
-
         <section id="experience" class="content-section">
           <h3 class="column-title">Experience</h3>
           <div class="timeline">
@@ -106,7 +103,6 @@ Kharagpur, India - 721302</p>
           </div>
         </section>
       </div>
-
       <div class="skills-section">
           <div class="working-skills">
             <h3 class="column-title">Working Skills</h3>
@@ -124,7 +120,7 @@ Kharagpur, India - 721302</p>
             </div>
           </div>
           <div class="knowledges">
-             <h3 class="column-title">Knowledges</h3>
+             <h3 class="column-title">Expertise</h3>
              <ul class="knowledge-list">
                 <li>Atmospheric Chemistry</li>
                 <li>Climate Modelling</li>

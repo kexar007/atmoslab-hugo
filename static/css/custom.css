@@ -219,7 +219,7 @@
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
     font-family: 'Poppins', sans-serif;
-    background: var(--background-gradient);
+    
     padding: 40px 15px;
 }
 
@@ -243,6 +243,8 @@
     position: sticky;
     top: 40px;
     flex-shrink: 0;
+       
+
 }
 
 .jayan-portfolio-page .profile-header {
@@ -258,6 +260,7 @@
     box-shadow: var(--shadow);
     margin-bottom: 15px;
     object-fit: cover;
+    margin-top: 30px;
 }
 
 .jayan-portfolio-page .profile-name {

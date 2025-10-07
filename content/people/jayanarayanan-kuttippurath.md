@@ -19,7 +19,7 @@ email = "jayan@coral.iitkgp.ernet.in"
         <div class="profile-header">
           <img src="/atmoslab-hugo/images/people/Jayanarayanan_Kuttipurath.jpg" alt="Jayanarayanan Kuttippurath" class="profile-image">
           <h1 class="profile-name">Jayanarayanan Kuttippurath</h1>
-          <p class="profile-title">Atmospheric Scientist & Professor</p>
+          <p class="profile-title">(Dr. rer. nat.-habil.)</p>
         </div>
 
         <div class="contact-info-box">
@@ -57,7 +57,12 @@ email = "jayan@coral.iitkgp.ernet.in"
 
     <!-- Main Content -->
     <main class="main-content">
-      <h2 class="section-title">Resume</h2>
+      <h2 class="section-title">About</h2>
+      <h3 class="column-title" ><p>Associate Professor</p></h3>
+
+<p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
+Indian Institute of Technology Kharagpur<br>
+Kharagpur, India - 721302</p>
       <div class="resume-columns">
         <section id="education" class="content-section">
           <h3 class="column-title">Education</h3>

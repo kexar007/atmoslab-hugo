@@ -3,10 +3,7 @@
     <article class="mentor-profile">
         <div class="profile-header">
             <div class="profile-info">
-                <h1>{{ .Title }}</h1>
-                {{ if .Params.date }}
-                    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
-                {{ end }}
+               
                 {{ .Content }}
             </div>
           

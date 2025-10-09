@@ -17,6 +17,7 @@ email = "jayan@coral.iitkgp.ernet.in"
   <div class="portfolio-container">
     <!-- Left Sidebar -->
     <aside class="sidebar">
+      <!-- Sidebar content remains the same -->
       <div class="sidebar-content">
         <div class="profile-header">
           <img src="/atmoslab-hugo/images/people/Jayanarayanan_Kuttipurath.jpg" alt="Jayanarayanan Kuttippurath" class="profile-image">
@@ -44,8 +45,8 @@ email = "jayan@coral.iitkgp.ernet.in"
     <!-- Main Content -->
     <main class="main-content">
       <h2 class="section-title">About</h2>
-      <p class="section-subtitle">Associate Professor</p>
-      <p style="margin-top: 10px;">Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
+      <h3 class="column-title" style="margin-top: -10px;"><p>Associate Professor</p></h3>
+      <p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
       Indian Institute of Technology Kharagpur<br>
       Kharagpur, India - 721302</p>
       
@@ -158,6 +159,7 @@ email = "jayan@coral.iitkgp.ernet.in"
       </div>
 
       <div class="skills-section">
+          <!-- Skills section remains the same -->
           <div class="working-skills">
             <h3 class="column-title">Working Skills</h3>
              <div class="skill-bar-item">

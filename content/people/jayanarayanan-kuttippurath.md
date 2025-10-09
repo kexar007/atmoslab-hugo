@@ -10,6 +10,8 @@ residence = "+91 - 3222 - 281995"
 email = "jayan@coral.iitkgp.ernet.in"
 +++
 
+<link rel="stylesheet" href="/atmoslab-hugo/css/jayanarayanan-cv.css">
+
 {{< rawhtml >}}
 <div class="jayan-portfolio-page">
   <div class="portfolio-container">
@@ -64,42 +66,201 @@ Kharagpur, India - 721302</p>
       <div class="resume-columns">
         <section id="education" class="content-section">
           <h3 class="column-title">Education</h3>
-          <div class="timeline">
-              <div class="timeline-card">
-                  <p class="timeline-date">2013</p>
-                  <h4 class="timeline-title">Habilitation (D. Sc.) in Atmospheric Physics</h4>
-                  <p class="timeline-org">University of Pierre and Marie Curie Paris 6, France</p>
-              </div>
-              <div class="timeline-card">
-                  <p class="timeline-date">2005</p>
-                  <h4 class="timeline-title">Dr. rer. nat. in Atmospheric Physics</h4>
-                  <p class="timeline-org">University of Bremen, Germany</p>
-              </div>
-              <div class="timeline-card">
-                  <p class="timeline-date">2000</p>
-                  <h4 class="timeline-title">M. Sc. in Physical Oceanography</h4>
-                  <p class="timeline-org">Cochin University of Science and Technology, India</p>
-              </div>
+          <div class="education-cards">
+            <div class="education-card pastel-green">
+              <p><strong>Habilitation (Equivalent to D. Sc.) in Physics/ Atmospheric Physics, March 2013</strong></p>
+              <p>University of Pierre and Marie Curie Paris 6, Paris, France.</p>
+            </div>
+            <div class="education-card pastel-blue">
+              <p><strong>Dr. rer. nat. in Physics/ Atmospheric Physics, April 2005 (Dec. 2001 – Mar. 2005)</strong></p>
+              <p>International Postgraduate Programme in Physics (PIP), University of Bremen, Bremen, Germany.</p>
+            </div>
+            <div class="education-card pastel-purple">
+              <p><strong>M. Tech. in Atmospheric Science, 2000 October – 2001 May</strong></p>
+              <p>Cochin University of Science and Technology, Kochi, India (Discontinued to pursue Ph.D.).</p>
+            </div>
+            <div class="education-card pastel-yellow">
+              <p><strong>M. Sc. in Physical Oceanography, 2000</strong></p>
+              <p>Cochin University of Science and Technology, Kochi, India.</p>
+            </div>
+            <div class="education-card pastel-pink">
+              <p><strong>Language:</strong> Malayalam, Tamil, English, German, and French.</p>
+            </div>
+            <div class="education-card pastel-orange">
+              <p><strong>Programming:</strong> Fortran, Matlab and IDL.</p>
+            </div>
           </div>
         </section>
         <section id="experience" class="content-section">
           <h3 class="column-title">Experience</h3>
-          <div class="timeline">
-              <div class="timeline-card">
-                <p class="timeline-date">2015 - Present</p>
-                <h4 class="timeline-title">Assistant Professor</h4>
-                <p class="timeline-org">IIT Kharagpur, India</p>
+          <div class="uia-timeline" data-uia-timeline-skin="2" data-uia-timeline-adapter-skin-2="uia-card-skin-#1">
+            <div class="uia-timeline__container">
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2015</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group" aria-labelledby="experience-2015-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2015-heading" class="ra-heading">Assistant Professor, IIT Kharagpur, India.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2015-04">
+                              <span class="uia-card__day">April</span>
+                              <span>2015 onwards</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Assistant Professor, IIT Kharagpur, India.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
-              <div class="timeline-card">
-                <p class="timeline-date">2012 - 2015</p>
-                <h4 class="timeline-title">CNRS Scientist (Permanent)</h4>
-                <p class="timeline-org">LATMOS/CNRS, Paris, France</p>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2012</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group" aria-labelledby="experience-2012-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2012-heading" class="ra-heading">CNRS Scientist (Permanent), LATMOS/CNRS, Paris, France.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2012-08">
+                              <span class="uia-card__day">August</span>
+                              <span>2012 - March 2015</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>CNRS Scientist (Permanent), LATMOS/CNRS, Paris, France.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
-              <div class="timeline-card">
-                <p class="timeline-date">2007 - 2012</p>
-                <h4 class="timeline-title">CNRS Research Scientist</h4>
-                <p class="timeline-org">LATMOS/CNRS, Paris, France</p>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2007</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group" aria-labelledby="experience-2007-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2007-heading" class="ra-heading">CNRS Research Scientist, LATMOS/CNRS, Paris, France.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2014-07-14">
+                              <span class="uia-card__day">October</span>
+                              <span>2007 - July 2012</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>CNRS Research Scientist, LATMOS/CNRS, Paris, France.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2005</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group" aria-labelledby="experience-2005-1-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2005-1-heading" class="ra-heading">CNRS post-doctoral fellow, LMD/CNRS, Paris, France.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2005-10">
+                              <span class="uia-card__day">October</span>
+                              <span>2005 - September 2007</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>CNRS post-doctoral fellow, LMD/CNRS, Paris, France.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="uia-timeline__group" aria-labelledby="experience-2005-2-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2005-2-heading" class="ra-heading">Research Associate, University of Bremen, Bremen, Germany.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2005-04">
+                              <span class="uia-card__day">April</span>
+                              <span>2005 - September 2005</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Research Associate, University of Bremen, Bremen, Germany.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="uia-timeline__annual-sections">
+                <span class="uia-timeline__year" aria-hidden="true">2001</span>
+                <div class="uia-timeline__groups">
+                  <section class="uia-timeline__group" aria-labelledby="experience-2001-1-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2001-1-heading" class="ra-heading">Ph.D. student, University of Bremen, Bremen, Germany.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2001-11">
+                              <span class="uia-card__day">November</span>
+                              <span>2001 - March 2005</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Ph.D. student, University of Bremen, Bremen, Germany.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="uia-timeline__group" aria-labelledby="experience-2001-2-heading">
+                    <div class="uia-timeline__point uia-card" data-uia-card-skin="1" data-uia-card-mod="1">
+                      <div class="uia-card__container">
+                        <div class="uia-card__intro">
+                          <h3 id="experience-2001-2-heading" class="ra-heading">Research Assistant, Cochin University of Science and Technology (CUSAT), India.</h3>
+                          <span class="uia-card__time">
+                            <time datetime="2001-05">
+                              <span class="uia-card__day">May</span>
+                              <span>2001 - July 2001</span>
+                            </time>
+                          </span>
+                        </div>
+                        <div class="uia-card__body">
+                          <div class="uia-card__description">
+                            <p>Research Assistant, Cochin University of Science and Technology (CUSAT), India.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

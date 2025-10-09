@@ -1,0 +1,134 @@
+{{ define "main" }}
+<link rel="stylesheet" href="{{ "css/cv.css" | relURL }}">
+
+<div class="cv-container">
+  <!-- Left Sidebar -->
+  <aside class="cv-sidebar">
+    <div class="profile">
+      <img src="{{ .Site.Data.cv.personal_info.photo | default "/images/avatar.jpg" }}" alt="{{ .Site.Data.cv.personal_info.name }}">
+      <h1>{{ .Site.Data.cv.personal_info.name }}</h1>
+      <p class="title">{{ .Site.Data.cv.personal_info.title }}</p>
+      <p class="location">{{ .Site.Data.cv.personal_info.location }}</p>
+
+      <ul class="profiles">
+        {{ range .Site.Data.cv.profiles }}
+          {{ if (reflect.IsMap .) }}
+            <li><a href="{{ .url }}" target="_blank">{{ .platform }}</a></li>
+          {{ else }}
+            <li>{{ . }}</li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ with .Site.Data.cv.skills }}
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        {{ range . }}
+          {{ if (reflect.IsMap .) }}
+            <li>{{ .name | default (index . 0) }}</li>
+          {{ else }}
+            <li>{{ . }}</li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ with .Site.Data.cv.research_interests }}
+    <div class="section">
+      <h2>Research Interests</h2>
+      <ul>
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </aside>
+
+  <!-- Main Content -->
+  <main class="cv-main">
+    {{ with .Site.Data.cv.experience }}
+    <section>
+      <h2>Experience</h2>
+      {{ range . }}
+        {{ if (reflect.IsMap .) }}
+          <div class="entry">
+            <h3>{{ with .role }}{{ . }}{{ end }}{{ if and .role .organization }} – {{ end }}{{ with .organization }}{{ . }}{{ end }}</h3>
+            <span class="date">{{ with .duration }}{{ . }}{{ end }}</span>
+            <p>{{ with .description }}{{ . }}{{ end }}</p>
+          </div>
+        {{ else }}
+          <div class="entry"><p>{{ . }}</p></div>
+        {{ end }}
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Site.Data.cv.education }}
+    <section>
+      <h2>Education</h2>
+      {{ range . }}
+        {{ if (reflect.IsMap .) }}
+          <div class="entry">
+            <h3>{{ with .degree }}{{ . }}{{ end }}</h3>
+            <p>{{ with .institution }}{{ . }}{{ end }}</p>
+            <span class="date">{{ with .year }}{{ . }}{{ end }}</span>
+          </div>
+        {{ else }}
+          <div class="entry"><p>{{ . }}</p></div>
+        {{ end }}
+      {{ end }}
+    </section>
+    {{ end }}
+
+    {{ with .Site.Data.cv.awards }}
+    <section>
+      <h2>Awards</h2>
+      <ul>
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Site.Data.cv.specialized_experience }}
+    <section>
+      <h2>Specialized Experience</h2>
+      <ul>
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Site.Data.cv.memberships }}
+    <section>
+      <h2>Memberships</h2>
+      <ul>
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+
+    {{ with .Site.Data.cv.references }}
+    <section>
+      <h2>References</h2>
+      {{ range . }}
+        {{ if (reflect.IsMap .) }}
+          <p><strong>{{ .name }}</strong> — {{ .contact }}</p>
+        {{ else }}
+          <p>{{ . }}</p>
+        {{ end }}
+      {{ end }}
+    </section>
+    {{ end }}
+  </main>
+</div>
+{{ end }}

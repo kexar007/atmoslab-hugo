@@ -252,145 +252,131 @@
         padding: 25px;
     }
 }
-/* --- Reference Timeline Section (Experience) --- */
-/* --- Reference Timeline Section (Experience) --- */
-/* --- Reference Timeline Section (Experience) --- */
-.jayan-portfolio-page [data-uia-timeline-skin="3"] {
-  --_uia-timeline-line-color_default: #4557bb;
-  --_uia-timeline-space: var(--uia-timeline-space, 1rem);
-  --_uia-timeline-line-thickness: var(--uia-timeline-line-thickness, 2px);
-  --_uia-timeline-point-line-position: var(--uia-timeline-point-line-position, 1rem);
-}
+
+
 
 /* --- Reference Timeline Section (Experience) --- */
-.jayan-portfolio-page [data-uia-timeline-skin="3"] {
-  --_uia-timeline-line-color_default: #4557bb;
-  --_uia-timeline-space: var(--uia-timeline-space, 1rem);
-  --_uia-timeline-line-thickness: var(--uia-timeline-line-thickness, 2px);
-  --_uia-timeline-point-line-position: var(--uia-timeline-point-line-position, 1rem);
-}
 
-/* --- Reference Timeline Section (Experience) --- */
-.jayan-portfolio-page [data-uia-timeline-skin="3"] {
-  --_uia-timeline-line-color_default: #4557bb;
-  --_uia-timeline-space: var(--uia-timeline-space, 1rem);
-  --_uia-timeline-line-thickness: var(--uia-timeline-line-thickness, 2px);
-  --_uia-timeline-point-line-position: var(--uia-timeline-point-line-position, 1rem);
-}
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__container {
-  position: relative;
-  gap: var(--uia-timeline-annual-sections-gap, 2.5rem);
-  padding-left: 60px; /* Adjusted padding for line and year */
-}
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__line {
-  inline-size: var(--_uia-timeline-line-thickness);
-  block-size: 100%;
-  background-color: var(--uia-timeline-line-color, var(--_uia-timeline-line-color_default));
-  position: absolute;
-  inset-block-start: 0;
-  inset-inline-start: 10px; /* Position of the vertical line */
-  z-index: 0;
-}
+        /* ===== TIMELINE CORE STYLES ===== */
+        .uia-timeline__container {
+            display: grid;
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__annual-sections {
-  display: flex;
-  align-items: flex-start;
-  isolation: isolate;
-  margin-bottom: 30px; /* Spacing between annual sections */
-}
+        .uia-timeline__groups {
+            display: grid;
+            gap: 2rem;
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__groups {
-  padding-inline-start: var(--_uia-timeline-space);
-  flex-grow: 1;
-  padding-top: 10px; /* Align with year */
-}
+        /* ===== SKIN 3 STYLES ===== */
+        [data-uia-timeline-skin="3"] {
+            --_uia-timeline-line-color_default: #222;
+            --_uia-timeline-space: var(--uia-timeline-space, 2rem);
+            --_uia-timeline-line-thickness: var(--uia-timeline-line-thickness, 3px);
+            --_uia-timeline-point-line-position: var(--uia-timeline-point-line-position, 1.75rem);
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__group {
-  position: relative;
-  isolation: isolate;
-  margin-bottom: 20px; /* Spacing between groups */
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__container {
+            position: relative;
+            gap: 2.5rem; /* Space between annual sections */
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__point {
-  background-color: var(--uia-timeline-point-background-color, #fff);
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__line {
+            inline-size: var(--_uia-timeline-line-thickness);
+            block-size: 100%;
+            background-color: var(--uia-timeline-line-color, var(--_uia-timeline-line-color_default));
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__point:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__annual-sections {
+            display: grid;
+            gap: 2rem;
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__point::before {
-  content: "";
-  width: 12px; /* Size of the dot */
-  height: 12px; /* Size of the dot */
-  border-radius: 50%;
-  background-color: var(--uia-timeline-line-color, var(--_uia-timeline-line-color_default));
-  border: 3px solid #fff; /* White border around the dot */
-  position: absolute;
-  left: -28px; /* Position relative to the card */
-  top: 20px; /* Vertical alignment with the card */
-  z-index: 1;
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__groups {
+            padding-inline-start: var(--_uia-timeline-space);
+        }
 
-.jayan-portfolio-page [data-uia-timeline-skin="3"] .uia-timeline__year {
-  inline-size: fit-content;
-  padding: var(--uia-timeline-year-padding, .25rem .75rem);
-  background-color: var(--uia-timeline-year-background-color, var(--_uia-timeline-line-color_default));
-  color: var(--uia-timeline-year-color, #f0f0f0);
-  border-radius: 5px; /* Rounded corners for year */
-  font-size: 1rem;
-  font-weight: 600;
-  flex-shrink: 0; /* Prevent year from shrinking */
-  margin-left: -50px; /* Pull year to the left of the line */
-  z-index: 1;
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__group {
+            position: relative;
+            isolation: isolate;
+        }
 
-.jayan-portfolio-page .uia-card__container {
-	display: grid;
-	gap: .5rem;
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__point {
+            background-color: var(--uia-timeline-point-background-color, #ffffff);
+        }
 
-.jayan-portfolio-page .uia-card__time {
-  grid-row: 1 / 1;
-  inline-size: fit-content;
-  padding: .25rem .75rem;
-  background-color: #f0f0f0; /* Light background for date */
-  font-weight: 700;
-  font-size: .75rem;
-  text-transform: uppercase;
-  color: currentColor;
-  border-radius: 3px;
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__point::before {
+            content: "";
+            inline-size: var(--_uia-timeline-space);
+            block-size: var(--_uia-timeline-line-thickness);
+            background-color: var(--uia-timeline-line-color, var(--_uia-timeline-line-color_default));
+            position: absolute;
+            top: var(--_uia-timeline-point-line-position);
+            left: calc(-1 * var(--_uia-timeline-space));
+            z-index: -1;
+        }
 
-.jayan-portfolio-page [data-uia-card-skin="1"] .uia-card__container {
-  padding: 1rem 1.75rem;
-  background-color: var(--uia-card-background-color, #fff);
-  border-radius: 2px;
-}
+        [data-uia-timeline-skin="3"] .uia-timeline__year {
+            inline-size: fit-content;
+            padding: .35rem 1rem;
+            background-color: var(--uia-timeline-year-background-color, var(--_uia-timeline-line-color_default));
+            color: var(--uia-timeline-year-color, #ffffff);
+            font-weight: 700;
+            border-radius: 4px;
+        }
 
-.jayan-portfolio-page [data-uia-card-skin="1"] .uia-card__intro {
-  display: grid;
-  gap: 1rem;
-}
+        /* ===== CARD STYLES ===== */
+         .uia-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+            border-left: 4px solid var(--uia-timeline-point-border-color);
+        }
 
-.jayan-portfolio-page [data-uia-card-skin="1"][data-uia-card-mod="1"] .uia-card__container {
-	border-inline-start:	2px solid var(--uia-card-border-color, #4557bb);
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
-}
+        .uia-card__container {
+            padding: 1.25rem 1.75rem;
+        }
 
-.jayan-portfolio-page .uia-card.pastel-green { background-color: #e6ffe6; }
-.jayan-portfolio-page .uia-card.pastel-blue { background-color: #e6f7ff; }
-.jayan-portfolio-page .uia-card.pastel-purple { background-color: #f2e6ff; }
-.jayan-portfolio-page .uia-card.pastel-yellow { background-color: #fffbe6; }
-.jayan-portfolio-page .uia-card.pastel-pink { background-color: #ffe6f2; }
-.jayan-portfolio-page .uia-card.pastel-orange { background-color: #fff0e6; }
+        .uia-card__intro {
+            display: grid;
+            gap: 0.25rem;
+        }
+
+        .uia-card__heading {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .uia-card__time {
+            color: #555;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .uia-card__description p {
+            margin: 0.75rem 0 0 0;
+            font-size: 1rem;
+            color: #444;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- Education Cards Section --- */
 .jayan-portfolio-page .education-cards {

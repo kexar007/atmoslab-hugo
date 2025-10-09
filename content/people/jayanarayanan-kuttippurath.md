@@ -17,6 +17,7 @@ email = "jayan@coral.iitkgp.ernet.in"
   <div class="portfolio-container">
     <!-- Left Sidebar -->
     <aside class="sidebar">
+      <!-- Sidebar content remains the same -->
       <div class="sidebar-content">
         <div class="profile-header">
           <img src="/atmoslab-hugo/images/people/Jayanarayanan_Kuttipurath.jpg" alt="Jayanarayanan Kuttippurath" class="profile-image">
@@ -25,223 +26,140 @@ email = "jayan@coral.iitkgp.ernet.in"
         </div>
         <div class="contact-info-box">
           <div class="contact-item">
-            <div class="icon-box">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6 0H12.61A12.6 12.6 0 0 0 0 12.61C0 278.55 233.45 512 499.39 512a12.6 12.6 0 0 0 12.61-12.61V389.39a24.16 24.16 0 0 0-14.61-27.59z"></path></svg>
-            </div>
-            <div class="text-box">
-              <p class="label">Phone</p>
-              <p class="value">+91 - 3222 - 281994</p>
-            </div>
+            <div class="icon-box"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6 0H12.61A12.6 12.6 0 0 0 0 12.61C0 278.55 233.45 512 499.39 512a12.6 12.6 0 0 0 12.61-12.61V389.39a24.16 24.16 0 0 0-14.61-27.59z"></path></svg></div>
+            <div class="text-box"><p class="label">Phone</p><p class="value">+91 - 3222 - 281994</p></div>
           </div>
           <div class="contact-item">
-            <div class="icon-box">
-             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144zm0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64z"></path></svg>
-            </div>
-            <div class="text-box">
-              <p class="label">Location</p>
-              <p class="value">Kharagpur, India</p>
-            </div>
+            <div class="icon-box"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 32C167.67 32 96 96.51 96 176c0 128 160 304 160 304s160-176 160-304c0-79.49-71.67-144-160-144zm0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64z"></path></svg></div>
+            <div class="text-box"><p class="label">Location</p><p class="value">Kharagpur, India</p></div>
           </div>
           <div class="contact-item">
-            <div class="icon-box">
-             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424 80H88a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h336a56.06 56.06 0 0 0 56-56V136a56.06 56.06 0 0 0-56-56zm-14.18 92.63-144 112a16 16 0 0 1-19.64 0l-144-112a16 16 0 1 1 19.64-25.26L256 251.73l134.18-104.36a16 16 0 0 1 19.64 25.26z"></path></svg>
-            </div>
-            <div class="text-box">
-              <p class="label">Email</p>
-              <p class="value"><a href="mailto:jayan@coral.iitkgp.ernet.in">jayan@coral.iitkgp.ernet.in</a></p>
-            </div>
+            <div class="icon-box"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M424 80H88a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h336a56.06 56.06 0 0 0 56-56V136a56.06 56.06 0 0 0-56-56zm-14.18 92.63-144 112a16 16 0 0 1-19.64 0l-144-112a16 16 0 1 1 19.64-25.26L256 251.73l134.18-104.36a16 16 0 0 1 19.64 25.26z"></path></svg></div>
+            <div class="text-box"><p class="label">Email</p><p class="value"><a href="mailto:jayan@coral.iitkgp.ernet.in">jayan@coral.iitkgp.ernet.in</a></p></div>
           </div>
         </div>
         <a href="#" class="download-cv-btn">Download CV</a>
       </div>
     </aside>
+
     <!-- Main Content -->
     <main class="main-content">
       <h2 class="section-title">About</h2>
-      <h3 class="column-title" ><p>Associate Professor</p></h3>
-
-<p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
-Indian Institute of Technology Kharagpur<br>
-Kharagpur, India - 721302</p>
+      <h3 class="column-title" style="margin-top: -10px;"><p>Associate Professor</p></h3>
+      <p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
+      Indian Institute of Technology Kharagpur<br>
+      Kharagpur, India - 721302</p>
+      
       <div class="resume-columns">
         <section id="education" class="content-section">
           <h3 class="column-title">Education</h3>
-          <div class="education-cards">
-            <div class="education-card pastel-green">
-              <p><strong>Habilitation (Equivalent to D. Sc.) in Physics/ Atmospheric Physics, March 2013</strong></p>
-              <p>University of Pierre and Marie Curie Paris 6, Paris, France.</p>
+          <div class="cv-timeline">
+            <div class="cv-timeline__line"></div>
+            <!-- Education Item 1 -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2013</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">Habilitation (D. Sc.) in Physics</h4>
+                <p class="cv-timeline__card-desc">University of Pierre and Marie Curie Paris 6, Paris, France.</p>
+              </div>
             </div>
-            <div class="education-card pastel-blue">
-              <p><strong>Dr. rer. nat. in Physics/ Atmospheric Physics, April 2005 (Dec. 2001 – Mar. 2005)</strong></p>
-              <p>International Postgraduate Programme in Physics (PIP), University of Bremen, Bremen, Germany.</p>
+            <!-- Education Item 2 -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2005</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">Dr. rer. nat. in Physics</h4>
+                <p class="cv-timeline__card-desc">University of Bremen, Bremen, Germany.</p>
+              </div>
             </div>
-            <div class="education-card pastel-purple">
-              <p><strong>M. Tech. in Atmospheric Science, 2000 October – 2001 May</strong></p>
-              <p>Cochin University of Science and Technology, Kochi, India (Discontinued to pursue Ph.D.).</p>
+             <!-- Education Item 3 -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2001</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">M. Tech. in Atmospheric Science</h4>
+                <p class="cv-timeline__card-desc">Cochin University of Science and Technology, India (Discontinued).</p>
+              </div>
             </div>
-            <div class="education-card pastel-yellow">
-              <p><strong>M. Sc. in Physical Oceanography, 2000</strong></p>
-              <p>Cochin University of Science and Technology, Kochi, India.</p>
+             <!-- Education Item 4 -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2000</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">M. Sc. in Physical Oceanography</h4>
+                <p class="cv-timeline__card-desc">Cochin University of Science and Technology, Kochi, India.</p>
+              </div>
             </div>
-            <div class="education-card pastel-pink">
-              <p><strong>Language:</strong> Malayalam, Tamil, English, German, and French.</p>
+          </div>
+          <!-- Non-timeline cards -->
+          <div class="education-info-cards">
+            <div class="info-card"><strong>Language:</strong> Malayalam, Tamil, English, German, and French.</div>
+            <div class="info-card"><strong>Programming:</strong> Fortran, Matlab and IDL.</div>
+          </div>
+        </section>
+
+        <section id="experience" class="content-section">
+          <h3 class="column-title">Experience</h3>
+          <div class="cv-timeline">
+            <div class="cv-timeline__line"></div>
+            <!-- Experience Item -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2015</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">Assistant Professor</h4>
+                <span class="cv-timeline__card-time">April 2015 onwards</span>
+                <p class="cv-timeline__card-desc">IIT Kharagpur, India.</p>
+              </div>
             </div>
-            <div class="education-card pastel-orange">
-              <p><strong>Programming:</strong> Fortran, Matlab and IDL.</p>
+            <!-- Experience Item -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2012</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">CNRS Scientist (Permanent)</h4>
+                <span class="cv-timeline__card-time">Aug 2012 – Mar 2015</span>
+                <p class="cv-timeline__card-desc">LATMOS/CNRS, Paris, France.</p>
+              </div>
+            </div>
+             <!-- Experience Item -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2007</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">CNRS Research Scientist</h4>
+                <span class="cv-timeline__card-time">Oct 2007 – Jul 2012</span>
+                <p class="cv-timeline__card-desc">LATMOS/CNRS, Paris, France.</p>
+              </div>
+            </div>
+             <!-- Experience Item -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2005</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">CNRS post-doctoral fellow</h4>
+                <span class="cv-timeline__card-time">Oct 2005 – Sep 2007</span>
+                <p class="cv-timeline__card-desc">LMD/CNRS, Paris, France.</p>
+              </div>
+               <div class="cv-timeline__card" style="margin-top: 25px;">
+                <h4 class="cv-timeline__card-title">Research Associate</h4>
+                <span class="cv-timeline__card-time">Apr 2005 – Sep 2005</span>
+                <p class="cv-timeline__card-desc">University of Bremen, Germany.</p>
+              </div>
+            </div>
+             <!-- Experience Item -->
+            <div class="cv-timeline__group">
+              <div class="cv-timeline__year">2001</div>
+              <div class="cv-timeline__card">
+                <h4 class="cv-timeline__card-title">Ph.D. Student</h4>
+                <span class="cv-timeline__card-time">Nov 2001 – Mar 2005</span>
+                <p class="cv-timeline__card-desc">University of Bremen, Germany.</p>
+              </div>
+               <div class="cv-timeline__card" style="margin-top: 25px;">
+                <h4 class="cv-timeline__card-title">Research Assistant</h4>
+                <span class="cv-timeline__card-time">May 2001 – Jul 2001</span>
+                <p class="cv-timeline__card-desc">CUSAT, India.</p>
+              </div>
             </div>
           </div>
         </section>
-        <section id="experience" class="content-section">
-          <h3 class="column-title">Experience</h3>
-                <div class="uia-timeline" data-uia-timeline-skin="3">
-            <div class="uia-timeline__container">
-                <div class="uia-timeline__line"></div>
-
-                <!-- 2015 -->
-                <div class="uia-timeline__annual-sections">
-                    <span class="uia-timeline__year" aria-hidden="true">2015</span>
-                    <div class="uia-timeline__groups">
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">Assistant Professor</h3>
-                                        <span class="uia-card__time">
-                                            <time datetime="2015-04">April 2015</time> onwards
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>IIT Kharagpur, India.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                
-                <!-- 2012 -->
-                <div class="uia-timeline__annual-sections">
-                    <span class="uia-timeline__year" aria-hidden="true">2012</span>
-                    <div class="uia-timeline__groups">
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">CNRS Scientist (Permanent)</h3>
-                                        <span class="uia-card__time">
-                                            <time datetime="2012-08">August 2012</time> – <time datetime="2015-03">March 2015</time>
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>LATMOS/CNRS, Paris, France.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                
-                <!-- 2007 -->
-                <div class="uia-timeline__annual-sections">
-                    <span class="uia-timeline__year" aria-hidden="true">2007</span>
-                    <div class="uia-timeline__groups">
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">CNRS Research Scientist</h3>
-                                         <span class="uia-card__time">
-                                            <time datetime="2007-10">October 2007</time> – <time datetime="2012-07">July 2012</time>
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>LATMOS/CNRS, Paris, France.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <!-- 2005 -->
-                <div class="uia-timeline__annual-sections">
-                    <span class="uia-timeline__year" aria-hidden="true">2005</span>
-                    <div class="uia-timeline__groups">
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">CNRS post-doctoral fellow</h3>
-                                        <span class="uia-card__time">
-                                            <time datetime="2005-10">October 2005</time> – <time datetime="2007-09">September 2007</time>
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>LMD/CNRS, Paris, France.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">Research Associate</h3>
-                                        <span class="uia-card__time">
-                                            <time datetime="2005-04">April 2005</time> – <time datetime="2005-09">September 2005</time>
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>University of Bremen, Bremen, Germany.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <!-- 2001 -->
-                <div class="uia-timeline__annual-sections">
-                    <span class="uia-timeline__year" aria-hidden="true">2001</span>
-                    <div class="uia-timeline__groups">
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">Ph.D. Student</h3>
-                                        <span class="uia-card__time">
-                                            <time datetime="2001-11">November 2001</time> – <time datetime="2005-03">March 2005</time>
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>University of Bremen, Bremen, Germany.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="uia-timeline__group">
-                            <div class="uia-timeline__point uia-card">
-                                <div class="uia-card__container">
-                                    <div class="uia-card__intro">
-                                        <h3 class="uia-card__heading">Research Assistant</h3>
-                                        <span class="uia-card__time">
-                                            <time datetime="2001-05">May 2001</time> – <time datetime="2001-07">July 2001</time>
-                                        </span>
-                                    </div>
-                                    <div class="uia-card__description">
-                                        <p>Cochin University of Science and Technology (CUSAT), India.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </section>
       </div>
+
       <div class="skills-section">
+          <!-- Skills section remains the same -->
           <div class="working-skills">
             <h3 class="column-title">Working Skills</h3>
              <div class="skill-bar-item">
@@ -260,12 +178,7 @@ Kharagpur, India - 721302</p>
           <div class="knowledges">
              <h3 class="column-title">Expertise</h3>
              <ul class="knowledge-list">
-                <li>Atmospheric Chemistry</li>
-                <li>Climate Modelling</li>
-                <li>Air Pollution</li>
-                <li>Remote Sensing</li>
-                <li>Physical Oceanography</li>
-                <li>Unix/Linux</li>
+                <li>Atmospheric Chemistry</li><li>Climate Modelling</li><li>Air Pollution</li><li>Remote Sensing</li><li>Physical Oceanography</li><li>Unix/Linux</li>
              </ul>
           </div>
       </div>

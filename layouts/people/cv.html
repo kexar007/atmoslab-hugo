@@ -142,6 +142,18 @@
         </div>
       </section>
 
+      <section class="cv-section">
+        <h3 class="cv-section__title">Awards & Recognition</h3>
+        <div class="cv-section__content">
+          <div class="awards-grid">
+            {{ range .Site.Data.cv.awards.items }}
+            <div class="award-card">
+              <p>{{ . }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
 
     </main>
 

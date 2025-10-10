@@ -143,6 +143,55 @@
     border-left: 4px solid #2196f3;
 }
 
+/* --- Awards Section --- */
+.jayan-portfolio-page .awards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.jayan-portfolio-page .award-card {
+    background: #ffffff;
+    border-radius: 0px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.jayan-portfolio-page .award-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.jayan-portfolio-page .award-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    font-weight: 400;
+}
+
+/* Varying colors for award cards */
+.jayan-portfolio-page .award-card:nth-child(3n+1) {
+    border-left-color: #e91e63;
+}
+
+.jayan-portfolio-page .award-card:nth-child(3n+2) {
+    border-left-color: #2196f3;
+}
+
+.jayan-portfolio-page .award-card:nth-child(3n+3) {
+    border-left-color: #4caf50;
+}
+
 
 
 
@@ -272,6 +321,13 @@
         padding: 12px 15px;
         min-height: 50px;
         font-size: 0.85rem;
+    }
+    .jayan-portfolio-page .awards-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        gap: 15px;
+    }
+    .jayan-portfolio-page .award-card {
+        padding: 15px;
     }
 }
 

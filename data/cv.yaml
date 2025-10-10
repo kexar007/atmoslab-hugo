@@ -83,14 +83,16 @@ education:
   items:
     - degree: "Habilitation (Equivalent to D. Sc.) in Physics/ Atmospheric Physics"
       institution: "University of Pierre and Marie Curie Paris 6, Paris, France."
-      year: "March 2013"
+      period: "March 2013"  
+      year: "2013"
     - degree: "Dr. rer. nat. in Physics/ Atmospheric Physics"
       institution: "International Postgraduate Programme in Physics (PIP), University of Bremen, Bremen, Germany."
       period: "Dec. 2001 – Mar. 2005"
-      year: "April 2005"
+      year: "2005"
     - degree: "M. Tech. in Atmospheric Science (Discontinued to pursue Ph.D.)"
       institution: "Cochin University of Science and Technology, Kochi, India."
       period: "2000 October – 2001 May"
+      year: "2001"
     - degree: "M. Sc. in Physical Oceanography"
       institution: "Cochin University of Science and Technology, Kochi, India."
       year: 2000

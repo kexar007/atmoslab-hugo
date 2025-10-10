@@ -56,38 +56,16 @@
           <h3 class="column-title">Education</h3>
           <div class="cv-timeline">
             <div class="cv-timeline__line"></div>
-            <!-- Education Item 1 -->
+            {{ range .Site.Data.cv.education.items }}
             <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2013</div>
+              <div class="cv-timeline__year">{{ .year }}</div>
               <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">Habilitation (D. Sc.) in Physics</h4>
-                <p class="cv-timeline__card-desc">University of Pierre and Marie Curie Paris 6, Paris, France.</p>
+                <h4 class="cv-timeline__card-title">{{ .degree }}</h4>
+                {{ if .period }}<span class="cv-timeline__card-time">{{ .period }}</span>{{ end }}
+                <p class="cv-timeline__card-desc">{{ .institution }}</p>
               </div>
             </div>
-            <!-- Education Item 2 -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2005</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">Dr. rer. nat. in Physics</h4>
-                <p class="cv-timeline__card-desc">University of Bremen, Bremen, Germany.</p>
-              </div>
-            </div>
-             <!-- Education Item 3 -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2001</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">M. Tech. in Atmospheric Science</h4>
-                <p class="cv-timeline__card-desc">Cochin University of Science and Technology, India (Discontinued).</p>
-              </div>
-            </div>
-             <!-- Education Item 4 -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2000</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">M. Sc. in Physical Oceanography</h4>
-                <p class="cv-timeline__card-desc">Cochin University of Science and Technology, Kochi, India.</p>
-              </div>
-            </div>
+            {{ end }}
           </div>
           <!-- Non-timeline cards -->
           <div class="education-info-cards">

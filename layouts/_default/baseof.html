@@ -37,10 +37,15 @@
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
-                <a href="{{ .Site.BaseURL }}" class="nav-logo">
-                    <img src="{{ "images/logo/atmos-lab-logo.png" | relURL }}" alt="ATMOS Lab Logo" class="nav-logo-image">
-                    ATMOS
-                </a>
+                <div class="logo-container">
+                    <a href="https://www.iitkgp.ac.in" class="nav-logo-iitkgp">
+                        <img src="{{ "images/icons/IIT Indian Institute of Technology Kharagpur.svg" | relURL }}" alt="IIT Kharagpur Logo" class="nav-logo-iitkgp-image">
+                    </a>
+                    <a href="{{ .Site.BaseURL }}" class="nav-logo">
+                        <img src="{{ "images/logo/atmos-lab-logo.png" | relURL }}" alt="ATMOS Lab Logo" class="nav-logo-image">
+                    </a>
+                    <span class="nav-title">ATMOS</span>
+                </div>
                 <ul class="nav-menu">
                     {{ range .Site.Menus.main }}
                         <li class="nav-item{{ if .HasChildren }} dropdown{{ end }}">

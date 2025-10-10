@@ -1,12 +1,13 @@
 # Personal and Contact Information
 personal_info:
-  name: "Dr. Jayanarayanan Kuttippurath"
+  name: "Jayanarayanan Kuttippurath"
   photo: "images/people/Jayanarayanan_Kuttipurath.jpg"                 
-  position: "Assistant Professor"
+  position: "Associate Professor"
+  titles: "(Dr. rer. nat.-habil.)"
   department: "Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL)"
   institution: "Indian Institute of Technology Kharagpur"
   address: "Kharagpur, India – 721302"
-  phone: "+91-3222-282438"
+  phone: "+91-3222-281994"
   email: "jayan@coral.iitkgp.ac.in"
   website: "www.atmoslabiitkgp.com"
 

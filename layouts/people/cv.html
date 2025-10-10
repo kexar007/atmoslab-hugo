@@ -33,134 +33,116 @@
 
     <!-- Main Content Area -->
      <main class="main-content">
-      <div class="cv-section">
-      <h3 class="section-title bullet-title">Associate Professor</h3>
-      <p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
-      Indian Institute of Technology Kharagpur<br>
-      Kharagpur, India - 721302</p>
-      </div>
-      <div class="cv-section">
-      <h3 class="section-title bullet-title ">Research</h3>
+      <section class="cv-section">
+        <h3 class="cv-section__title bullet-title">Associate Professor</h3>
+        <div class="cv-section__content">
+          <p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
+          Indian Institute of Technology Kharagpur<br>
+          Kharagpur, India - 721302</p>
+        </div>
+      </section>
 
-
-              <div class="research-grid">
-                {{ range .Site.Data.cv.research_interests.items }}
-                <div class="research-item">{{ . }}</div>
-                    {{ end }}
-              </div>
-
-
-      </div>
-      <div class="resume-columns">
-        <section id="education" class="content-section">
-          <h3 class="column-title">Education</h3>
-          <div class="cv-timeline">
-            <div class="cv-timeline__line"></div>
-            {{ range .Site.Data.cv.education.items }}
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">{{ .year }}</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">{{ .degree }}</h4>
-                {{ if .period }}<span class="cv-timeline__card-time">{{ .period }}</span>{{ end }}
-                <p class="cv-timeline__card-desc">{{ .institution }}</p>
-              </div>
-            </div>
-            {{ end }}
+      <section class="cv-section">
+        <h3 class="cv-section__title bullet-title">Research</h3>
+        <div class="cv-section__content">
+          <div class="research-grid">
+            {{ range .Site.Data.cv.research_interests.items }}
+            <div class="research-item">{{ . }}</div>
+                {{ end }}
           </div>
-          <!-- Non-timeline cards -->
-          <div class="education-info-cards">
-            <div class="info-card"><strong>Language:</strong> Malayalam, Tamil, English, German, and French.</div>
-            <div class="info-card"><strong>Programming:</strong> Fortran, Matlab and IDL.</div>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="experience" class="content-section">
-          <h3 class="column-title">Experience</h3>
-          <div class="cv-timeline">
-            <div class="cv-timeline__line"></div>
-            <!-- Experience Item -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2015</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">Assistant Professor</h4>
-                <span class="cv-timeline__card-time">April 2015 onwards</span>
-                <p class="cv-timeline__card-desc">IIT Kharagpur, India.</p>
+      <section class="cv-section">
+        <h3 class="cv-section__title">Education & Experience</h3>
+        <div class="cv-section__content cv-section__content--columns">
+          <section id="education" class="content-section">
+            <h4 class="cv-section__subtitle">Education</h4>
+            <div class="cv-timeline">
+              <div class="cv-timeline__line"></div>
+              {{ range .Site.Data.cv.education.items }}
+              <div class="cv-timeline__group">
+                <div class="cv-timeline__year">{{ .year }}</div>
+                <div class="cv-timeline__card">
+                  <h5 class="cv-timeline__card-title">{{ .degree }}</h5>
+                  {{ if .period }}<span class="cv-timeline__card-time">{{ .period }}</span>{{ end }}
+                  <p class="cv-timeline__card-desc">{{ .institution }}</p>
+                </div>
               </div>
+              {{ end }}
             </div>
-            <!-- Experience Item -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2012</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">CNRS Scientist (Permanent)</h4>
-                <span class="cv-timeline__card-time">Aug 2012 – Mar 2015</span>
-                <p class="cv-timeline__card-desc">LATMOS/CNRS, Paris, France.</p>
-              </div>
+            <!-- Non-timeline cards -->
+            <div class="education-info-cards">
+              <div class="info-card"><strong>Language:</strong> Malayalam, Tamil, English, German, and French.</div>
+              <div class="info-card"><strong>Programming:</strong> Fortran, Matlab and IDL.</div>
             </div>
-             <!-- Experience Item -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2007</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">CNRS Research Scientist</h4>
-                <span class="cv-timeline__card-time">Oct 2007 – Jul 2012</span>
-                <p class="cv-timeline__card-desc">LATMOS/CNRS, Paris, France.</p>
-              </div>
-            </div>
-             <!-- Experience Item -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2005</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">CNRS post-doctoral fellow</h4>
-                <span class="cv-timeline__card-time">Oct 2005 – Sep 2007</span>
-                <p class="cv-timeline__card-desc">LMD/CNRS, Paris, France.</p>
-              </div>
-               <div class="cv-timeline__card" style="margin-top: 25px;">
-                <h4 class="cv-timeline__card-title">Research Associate</h4>
-                <span class="cv-timeline__card-time">Apr 2005 – Sep 2005</span>
-                <p class="cv-timeline__card-desc">University of Bremen, Germany.</p>
-              </div>
-            </div>
-             <!-- Experience Item -->
-            <div class="cv-timeline__group">
-              <div class="cv-timeline__year">2001</div>
-              <div class="cv-timeline__card">
-                <h4 class="cv-timeline__card-title">Ph.D. Student</h4>
-                <span class="cv-timeline__card-time">Nov 2001 – Mar 2005</span>
-                <p class="cv-timeline__card-desc">University of Bremen, Germany.</p>
-              </div>
-               <div class="cv-timeline__card" style="margin-top: 25px;">
-                <h4 class="cv-timeline__card-title">Research Assistant</h4>
-                <span class="cv-timeline__card-time">May 2001 – Jul 2001</span>
-                <p class="cv-timeline__card-desc">CUSAT, India.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+          </section>
 
-      <div class="skills-section">
-          <!-- Skills section remains the same -->
-          <div class="working-skills">
-            <h3 class="column-title">Working Skills</h3>
-             <div class="skill-bar-item">
-                <p>Fortran</p>
-                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          <section id="experience" class="content-section">
+            <h4 class="cv-section__subtitle">Experience</h4>
+            <div class="cv-timeline">
+              <div class="cv-timeline__line"></div>
+              <!-- Experience Item -->
+              <div class="cv-timeline__group">
+                <div class="cv-timeline__year">2015</div>
+                <div class="cv-timeline__card">
+                  <h5 class="cv-timeline__card-title">Assistant Professor</h5>
+                  <span class="cv-timeline__card-time">April 2015 onwards</span>
+                  <p class="cv-timeline__card-desc">IIT Kharagpur, India.</p>
+                </div>
+              </div>
+              <!-- Experience Item -->
+              <div class="cv-timeline__group">
+                <div class="cv-timeline__year">2012</div>
+                <div class="cv-timeline__card">
+                  <h5 class="cv-timeline__card-title">CNRS Scientist (Permanent)</h5>
+                  <span class="cv-timeline__card-time">Aug 2012 – Mar 2015</span>
+                  <p class="cv-timeline__card-desc">LATMOS/CNRS, Paris, France.</p>
+                </div>
+              </div>
+               <!-- Experience Item -->
+              <div class="cv-timeline__group">
+                <div class="cv-timeline__year">2007</div>
+                <div class="cv-timeline__card">
+                  <h5 class="cv-timeline__card-title">CNRS Research Scientist</h5>
+                  <span class="cv-timeline__card-time">Oct 2007 – Jul 2012</span>
+                  <p class="cv-timeline__card-desc">LATMOS/CNRS, Paris, France.</p>
+                </div>
+              </div>
+               <!-- Experience Item -->
+              <div class="cv-timeline__group">
+                <div class="cv-timeline__year">2005</div>
+                <div class="cv-timeline__card">
+                  <h5 class="cv-timeline__card-title">CNRS post-doctoral fellow</h5>
+                  <span class="cv-timeline__card-time">Oct 2005 – Sep 2007</span>
+                  <p class="cv-timeline__card-desc">LMD/CNRS, Paris, France.</p>
+                </div>
+                 <div class="cv-timeline__card" style="margin-top: 25px;">
+                  <h5 class="cv-timeline__card-title">Research Associate</h5>
+                  <span class="cv-timeline__card-time">Apr 2005 – Sep 2005</span>
+                  <p class="cv-timeline__card-desc">University of Bremen, Germany.</p>
+                </div>
+              </div>
+               <!-- Experience Item -->
+              <div class="cv-timeline__group">
+                <div class="cv-timeline__year">2001</div>
+                <div class="cv-timeline__card">
+                  <h5 class="cv-timeline__card-title">Ph.D. Student</h5>
+                  <span class="cv-timeline__card-time">Nov 2001 – Mar 2005</span>
+                  <p class="cv-timeline__card-desc">University of Bremen, Germany.</p>
+                </div>
+                 <div class="cv-timeline__card" style="margin-top: 25px;">
+                  <h5 class="cv-timeline__card-title">Research Assistant</h5>
+                  <span class="cv-timeline__card-time">May 2001 – Jul 2001</span>
+                  <p class="cv-timeline__card-desc">CUSAT, India.</p>
+                </div>
+              </div>
             </div>
-            <div class="skill-bar-item">
-                <p>Matlab & IDL</p>
-                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-            </div>
-             <div class="skill-bar-item">
-                <p>Numerical Modelling</p>
-                <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
-            </div>
-          </div>
-          <div class="knowledges">
-             <h3 class="column-title">Expertise</h3>
-             <ul class="knowledge-list">
-                <li>Atmospheric Chemistry</li><li>Climate Modelling</li><li>Air Pollution</li><li>Remote Sensing</li><li>Physical Oceanography</li><li>Unix/Linux</li>
-             </ul>
-          </div>
-      </div>
+          </section>
+        </div>
+      </section>
+
+
     </main>
 
 

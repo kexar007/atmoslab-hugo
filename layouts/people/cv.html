@@ -33,11 +33,24 @@
 
     <!-- Main Content Area -->
      <main class="main-content">
-      <h3 class="section-title"><p>Associate Professor</p></h3>
+      <div class="cv-section">
+      <h3 class="section-title bullet-title">Associate Professor</h3>
       <p>Centre for Oceans, Rivers, Atmosphere and Land Sciences (CORAL),<br>
       Indian Institute of Technology Kharagpur<br>
       Kharagpur, India - 721302</p>
-      
+      </div>
+      <div class="cv-section">
+      <h3 class="section-title bullet-title ">Research</h3>
+
+
+              <div class="research-grid">
+                {{ range .Site.Data.cv.research_interests.items }}
+                <div class="research-item">{{ . }}</div>
+                    {{ end }}
+              </div>
+
+
+      </div>
       <div class="resume-columns">
         <section id="education" class="content-section">
           <h3 class="column-title">Education</h3>

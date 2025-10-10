@@ -68,8 +68,13 @@
     box-shadow: var(--shadow);
     padding: 30px 20px; /* Adjusted padding for mobile */
     display: grid;
-    gap: 10px;
+    gap: 15px;
 }
+
+.jayan-portfolio-page .cv-section {
+    padding-bottom: 15px;
+} 
+
 
 .jayan-portfolio-page .section-title {
     
@@ -81,14 +86,53 @@
     margin-bottom: 0px;
 }
 
-.jayan-portfolio-page .section-title::before {
+
+.bullet-title::before {
     content: '';
     margin-left: 5px;
     width: 20px;
     height: 20px;
     background: var(--accent-color);
-    
+
 }
+
+.section-title + * {
+    margin-left: 35px;
+}
+
+.jayan-portfolio-page .research {
+    margin-top: 30px; }
+.jayan-portfolio-page .research-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 15px;
+     padding-top: 5px; }
+
+.jayan-portfolio-page .research-item {
+     padding: 15px 20px;
+     border-radius: 12px;
+     font-size: 0.9rem;
+     color: var(--text-color-dark);
+     font-weight: 500;
+     text-align: center;
+     line-height: 1.4;
+     min-height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center; }
+
+.jayan-portfolio-page .research-item:nth-child(odd) {
+     background: linear-gradient(135deg, #f8e8f8, #f0d8f0);
+     border-left: 4px solid #e91e63; }
+
+.jayan-portfolio-page .research-item:nth-child(even) {
+     background: linear-gradient(135deg, #e8f4f8, #d0e8f0);
+     border-left: 4px solid #2196f3; }
+
+
+
+
+
 
 .jayan-portfolio-page .resume-columns {
     display: grid;
@@ -242,6 +286,18 @@
 /* --------------------------------------------------- */
 /* --- DESKTOP & TABLET STYLES (min-width)         --- */
 /* --------------------------------------------------- */
+
+@media (max-width: 767px) {
+    .jayan-portfolio-page .research-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        gap: 12px;
+    }
+    .jayan-portfolio-page .research-item {
+        padding: 12px 15px;
+        min-height: 50px;
+        font-size: 0.85rem;
+    }
+}
 
 @media (min-width: 768px) {
     .jayan-portfolio-page {

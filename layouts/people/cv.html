@@ -155,6 +155,78 @@
         </div>
       </section>
 
+      <section class="cv-section">
+        <h3 class="cv-section__title">Numerical Modelling</h3>
+        <div class="cv-section__content">
+          <div class="experience-grid">
+            {{ range .Site.Data.cv.specialized_experience.numerical_modelling.items }}
+            <div class="experience-card">
+              <p>{{ . }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h3 class="cv-section__title">Instrument Expertise</h3>
+        <div class="cv-section__content">
+          <div class="experience-grid">
+            {{ range .Site.Data.cv.specialized_experience.instrument_expertise.items }}
+            <div class="experience-card">
+              <h5 class="experience-card__title">{{ .name }}</h5>
+              <p class="experience-card__description">{{ .description }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h3 class="cv-section__title">Field Campaign Experience</h3>
+        <div class="cv-section__content">
+          <div class="experience-grid">
+            {{ range .Site.Data.cv.specialized_experience.field_campaigns.items }}
+            <div class="experience-card">
+              <h5 class="experience-card__title">{{ .name }}</h5>
+              <p class="experience-card__description">{{ .description }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h3 class="cv-section__title">Professional Memberships</h3>
+        <div class="cv-section__content">
+          <div class="awards-grid">
+            {{ range .Site.Data.cv.memberships.items }}
+            <div class="award-card">
+              <p>{{ . }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h3 class="cv-section__title">Professional References</h3>
+        <div class="cv-section__content">
+          <div class="references-grid">
+            {{ range .Site.Data.cv.references.items }}
+            <div class="reference-card">
+              <h5 class="reference-card__name">{{ .name }}</h5>
+              <p class="reference-card__affiliation">{{ .affiliation }}</p>
+              <div class="reference-card__contact">
+                <p><strong>Phone:</strong> {{ .phone }}</p>
+                <p><strong>Email:</strong> <a href="mailto:{{ .email }}">{{ .email }}</a></p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
     </main>
 
 

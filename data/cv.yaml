@@ -139,7 +139,10 @@ awards:
 specialized_experience:
   numerical_modelling:
     title: "Numerical Modelling Experience"
-    description: "Working experience with the Chemistry Climate Model (CCM) LMDz-repro, REPROBUS Chemical Transport Model (CTM), MIMOSA-CHIM CTM, BREMEN CTM and MIMOSA dynamical model, for several studies for the interpretation of atmospheric chemistry, dynamics, and climate processes. First simulation and validation (of stratospheric ozone and N2O profiles) of the Bremen CTM (a part of the Ph.D. work). Retrieval/Inversion of stratospheric trace gases from sub-millimetre wave measurements."
+    items:
+      - "Working experience with the Chemistry Climate Model (CCM) LMDz-repro, REPROBUS Chemical Transport Model (CTM), MIMOSA-CHIM CTM, BREMEN CTM and MIMOSA dynamical model, for several studies for the interpretation of atmospheric chemistry, dynamics, and climate processes."
+      - "First simulation and validation (of stratospheric ozone and N2O profiles) of the Bremen CTM (a part of the Ph.D. work)."
+      - "Retrieval/Inversion of stratospheric trace gases from sub-millimetre wave measurements."
   instrument_expertise:
     title: "Expertise With Specific Scientific Instruments"
     items:

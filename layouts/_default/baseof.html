@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="{{ $galleryStyle.RelPermalink }}">
     {{ end }}
 
+    {{ $ResearchStyle := resources.Get "css/research.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $ResearchStyle.RelPermalink }}">
+
 </head>
 <body>
     <canvas id="animus"></canvas>

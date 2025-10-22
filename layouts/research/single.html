@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <section class="research-areas-page">
+    <div class="page-header">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+    </div>
+    
+    <div class="research-grid">
+      {{ range site.Data.research.research_areas }}
+        <div class="research-area">
+          {{ if .image }}
+            <img 
+              src="{{ .image }}" 
+              alt="{{ .Title }}" 
+              loading="lazy"
+            >
+          {{ end }}
+          <h3>{{ .Title }}</h3>
+          <div class="research-id">ID: {{ .ID }}</div>
+          <p>Explore our research in {{ humanize .Title }}</p>
+        </div>
+      {{ end }}
+    </div>
+    
+    <div class="cta">
+      <a href="/contact" class="btn-primary">Contact Research Team</a>
+    </div>
+  </section>
+</div>
+{{ end }}

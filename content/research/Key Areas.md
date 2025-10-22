@@ -1,6 +1,6 @@
----
-title: Key Areas Overview
-description: Overview of our research focus areas
-
-layout: "research" # Added layout configuration
----
++++
+date = '2025-10-03T01:54:29+05:30'
+draft = false
+title = 'Key Areas'
+layout = "research"
++++

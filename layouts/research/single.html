@@ -1,33 +1,22 @@
 {{ define "main" }}
 
-
 <div class="container">
   <section class="hero-section">
     <div class="page-header">
-      <h1>{{ .Title }}</h1>
-      <p>{{ .Description }}</p>
+      <h2>RESEARCH FOR SOCIETAL NEEDS</h2>
     </div>
   </section>
   <section>
     <div class="research-grid">
       {{ range site.Data.research.research_areas }}
-        <div class="research-area">
-          {{ if .image }}
-            {{ with .image | resources.Get }}
-            <img
-              src="{{ .RelPermalink }}"
-              alt="{{ $.Title }}"              
-            >
-            {{ end }}
-          {{ end }}
-          <h3>{{ .Title }}</h3>
-          
-        </div>
+      <div class="research-area">
+        {{ if .image }} {{ with .image | resources.Get }}
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" />
+        {{ end }} {{ end }}
+        <h3>{{ .Title }}</h3>
+      </div>
       {{ end }}
     </div>
-    
-    
   </section>
-</div>
 </div>
 {{ end }}

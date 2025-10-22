@@ -58,9 +58,20 @@ archetypeDir = "archetypes"
   weight = 4
 
 [[menu.main]]
+  name = "Research"  
+  url = "/research/" 
+  weight = 5
+
+[[menu.main]]
+  name = "Key Areas"  # Sub-item under Research
+  url = "/research/key-areas/" 
+  parent = "Research"
+  weight = 1
+
+[[menu.main]]
   name = "Publications"
   identifier = "publications"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "Journal"

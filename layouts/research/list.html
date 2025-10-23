@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="container" id="research-overview">
+  <section class="hero-section">
+    <h1 class="hero-title">Research</h1>
+    <p class="hero-subtitle">Overview of our research</p>
+  </section>
+  <div class="card">
+    <div class="card-header">
+      <h2 class="card-title">Key Areas</h2>
+    </div>
+    <span
+      >{{ range site.Data.research.research_areas }}
+      <ul>
+        {{ .Title }}
+      </ul>
+      {{end}}</span
+    >
+  </div>
+</div>
+{{ end }}

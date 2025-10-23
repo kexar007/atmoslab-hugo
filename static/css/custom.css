@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Open+Sans:400,400i,700|Roboto:400,400i,700");
 
-
-
 #animus {
   position: fixed;
   top: 0;
@@ -21,182 +19,174 @@
   justify-content: center;
 }
 
-
 .people-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #333;
-    font-size: 1.8rem;
-    text-align: center;
-    padding-bottom: 0.5rem;
-    margin-top: 2rem; /* Adds space above the heading */
-    margin-bottom: 2rem;
-    border-bottom: 3px solid #f0f0f0;
-    letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem; /* Adds space above the heading */
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #f0f0f0;
+  letter-spacing: 2px;
 }
-
-
 
 .profile_card {
-    font-size: 1rem;
-    color: #404040;
-    font-family: Montserrat, sans-serif;
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 2rem;
-    box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
-    transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Added transition for smooth hover */
+  font-size: 1rem;
+  color: #404040;
+  font-family: Montserrat, sans-serif;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+  transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Added transition for smooth hover */
 }
 
-
 .profile_card-grid a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .profile_card:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0px 1.5rem 2rem rgba(0, 0, 0, 0.6);
-    background-image: var(--card-gradient); /* Apply gradient to card on hover */
-    color: #fff; /* Change text color to white on hover */
-    cursor: pointer;
+  transform: translateY(-0.5rem);
+  box-shadow: 0px 1.5rem 2rem rgba(0, 0, 0, 0.6);
+  background-image: var(--card-gradient); /* Apply gradient to card on hover */
+  color: #fff; /* Change text color to white on hover */
+  cursor: pointer;
 }
 
 .profile_card .banner {
-    background-image: var(--card-gradient); /* Use CSS variable for banner background */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 7rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-sizing: border-box;
-    transition: background-image 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Added transition */
+  background-image: var(
+    --card-gradient
+  ); /* Use CSS variable for banner background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 7rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: background-image 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Added transition */
 }
 
 .profile_card:hover .banner {
-    background-image: none; /* Remove banner gradient on card hover */
+  background-image: none; /* Remove banner gradient on card hover */
 }
 
 .profile_card .banner svg {
-    background-color: #fff;
-    width: 6rem;
-    height: 6rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    transform: translateY(50%);
-    transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  background-color: #fff;
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: translateY(50%);
+  transition: transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .profile_card .banner svg:hover {
-    transform: translateY(50%) scale(1.3);
+  transform: translateY(50%) scale(1.3);
 }
 
-
-
 .profile_card h3.name {
-    text-align: center;
-    padding: 0 1rem 0.5rem;
-    margin: 0;
-    text-transform: uppercase;
+  text-align: center;
+  padding: 0 1rem 0.5rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .profile_card .title {
-    color: #a0a0a0;
-    font-size: 0.85rem;
-    text-align: center;
-    padding: 0 2rem 1.2rem;
-    text-transform: capitalize;
+  color: #a0a0a0;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0 2rem 1.2rem;
+  text-transform: capitalize;
 }
 
 .profile_card .actions {
-    padding: 0 2rem 1.2rem;
-    display: flex;
-    flex-direction: column;
-    order: 99;
+  padding: 0 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  order: 99;
 }
 
 .profile_card .actions .follow-info {
-    padding: 0 0 1rem;
-    display: flex;
+  padding: 0 0 1rem;
+  display: flex;
 }
 
 .profile_card .actions .follow-info h2 {
-    text-align: center;
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
+  text-align: center;
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .profile_card .actions .follow-info h2 a {
-    text-decoration: none;
-    padding: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.8rem;
-    transition: background-color 100ms ease-in-out;
+  text-decoration: none;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  transition: background-color 100ms ease-in-out;
 }
 
 .profile_card .actions .follow-info h2 a span {
-    color: #1c9eff;
-    font-weight: bold;
-    transform-origin: bottom;
-    transform: scaleY(1.3);
-    transition: color 100ms ease-in-out;
+  color: #1c9eff;
+  font-weight: bold;
+  transform-origin: bottom;
+  transform: scaleY(1.3);
+  transition: color 100ms ease-in-out;
 }
 
 .profile_card .actions .follow-info h2 a small {
-    color: #afafaf;
-    font-size: 0.85rem;
-    font-weight: normal;
+  color: #afafaf;
+  font-size: 0.85rem;
+  font-weight: normal;
 }
 
 .profile_card .actions .follow-info h2 a:hover {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .profile_card .actions .follow-info h2 a:hover span {
-    color: #007ad6;
+  color: #007ad6;
 }
 
 .profile_card .actions .follow-btn button {
-    color: inherit;
-    font: inherit;
-    font-weight: bold;
-    background-color: #ffd01a;
-    width: 100%;
-    border: none;
-    padding: 1rem;
-    outline: none;
-    box-sizing: border-box;
-    border-radius: 1.5rem/50%;
-    transition: background-color 100ms ease-in-out, transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  background-color: #ffd01a;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 1.5rem/50%;
+  transition: background-color 100ms ease-in-out,
+    transform 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .profile_card .actions .follow-btn button:hover {
-    background-color: #efb10a;
-    transform: scale(1.1);
+  background-color: #efb10a;
+  transform: scale(1.1);
 }
 
 .profile_card .actions .follow-btn button:active {
-    background-color: #e8a200;
-    transform: scale(1);
+  background-color: #e8a200;
+  transform: scale(1);
 }
 
 .profile_card .desc {
-    text-align: center;
-    padding: 0 2rem 2.5rem;
-    font-size: 0.9rem;
-    line-height: 1.4;
+  text-align: center;
+  padding: 0 2rem 2.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
-
-
-
-
-
 
 .profile-icons {
   font-size: 2.5em; /* Make icons bigger */
@@ -211,8 +201,8 @@
 }
 
 .svg-icon {
-  width: 1em;       /* Match the width to the font size */
-  height: 1em;      /* Match the height to the font size */
+  width: 1em; /* Match the width to the font size */
+  height: 1em; /* Match the height to the font size */
   vertical-align: -0.15em; /* Helps align it with the baseline of text/other icons */
   margin-bottom: 2px; /* Fine-tune vertical alignment */
 }
@@ -268,7 +258,8 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: #007bff;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
 }
 
 /* Mobile Responsive Styles */

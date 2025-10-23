@@ -47,3 +47,26 @@
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
+
+#research-overview .card {
+  .card-title {
+    text-align: center;
+  }
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  ul {
+    cursor: pointer;
+    background-color: rgb(209, 211, 211);
+    padding: 8px 12px;
+    font-size: 0.7rem;
+    border-radius: 16px;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: hsl(0, 0%, 100%);
+    }
+  }
+}

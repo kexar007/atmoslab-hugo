@@ -1,0 +1,11 @@
+{{ range $.Site.Data.research.research_areas }}
+  {{ $page := dict
+      "path" .Title
+      "title" .Title
+      "layout" "research" 
+      "params" (dict
+          "cover_image" .image
+      )
+  }}
+  {{ $.AddPage $page }}
+{{ end }}

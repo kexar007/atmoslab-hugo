@@ -2,3 +2,4 @@ public/
 fetch_strapi_data.bat
 fetch_strapi.ps1
 people_page_files.txt
+resources/_gen

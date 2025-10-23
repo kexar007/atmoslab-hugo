@@ -1,53 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} | My Research</title>
-    <link rel="stylesheet" href="/css/research-style.css">
-</head>
-<body>
-
-    <header class="research-header">
-        <h1>Research Area: {{ .Title }}</h1>
-    </header>
-
-    <main>
-        <div class="cover-image-container">
-            {{/* --- HUGO PIPES LOGIC (RESIZE ONLY) --- */}}
-
-            {{/* 1. Check if an image is defined in the page parameters */}}
-            {{ with .Params.cover_image }}
-                {{/* 2. Get the image as a processable resource from the /assets folder */}}
+{{ define "main" }}
+<div class="container" id="key-area">
+  <section class="hero-section">
+    <div class="page-header">
+      <h2><span>{{.Title}}</span></h2>
+      <div class="cover">
+        {{ with .Params.cover_image }}
                 {{ with resources.Get . }}
-
-                    {{/* 3. Resize the image to a max width of 800px and set JPEG quality to 85 */}}
-                    {{ $resizedImage := .Process "resize 800x q85" }}
-
-                    {{/* 4. Display the resized image using a standard <img> tag */}}
+                       {{ $resizedImage := .Process "resize 800x q85" }}
                     <img
-                        src="{{ $resizedImage.RelPermalink }}"
-                        width="{{ $resizedImage.Width }}"
-                        height="{{ $resizedImage.Height }}"
-                        alt="Cover image for {{ $.Title }}">
+                        src="{{ $resizedImage.RelPermalink }}"                        
+                        alt="Cover image for {{ $.Title }}"
+                        >
 
                 {{ else }}
-                    {{/* Optional: A message if the image is not found in /assets */}}
                     <p>Warning: Image '{{ . }}' not found.</p>
                 {{ end }}
-            {{ end }}
-
-            {{/* --- HUGO PIPES LOGIC ENDS HERE --- */}}
+           {{ end }}
         </div>
-
-        <div class="page-content">
-            <p>This is the page for {{ .Title }}.</p>
-        </div>
-    </main>
-
-    <footer>
-        <p>Footer for the research section.</p>
-    </footer>
-
-</body>
-</html>
+        
+    </div>
+  </section>
+</div>
+      
+        
+          
+{{end}}        

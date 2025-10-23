@@ -8,7 +8,7 @@ draft: false
 
 Atmos Lab is a leading research institution dedicated to advancing our understanding of atmospheric science and environmental monitoring. Our mission is to develop innovative solutions for climate challenges through cutting-edge research and technology.
 
-## Our Vision
+## Our Visionqqqqq
 
 To be at the forefront of atmospheric research, driving sustainable solutions for a changing planet.
 

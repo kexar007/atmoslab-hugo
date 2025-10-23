@@ -21,6 +21,11 @@
     }
   }
 }
+.research-area-link{
+  display: grid;
+  
+}
+
 
 .research-area img {
   width: 100%;

@@ -9,12 +9,14 @@
   <section>
     <div class="research-grid">
       {{ range site.Data.research.research_areas }}
+       <a href="{{ relLangURL (printf "research/%s" (.Title | urlize)) }}" class="research-area-link">
       <div class="research-area">
         {{ if .image }} {{ with .image | resources.Get }}
         <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" />
         {{ end }} {{ end }}
         <h3><span>{{ .Title }}</span></h3>
       </div>
+      </a>
       {{ end }}
     </div>
   </section>

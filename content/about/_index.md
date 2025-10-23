@@ -4,7 +4,7 @@ date: 2024-09-23
 draft: false
 ---
 
-# About Atmos Lab
+# Atmos Lab
 
 Atmos Lab is a leading research institution dedicated to advancing our understanding of atmospheric science and environmental monitoring. Our mission is to develop innovative solutions for climate challenges through cutting-edge research and technology.
 

@@ -1,6 +1,6 @@
 {{ range $.Site.Data.research.research_areas }}
   {{ $page := dict
-      "path" .Title
+     "path" (urlize .Title)
       "title" .Title
       "layout" "research" 
       "params" (dict

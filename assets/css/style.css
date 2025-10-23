@@ -6,6 +6,10 @@
   src: local(""), url("/fonts/fontscorecomttwcenmt.woff") format("woff");
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 /* Reset and Base Styles */
 * {
   margin: 0;

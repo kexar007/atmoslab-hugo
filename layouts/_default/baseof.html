@@ -1,121 +1,125 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <link rel="icon" type="image/x-icon" href="{{ "images/logo/favicon.ico" | relURL }}">
-    
+    <link rel="icon" type="image/x-icon" href="{{ "images/logo/favicon.ico" |
+    relURL }}">
+
     <!-- Main stylesheet -->
-    {{ $style := resources.Get "css/style.css" }}
-    {{ if $style }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $style := resources.Get "css/style.css" }} {{ if $style }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     {{ end }}
     <!-- Google Fonts -->
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:ital,wght@0,100..900;1,100..900&family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
 
     <!-- Background animation stylesheet (using a new variable name for clarity) -->
     {{ $bgStyle := resources.Get "css/background.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $bgStyle.RelPermalink }}">
-    
+    <link rel="stylesheet" href="{{ $bgStyle.RelPermalink }}" />
+
     <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
     {{ $galleryStyle := resources.Get "css/gallery.css" }}
     {{ if $galleryStyle }}
-    <link rel="stylesheet" href="{{ $galleryStyle.RelPermalink }}">
+    <link rel="stylesheet" href="{{ $galleryStyle.RelPermalink }}" />
     {{ end }}
 
     {{ $ResearchStyle := resources.Get "css/research.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $ResearchStyle.RelPermalink }}">
-
-</head>
-<body>
+    <link rel="stylesheet" href="{{ $ResearchStyle.RelPermalink }}" />
+  </head>
+  <body>
     <canvas id="animus"></canvas>
-    
+
     <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo-container">
-                    <a href="https://www.iitkgp.ac.in" class="nav-logo-iitkgp">
-                        <img src="{{ "images/icons/IIT Indian Institute of Technology Kharagpur.png" | relURL }}" alt="IIT Kharagpur Logo" class="nav-logo-iitkgp-image">
-                    </a>
-                    <a href="{{ .Site.BaseURL }}" class="nav-logo">
-                        <img src="{{ "images/logo/atmos-lab-logo.png" | relURL }}" alt="ATMOS Lab Logo" class="nav-logo-image">
-                    </a>
-                    <span class="nav-title">ATMOS</span>
-                </div>
-                <ul class="nav-menu">
-                    {{ range .Site.Menus.main }}
-                        <li class="nav-item{{ if .HasChildren }} dropdown{{ end }}">
-                            <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-                            {{ if .HasChildren }}
-                                <ul class="dropdown-menu">
-                                    {{ range .Children }}
-                                        <li class="nav-item">
-                                            <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-                                        </li>
-                                    {{ end }}
-                                </ul>
-                            {{ end }}
-                        </li>
-                    {{ end }}
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo-container">
+            <a href="https://www.iitkgp.ac.in" class="nav-logo-iitkgp">
+              <img src="{{ "images/icons/IIT Indian Institute of Technology Kharagpur.png" | relURL }}" alt="IIT Kharagpur Logo" class="nav-logo-iitkgp-image">
+            </a>
+            <a href="{{ .Site.BaseURL }}" class="nav-logo">
+              <img src="{{ "images/logo/atmos-lab-logo.png" | relURL }}"
+              alt="ATMOS Lab Logo" class="nav-logo-image">
+            </a>
+            <a href="{{ .Site.BaseURL }}" class="nav-title">ATMOS</a>
+          </div>
+          <ul class="nav-menu">
+            {{ range .Site.Menus.main }}
+            <li class="nav-item{{ if .HasChildren }} dropdown{{ end }}">
+              <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+              {{ if .HasChildren }}
+              <ul class="dropdown-menu">
+                {{ range .Children }}
+                <li class="nav-item">
+                  <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+                </li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="main-content">
-        {{ block "main" . }}{{ end }}
-    </main>
+    <main class="main-content">{{ block "main" . }}{{ end }}</main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Atmos Lab</h3>
-                    <p>Leading research in atmospheric science and environmental monitoring</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-                        <li><a href="{{ .Site.BaseURL }}people/">People</a></li>
-                        <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
-                        <li><a href="{{ .Site.BaseURL }}media/">Media</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>info@atmoslab.org</p>
-                    <p>123 Research Avenue<br>Science City, SC 12345</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; {{ now.Format "2006" }} Atmos Lab. All rights reserved.</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Atmos Lab</h3>
+            <p>
+              Leading research in atmospheric science and environmental
+              monitoring
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+              <li><a href="{{ .Site.BaseURL }}people/">People</a></li>
+              <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
+              <li><a href="{{ .Site.BaseURL }}media/">Media</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>info@atmoslab.org</p>
+            <p>123 Research Avenue<br />Science City, SC 12345</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; {{ now.Format "2006" }} Atmos Lab. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Main site script (for hamburger menu, etc.) -->
-    {{ $script := resources.Get "js/script.js" }}
-    {{ if $script }}
+    {{ $script := resources.Get "js/script.js" }} {{ if $script }}
     <script src="{{ $script.RelPermalink }}"></script>
     {{ end }}
 
     <!-- CORRECT: Removed the duplicate main block from here -->
 
     <!-- Background animation script -->
-   
+
     <script defer src="{{ .Site.BaseURL }}js/animus-background.js"></script>
-</body>
+  </body>
 </html>

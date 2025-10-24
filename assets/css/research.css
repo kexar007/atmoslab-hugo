@@ -21,11 +21,9 @@
     }
   }
 }
-.research-area-link{
+.research-area-link {
   display: grid;
-  
 }
-
 
 .research-area img {
   width: 100%;
@@ -76,59 +74,52 @@
   }
 }
 
-
-
 #key-area {
   background-color: #fdfdfd;
 
+  .page-header {
+    position: relative;
+    margin: 15px;
+  }
 
-.page-header {
-  position: relative;
-  margin: 15px;
+  .page-header h2 {
+    padding: 1rem;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    /* Use clamp() for a responsive font size */
+    font-size: clamp(1.2rem, 5vw, 3rem);
+    position: absolute;
+    text-align: left;
+    bottom: 2rem;
+    width: 100%;
+    margin: 0;
+    /* Add box-sizing to include padding in the total width */
+    box-sizing: border-box;
+  }
+
+  .page-header h2 span {
+    background-color: hsla(0, 0%, 2%, 0.491);
+    border-radius: 5px;
+    font-family: "Alata", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, sans-serif;
+
+    color: rgb(255, 255, 255);
+    padding: 0.2em 0.4em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .cover {
+    position: relative;
+  }
+
+  .cover img {
+    max-height: 500px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    /* Prevents a small gap from appearing below the image */
+    display: block;
+  }
 }
-
-.page-header h2 {
-  padding: 1rem;
-  z-index: 20;
-  display: flex;
-  flex-wrap: wrap;
-  /* Use clamp() for a responsive font size */
-  font-size: clamp(1.2rem, 5vw, 3rem);
-  position: absolute;
-  text-align: left;
-  bottom: 2rem;
-  width: 100%;
-  margin: 0;
-  /* Add box-sizing to include padding in the total width */
-  box-sizing: border-box;
-}
-
-.page-header h2 span {
-  background-color: hsla(0, 0%, 2%, 0.491);
-  border-radius: 5px;
-  font-family: "Twocenmt", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
- 
-  color: rgb(255, 255, 255);
-  padding: 0.2em 0.4em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
-.cover {
-  position: relative;
-}
-
-.cover img {
-  max-height: 500px;
-  width: 100%;
-  position: relative;
-  object-fit: cover;
-  /* Prevents a small gap from appearing below the image */
-  display: block;
-}
-
-
-}
-
-
-

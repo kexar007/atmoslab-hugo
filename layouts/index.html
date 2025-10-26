@@ -54,7 +54,7 @@
         <h2 class="section-title">Latest Announcements</h2>
         <div class="announcements-grid">
             {{ range .Site.Data.announcements }}
-            <div class="announcement-card">
+            <div class="announcement-card" style="background: linear-gradient(135deg, {{ .color }}, {{ .color }}dd);">
                 <h3 class="announcement-title">{{ .title }}</h3>
                 <p class="announcement-content">{{ .content }}</p>
             </div>
@@ -68,7 +68,7 @@
         <div class="carousel">
             <div class="carousel-container">
                 {{ range $index, $announcement := .Site.Data.announcements }}
-                <div class="carousel-slide">
+                <div class="carousel-slide" style="background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);">
                     <div>
                         <h3>{{ $announcement.title }}</h3>
                         <p>{{ $announcement.content }}</p>
@@ -98,14 +98,4 @@
     </section>
 </div>
 
-<style>
-    {{ range $index, $announcement := .Site.Data.announcements }}
-    .announcement-card:nth-child({{ add $index 1 }}) {
-        background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);
-    }
-    .carousel-slide:nth-child({{ add $index 1 }}) {
-        background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);
-    }
-    {{ end }}
-</style>
 {{ end }}

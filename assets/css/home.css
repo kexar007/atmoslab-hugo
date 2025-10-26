@@ -64,8 +64,8 @@
 }
 
 .div4 {
-    grid-column: span 6 / span 6;
-    grid-column-start: 3;
+    grid-column: span 4 / span 4;
+    grid-column-start: 5;
     grid-row-start: 3;
     font-size: clamp(0.5rem, 0.7vw + 0.5rem, 1.3rem);
     margin-top: 10px;
@@ -79,18 +79,18 @@
 }
 
 .div5 {
-    grid-column: span 6 / span 6;
-    grid-column-start: 3;
+    grid-column: span 4 / span 4;
+    grid-column-start: 5;
     grid-row-start: 4;
-    font-size: clamp(0.4rem, 0.7vw, 1rem);
+    font-size: clamp(0.4rem, 1vw, 1rem);
     font-weight: 500;
 }
 
 .div6 {
-    grid-column: span 6 / span 6;
-    grid-column-start: 3;
+    grid-column: span 4 / span 4;
+    grid-column-start: 5;
     grid-row-start: 5;
-    font-size: clamp(0.4rem, 0.7vw, 1rem);
+    font-size: clamp(0.4rem, 1vw, 1rem);
     font-weight: 500;
 }
         

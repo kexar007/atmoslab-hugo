@@ -16,7 +16,13 @@ body {
   color: #333;
   background-color: #f8f9fa;
 }
-
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent base */
+  backdrop-filter: blur(10px);           /* creates the blur behind it */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+}
 /* Header and Navigation */
 .header {
   background-color: transparent;
@@ -56,10 +62,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
   font-family: "Alata", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Dropdown menu styles */
@@ -70,7 +76,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff5b;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
   list-style: none;
@@ -100,8 +106,7 @@ body {
 }
 
 .nav-menu.active {
-  left: 0;
-  background-color: rgb(230, 230, 230);
+  /* kk */
 }
 
 .nav-link {
@@ -445,11 +450,13 @@ body {
 @media screen and (max-width: 830px) {
   .nav-menu {
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 80px;
     flex-direction: column;
-    background-color: #fff;
-    width: 100%;
+    background: rgba(255, 255, 255, 0.2); /* semi-transparent base */
+    backdrop-filter: blur(10px);           /* creates the blur behind it */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    width: 90%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -459,6 +466,7 @@ body {
 
   /* Mobile dropdown styles */
   .nav-item.dropdown .nav-link {
+    background-color: transparent;
     /* Ensure parent link is clickable if it has a URL */
     pointer-events: auto;
   }
@@ -466,11 +474,11 @@ body {
   .dropdown-menu {
     position: static; /* Remove absolute positioning */
     display: block; /* Always show in mobile menu */
-    background-color: #f0f0f0; /* Slightly different background for sub-items */
+    background-color: transparent; /* Remove background for sub-items */
     box-shadow: none;
-    padding: 0.5rem 0;
+    padding: 0.1rem 0;
     border-radius: 0;
-    margin-left: 1rem; /* Indent sub-items */
+    margin-left: 1.3rem; /* Indent sub-items */
     text-align: center;
   }
 
@@ -479,7 +487,7 @@ body {
   }
 
   .nav-menu.active {
-    left: 0;
+    right: 0;
   }
 
   .nav-item {
@@ -607,6 +615,7 @@ body {
 :root {
   --card-color: #007bff;
   --card-color-light: #0056b3;
+  --text-normal: #333;
 }
 
 /* Papers List Section */

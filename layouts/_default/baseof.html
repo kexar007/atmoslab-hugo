@@ -36,6 +36,11 @@
 
     {{ $ResearchStyle := resources.Get "css/research.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $ResearchStyle.RelPermalink }}" />
+
+    {{ $homeStyle := resources.Get "css/home.css" }}
+    {{ if $homeStyle }}
+    <link rel="stylesheet" href="{{ $homeStyle.RelPermalink }}" />
+    {{ end }}
   </head>
   <body>
     <canvas id="animus"></canvas>
@@ -53,7 +58,7 @@
             </a>
             <a href="{{ .Site.BaseURL }}" class="nav-title">ATMOS</a>
           </div>
-          <ul class="nav-menu">
+          <ul class="nav-menu frosted-glass">
             {{ range .Site.Menus.main }}
             <li class="nav-item{{ if .HasChildren }} dropdown{{ end }}">
               <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>

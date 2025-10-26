@@ -2,6 +2,18 @@
   navigation: auto;
 }
 
+/* Animation keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -114,6 +126,12 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  padding: 1rem 1.5rem;
+  display: block;
+  min-height: 44px; /* Proper touch target */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-link:hover {
@@ -469,29 +487,92 @@ body {
     background-color: transparent;
     /* Ensure parent link is clickable if it has a URL */
     pointer-events: auto;
+    /* Add arrow indicator for expandable items */
+    position: relative;
+  }
+
+  /* Add arrow indicators for dropdown items */
+  .nav-item.dropdown .nav-link::after {
+    content: '›';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Rotated arrow when expanded */
+  .nav-item.dropdown.expanded .nav-link::after {
+    transform: translateY(-50%) rotate(180deg);
   }
 
   .dropdown-menu {
     position: static; /* Remove absolute positioning */
-    display: block; /* Always show in mobile menu */
+    display: none; /* Hidden by default in mobile */
     background-color: transparent; /* Remove background for sub-items */
     box-shadow: none;
-    padding: 0.1rem 0;
+    padding: 0.5rem 0;
     border-radius: 0;
-    margin-left: 1.3rem; /* Indent sub-items */
+    margin: 0.5rem 0;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Show submenu when expanded */
+  .nav-item.dropdown.expanded .dropdown-menu {
+    display: block;
+    animation: fadeInDown 0.3s ease;
   }
 
   .dropdown-menu .nav-link {
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0.25rem 0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    min-height: 44px; /* Proper touch target */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+
+  /* Remove arrow from sub-items */
+  .dropdown-menu .nav-link::after {
+    display: none;
+  }
+
+  .dropdown-menu .nav-item:first-child .nav-link {
+    border-top: none;
+  }
+
+  .dropdown-menu .nav-item:last-child .nav-link {
+    border-bottom: none;
   }
 
   .nav-menu.active {
     right: 0;
   }
 
+  /* Add separators between main menu items */
+  .nav-menu .nav-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+  }
+
   .nav-item {
-    margin: 1rem 0;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+  /* First item shouldn't have top separator */
+  .nav-menu .nav-item:first-child {
+    padding-top: 0;
   }
 
   .hamburger {

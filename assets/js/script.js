@@ -9,11 +9,36 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when clicking on a link
+        // Close menu when clicking on a regular link
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+            link.addEventListener('click', (e) => {
+                // Don't close menu if this is a dropdown toggle
+                const parentItem = link.closest('.nav-item');
+                if (!parentItem.classList.contains('dropdown')) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Handle dropdown toggles
+        document.querySelectorAll('.nav-item.dropdown .nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent navigation for dropdown toggle
+                const parentItem = link.closest('.nav-item');
+                const isExpanded = parentItem.classList.contains('expanded');
+                
+                // Close all other dropdowns
+                document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+                    item.classList.remove('expanded');
+                    item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
+                });
+                
+                // Toggle current dropdown
+                if (!isExpanded) {
+                    parentItem.classList.add('expanded');
+                    parentItem.querySelector('.nav-link').setAttribute('aria-expanded', 'true');
+                }
             });
         });
 
@@ -22,6 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                // Close all dropdowns when closing menu
+                document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+                    item.classList.remove('expanded');
+                    item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
+                });
             }
         });
     }

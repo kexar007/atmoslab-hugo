@@ -21,24 +21,30 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Handle dropdown toggles
+        // Handle dropdown toggles for mobile only
         document.querySelectorAll('.nav-item.dropdown .nav-link').forEach(link => {
             link.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevent navigation for dropdown toggle
                 const parentItem = link.closest('.nav-item');
-                const isExpanded = parentItem.classList.contains('expanded');
+                const isMobile = window.innerWidth <= 830; // Match CSS media query
                 
-                // Close all other dropdowns
-                document.querySelectorAll('.nav-item.dropdown').forEach(item => {
-                    item.classList.remove('expanded');
-                    item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
-                });
-                
-                // Toggle current dropdown
-                if (!isExpanded) {
-                    parentItem.classList.add('expanded');
-                    parentItem.querySelector('.nav-link').setAttribute('aria-expanded', 'true');
+                // Only prevent default and handle dropdown on mobile when menu is active
+                if (isMobile && navMenu.classList.contains('active')) {
+                    e.preventDefault();
+                    const isExpanded = parentItem.classList.contains('expanded');
+                    
+                    // Close all other dropdowns
+                    document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+                        item.classList.remove('expanded');
+                        item.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
+                    });
+                    
+                    // Toggle current dropdown
+                    if (!isExpanded) {
+                        parentItem.classList.add('expanded');
+                        parentItem.querySelector('.nav-link').setAttribute('aria-expanded', 'true');
+                    }
                 }
+                // On desktop or when menu is not active, allow default navigation behavior (CSS hover will handle dropdown)
             });
         });
 

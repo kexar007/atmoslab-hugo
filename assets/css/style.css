@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 96px;
+  min-height: 96px;
 }
 
 .nav-logo {
@@ -72,7 +72,7 @@ body {
 
 .nav-menu {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   list-style: none;
   gap: 1rem;
   font-family: "Alata", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -467,6 +467,17 @@ body {
 }
 
 /* Responsive Design - Mobile First */
+@media screen and (max-width: 992px) and (min-width: 831px) {
+  .nav-menu {
+    gap: 0.5rem; /* Reduce gap between menu items */
+  }
+
+  .nav-link {
+    padding: 0.6rem 0.8rem; /* Reduce padding for smaller links */
+    font-size: 0.9rem; /* Slightly reduce font size */
+  }
+}
+
 @media screen and (max-width: 830px) {
   .nav-menu {
     position: fixed;

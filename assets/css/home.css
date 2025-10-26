@@ -4,9 +4,7 @@
 
     .hero-section{
         height: 300px;
-       
-        background-color: hsla(0, 0%, 100%, 0.621);
- display: grid;
+        display: grid;
     grid-template-columns: repeat(2, 1fr) repeat(6,auto) repeat(2,1fr);
     grid-template-rows:repeat(5,0.3fr);
     gap: 4px;

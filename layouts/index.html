@@ -14,12 +14,47 @@
 <div class="div6"> IIT KHARAGPUR</div> 
     </section>
 
+    {{ $mediaHeadlines := .Site.Data.news.media_headlines }}
+    {{ $papersWithIds := .Site.Data.papers_with_ids }}
+    {{ $featuredDoi := "" }}
+    {{ $publisherDetails := slice }}
+    {{ $paperTitle := "" }}
+
+    {{ if $mediaHeadlines.doi_entries }}
+        {{ $featuredDoi = (index $mediaHeadlines.doi_entries 0).doi }}
+        {{ $publisherDetails = (index $mediaHeadlines.doi_entries 0).news_items }}
+    {{ end }}
+
+    {{ if $featuredDoi }}
+        {{ range $papersWithIds }}
+            {{ if eq .doi $featuredDoi }}
+                {{ $paperTitle = .title }}
+                {{ break }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ if $paperTitle }}
+    <!-- New Section: Featured Paper and Publishers -->
+    <section class="featured-paper-section">
+        <h2 class="section-title">{{ $paperTitle }}</h2>
+        <div class="publisher-cards-grid">
+            {{ range $publisherDetails }}
+            <a href="{{ .url }}" target="_blank" rel="noopener" class="publisher-card">
+                <img src="{{ .image | relURL }}" alt="{{ .publisher }} Logo" class="publisher-logo">
+                <p class="publisher-name">{{ .publisher }}</p>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
     <!-- Announcements Grid -->
     <section class="announcements-section">
         <h2 class="section-title">Latest Announcements</h2>
         <div class="announcements-grid">
             {{ range .Site.Data.announcements }}
-            <div class="announcement-card" style="background: linear-gradient(135deg, {{ .color }}, {{ .color }}dd);">
+            <div class="announcement-card">
                 <h3 class="announcement-title">{{ .title }}</h3>
                 <p class="announcement-content">{{ .content }}</p>
             </div>
@@ -33,7 +68,7 @@
         <div class="carousel">
             <div class="carousel-container">
                 {{ range $index, $announcement := .Site.Data.announcements }}
-                <div class="carousel-slide" style="background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);">
+                <div class="carousel-slide">
                     <div>
                         <h3>{{ $announcement.title }}</h3>
                         <p>{{ $announcement.content }}</p>
@@ -62,4 +97,15 @@
         </div>
     </section>
 </div>
+
+<style>
+    {{ range $index, $announcement := .Site.Data.announcements }}
+    .announcement-card:nth-child({{ add $index 1 }}) {
+        background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);
+    }
+    .carousel-slide:nth-child({{ add $index 1 }}) {
+        background: linear-gradient(135deg, {{ $announcement.color }}, {{ $announcement.color }}dd);
+    }
+    {{ end }}
+</style>
 {{ end }}

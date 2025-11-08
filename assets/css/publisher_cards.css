@@ -1,60 +1,83 @@
-/* Grid-based responsive layout */
+/* Master grid: title column + fluid card columns */
 .featured-paper-section {
-  padding: 40px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
   gap: 10px;
   align-items: start;
+  padding: clamp(8px, 1.6vw, 20px);
+
+  /* Column layout:
+     - column 1: title (flexible but slightly larger minimum)
+     - columns 2..N: publisher "bars" columns, created by auto-fit.
+  */
+  grid-template-columns: minmax(220px, 1fr) repeat(auto-fit, minmax(160px, 1fr));
+  grid-auto-rows: min-content;
 }
 
-
-
-
+/* Title sits in the first column, first row */
 .section-title {
-  font-size: clamp(0.9rem, 1vw, 1.2rem);
-  color: #333;
-  text-align: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.15;
   align-self: start;
+  padding-right: 12px;
 }
 
+/* Make the wrapper transparent to layout so each card is a direct grid item */
 .publisher-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 8px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: contents;
 }
 
+/* Publisher cards become grid items and auto-place to the right columns.
+   They will fill columns 2..N in row 1, then wrap into subsequent rows.
+*/
 .publisher-card {
-  display: grid;
-  place-items: center;
-  grid-template-rows: auto auto;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* allow cards to occupy any auto-placed column */
+  grid-column: auto;
+  grid-row: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  min-height: 36px;
+  border-radius: 6px;
+  background: #eaf1ff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   text-decoration: none;
-  color: #555;
-  padding: clamp(4px, 0.8vw, 8px);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  min-height: clamp(48px, 5vh, 72px);
+  color: #222;
+  font-size: clamp(0.65rem, 1vw, 0.9rem);
+
+  /* let cards stretch to fill their grid cell */
+  justify-self: stretch;
 }
 
+/* Ensure cards below the first row sit naturally across columns (they will occupy grid columns 1..N as available)
+   This creates the multi-column layout under the title. */
+.publisher-card:nth-of-type(n+1) {
+  /* no explicit overrides — left to auto-placement */
+}
+
+/* Card hover */
 .publisher-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
+/* Logo & label */
 .publisher-logo {
+  height: clamp(14px, 2.4vw, 22px);
+  width: auto;
   border-radius: 50%;
-  max-height: 35px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+  flex: 0 0 auto;
 }
 
 .publisher-name {
-  font-size: clamp(0.6rem, 1vw, 0.9rem);
   font-weight: 600;
-  text-align: center;
-  margin-top: 4px;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

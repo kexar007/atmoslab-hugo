@@ -1,50 +1,45 @@
-{{/* Partial to display featured research paper with media coverage */}}
-{{/* Usage: {{ partial "featured_research.html" (dict "doi" "10.1234/example.doi" "Site" .Site) }} */}}
-
+{{/* partials/featured_research.html */}}
 {{ $doi := .doi }}
 {{ $Site := .Site }}
 
 {{ if $doi }}
-    {{/* Load data files */}}
-    {{ $papersWithIds := $Site.Data.papers_with_ids }}
-    {{ $mediaHeadlines := $Site.Data.news.media_headlines }}
+  {{ $papersWithIds := $Site.Data.papers_with_ids }}
+  {{ $mediaHeadlines := $Site.Data.news.media_headlines }}
 
-    {{/* Initialize variables */}}
-    {{ $paperTitle := "" }}
-    {{ $publisherDetails := slice }}
+  {{ $paperTitle := "" }}
+  {{ $publisherDetails := slice }}
 
-    {{/* Find the paper title for the given DOI */}}
-    {{ if $papersWithIds }}
-        {{ range $papersWithIds }}
-            {{ if eq .doi $doi }}
-                {{ $paperTitle = .title }}
-                {{ break }}
-            {{ end }}
-        {{ end }}
+  {{ if $papersWithIds }}
+    {{ range $papersWithIds }}
+      {{ if eq .doi $doi }}
+        {{ $paperTitle = .title }}
+        {{ break }}
+      {{ end }}
     {{ end }}
+  {{ end }}
 
-    {{/* Find the publisher details for the given DOI */}}
-    {{ if $mediaHeadlines.doi_entries }}
-        {{ range $mediaHeadlines.doi_entries }}
-            {{ if eq .doi $doi }}
-                {{ $publisherDetails = .news_items }}
-                {{ break }}
-            {{ end }}
-        {{ end }}
+  {{ if $mediaHeadlines.doi_entries }}
+    {{ range $mediaHeadlines.doi_entries }}
+      {{ if eq .doi $doi }}
+        {{ $publisherDetails = .news_items }}
+        {{ break }}
+      {{ end }}
     {{ end }}
+  {{ end }}
 
-    {{/* Render the section if we have both title and publishers */}}
-    {{ if and $paperTitle (gt (len $publisherDetails) 0) }}
-    <section class="featured-paper-section">
-        <h2 class="section-title">{{ $paperTitle }}</h2>
-        <div class="publisher-cards-grid">
-            {{ range $publisherDetails }}
-            <a href="{{ .url }}" target="_blank" rel="noopener" class="publisher-card">
-                <img src="{{ .image | relURL }}" alt="{{ .publisher }} Logo" class="publisher-logo">
-                <p class="publisher-name">{{ .publisher }}</p>
-            </a>
-            {{ end }}
-        </div>
-    </section>
-    {{ end }}
+  {{ if and $paperTitle (gt (len $publisherDetails) 0) }}
+<section class="featured-paper-section" aria-labelledby="featured-title-{{ $doi | urlize }}">
+  <h2 id="featured-title-{{ $doi | urlize }}" class="section-title">{{ $paperTitle }}</h2>
+
+  {{ range $i, $item := $publisherDetails }}
+  <a class="publisher-card" href="{{ $item.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ $item.publisher }} article">
+    <span class="publisher-logo-wrap" aria-hidden="true">
+      <img src="{{ $item.image | relURL }}" alt="" class="publisher-logo">
+    </span>
+    <span class="publisher-name">{{ $item.publisher }}</span>
+  </a>
+  {{ end }}
+
+</section>
+  {{ end }}
 {{ end }}

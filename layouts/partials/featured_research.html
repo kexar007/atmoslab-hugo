@@ -29,7 +29,7 @@
 
   {{ if and $paperTitle (gt (len $publisherDetails) 0) }}
 <section class="featured-paper-section" aria-labelledby="featured-title-{{ $doi | urlize }}">
-  <h2 id="featured-title-{{ $doi | urlize }}" class="paper-title">{{ $paperTitle }}</h2>
+  <h2 id="featured-title-{{ $doi | urlize }}" class="featured-paper-title">{{ $paperTitle }}</h2>
 
   {{ range $i, $item := $publisherDetails }}
   <a class="publisher-card" href="{{ $item.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ $item.publisher }} article">

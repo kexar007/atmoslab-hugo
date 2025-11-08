@@ -12,7 +12,7 @@
 }
 
 /* ---------- Title (left on wide, top on narrow) ---------- */
-.section-title {
+.paper-title {
   grid-column: 1 / 2;     /* lock title into column 1 so cards flow into columns 2..N */
   grid-row: 1 / 2;
   margin: 0;

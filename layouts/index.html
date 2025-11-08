@@ -14,40 +14,8 @@
 <div class="div6"> IIT KHARAGPUR</div> 
     </section>
 
-    {{ $mediaHeadlines := .Site.Data.news.media_headlines }}
-    {{ $papersWithIds := .Site.Data.papers_with_ids }}
-    {{ $featuredDoi := "" }}
-    {{ $publisherDetails := slice }}
-    {{ $paperTitle := "" }}
+    {{ partial "featured_research.html" (dict "doi" "10.1016/j.resconrec.2025.108478" "Site" .Site) }}
 
-    {{ if $mediaHeadlines.doi_entries }}
-        {{ $featuredDoi = (index $mediaHeadlines.doi_entries 0).doi }}
-        {{ $publisherDetails = (index $mediaHeadlines.doi_entries 0).news_items }}
-    {{ end }}
-
-    {{ if $featuredDoi }}
-        {{ range $papersWithIds }}
-            {{ if eq .doi $featuredDoi }}
-                {{ $paperTitle = .title }}
-                {{ break }}
-            {{ end }}
-        {{ end }}
-    {{ end }}
-
-    {{ if $paperTitle }}
-    <!-- New Section: Featured Paper and Publishers -->
-    <section class="featured-paper-section">
-        <h2 class="section-title">{{ $paperTitle }}</h2>
-        <div class="publisher-cards-grid">
-            {{ range $publisherDetails }}
-            <a href="{{ .url }}" target="_blank" rel="noopener" class="publisher-card">
-                <img src="{{ .image | relURL }}" alt="{{ .publisher }} Logo" class="publisher-logo">
-                <p class="publisher-name">{{ .publisher }}</p>
-            </a>
-            {{ end }}
-        </div>
-    </section>
-    {{ end }}
 
     <!-- Announcements Grid -->
     <section class="announcements-section">

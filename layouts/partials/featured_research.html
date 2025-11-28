@@ -7,12 +7,16 @@
   {{ $mediaHeadlines := $Site.Data.news.media_headlines }}
 
   {{ $paperTitle := "" }}
+  {{ $doiurl := "" }}
+  {{$authors := "" }}
   {{ $publisherDetails := slice }}
 
   {{ if $papersWithIds }}
     {{ range $papersWithIds }}
       {{ if eq .doi $doi }}
         {{ $paperTitle = .title }}
+        {{ $doiurl = .doiurl }}
+        {{$authors = .authors }}
         {{ break }}
       {{ end }}
     {{ end }}
@@ -32,10 +36,12 @@
   <div class="featured-paper-banner-container" aria-labelledby="featured-title-{{ $doi | urlize }}" >
   <div class="content-side">
     <span class="meta-tag">Critical Analysis</span>
-  <h2 id="featured-title-{{ $doi | urlize }}" class="featured-paper-title">{{ $paperTitle }}</h2>
-
+    <h2 id="featured-title-{{ $doi | urlize }}" class="featured-paper-title">{{ $paperTitle }}</h2>
+    <p class="featured-paper-authors">{{ $authors }}</p>
+    <a href="{{ $doiurl }}" class="featured-btn">READ FULL REPORT</a>
   </div>
   <div class="image-side">
+    <div class="media-pill-container">  
 
   {{ range $i, $item := $publisherDetails }}
   <a class="publisher-card" href="{{ $item.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ $item.publisher }} article">
@@ -45,6 +51,7 @@
     <span class="publisher-name">{{ $item.publisher }}</span>
   </a>
    {{ end }}
+   </div>
 </div>
 
 

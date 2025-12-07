@@ -28,6 +28,52 @@ body {
   color: #333;
   background-color: #f8f9fa;
 }
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/* For Chrome, Safari, Edge, Opera (WebKit browsers) */
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Shorter/narrower vertical scrollbar */
+  
+  height: 8px; /* Shorter/narrower horizontal scrollbar */
+}
+
+/* Target the draggable scrolling handle (the "thumb") */
+::-webkit-scrollbar-thumb {
+  background-color: #007bff5a; /* Specific color */
+  border-radius: 100px;
+
+  
+}
+
+
+/* Optional: Add a hover effect for better user experience */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0261c6; /* Slightly darker shade on hover */
+  
+}
+
+
+/* For Firefox (standard properties) */
+/* Note: Firefox properties only support 'auto', 'thin', 'none' for width and pair colors. 
+   They do not support specific pixel widths or border-radius manipulation. */
+body {
+  scrollbar-width: thin; /* Makes the scrollbar thinner than default */
+  scrollbar-color: #007bff; #f1f1f1 ; /* thumb color and track color */
+}
+
+
+
+
+/* Frosted glass effect */
+
 .frosted-glass {
   background: rgba(255, 255, 255, 0.2); /* semi-transparent base */
   backdrop-filter: blur(10px);           /* creates the blur behind it */
@@ -118,6 +164,7 @@ body {
 }
 
 .nav-menu.active {
+  
   /* kk */
 }
 

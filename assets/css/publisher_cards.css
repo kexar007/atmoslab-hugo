@@ -12,8 +12,7 @@
     margin-bottom: 40px;
 } 
 .featured-paper-banner-container {
-     width: 100%;
-   
+     width: 100%;   
     height: 200px;
     background: white;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
@@ -71,9 +70,7 @@
     background-position: center center;
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
     display: flex;
-    justify-content: right;
-   
-    
+    justify-content: right; 
 }
 
 .media-pill-container {
@@ -128,7 +125,7 @@
 
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 1px;
 
   /* visual style: small colored bar / pill */
   padding: 2px 5px;
@@ -145,7 +142,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
   justify-self: stretch;  /* fill grid cell */
 }
 

@@ -1,17 +1,42 @@
 {{ define "main" }}
 <div class="container" id="home">
     <!-- Hero Section -->
-    <section class="hero-section">
-       
+    <section class="hero-section">     
         
-        <div class="div1">
-              <img src="{{ "images/logo/atmoslogo.svg" | relURL }}" alt="IIT Kharagpur Logo" class="nav-logo-iitkgp-image">   
+
+        <div class="left-column">
+            <section class="lab-card">
+                <div class="lab-image-column">
+                    <img src="{{ "images/logo/atmoslogo.webp" | relURL }}" alt="IIT Kharagpur Logo" class="lab-logo">
+                </div>
+                <div class="lab-content-column">
+                    <header class="lab-header">
+                        <h1 class="lab-title">Atmos</h1>
+                        <p class="lab-subtitle">Atmospheric and climate science laboratory.</p>
+                    </header>
+                    <div class="lab-details">
+                        <p class="lab-incharge"><strong>Lab in Charge:</strong> Prof. Jayanarayanan Kuttippurath</p>
+                        <p class="lab-department">CENTRE FOR OCEAN, RIVER, ATMOSPHERE AND LAND SCIENCES (CORAL)</p>
+                        <p class="lab-university">IIT KHARAGPUR</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="right-column">
+            <!-- Slider content will go here -->
+            <div class="slider-placeholder">
+                <h2>Slider Area</h2>
+                <p>This is where your slider content will be.</p>
             </div>
-<div class="div2">  <h1 class="hero-title">Atmos</h1></div>
-<div class="div3"> <p class="hero-subtitle">Atmospheric and climate science laboratory.</p></div>
-<div class="div4">Lab in Charge: <p>Prof. Jayanarayanan Kuttippurath</p> </div>
-<div class="div5"><p>CENTRE FOR OCEAN, RIVER, ATMOSPHERE AND LAND SCIENCES (CORAL)</p></div> 
-<div class="div6"> IIT KHARAGPUR</div> 
+        </div>
+
+
+
+
+
+
+
+
     </section>
 
     {{ partial "featured_research.html" (dict "doi" "10.1016/j.resconrec.2025.108478" "Site" .Site) }}

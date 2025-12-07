@@ -11,7 +11,7 @@
     min-height: 130px;
     width: 100%;
     overflow: hidden;
-    border: solid 1px #ddd;
+  
     padding: 0;
     
 }    
@@ -21,7 +21,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow:hidden /* Add scroll if content overflows */
+    overflow:hidden; /* Add scroll if content overflows */    
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+    
 }
 
 .right-column {
@@ -50,7 +54,7 @@
 
 .lab-image-column {
     padding-right: 0;
-    margin-bottom: 10px; /* Reduced margin */
+    
 }
 
 .lab-content-column {
@@ -96,10 +100,15 @@
     color: #333;
 }
 
+.prof-name {
+    font-weight: 600;
+    color: #007bff;
+}
 .lab-department,
 .lab-university {
-    font-weight: 600;
+    font-weight: 300;
     color: #444;
+    font-size: clamp(0.85em, 2vw, 1em); /* Responsive font size */
 }
 
 .slider-placeholder {

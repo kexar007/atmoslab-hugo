@@ -1,16 +1,10 @@
-<details
-  open
-  id="TOCView"
-  class="toc-desktop">
-  <summary
-    class="toc-summary">
-    {{ i18n "article.table_of_contents" }}
-  </summary>
+
+  
   <div
     class="toc-content">
     {{ .TableOfContents | emojify }}
   </div>
-</details>
+
 
 {{ if .Site.Params.smartTOC }}
 <script>
@@ -19,7 +13,7 @@
 
     const SCROLL_OFFSET_RATIO = 0.33
     const TOC_SELECTOR = '#TableOfContents'
-    const ANCHOR_SELECTOR = '.anchor'
+    const ANCHOR_SELECTOR = 'h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]'
     const TOC_LINK_SELECTOR = 'a[href^="#"]'
     const NESTED_LIST_SELECTOR = 'li ul'
     const ACTIVE_CLASS = 'active'
@@ -88,6 +82,7 @@
       }
 
       links.forEach(link => {
+        link.classList.add('toc-link')
         link.addEventListener('click', () => {
           isJumpingToAnchor = true
         })

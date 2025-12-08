@@ -84,6 +84,8 @@ archetypeDir = "archetypes"
   description = "Leading research in atmospheric science and environmental monitoring"
   keywords = ["atmospheric science", "environmental monitoring", "climate research", "research lab"]
   favicon = "/favicon.ico"
+  smartTOC = true
+  smartTOCHideUnfocusedChildren = true
 
 # Social media
 [[params.social]]

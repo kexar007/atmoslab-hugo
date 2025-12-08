@@ -796,6 +796,7 @@ body {
 
 /* Papers List Section */
 .papers-list-section {
+  max-width: 70ch;
   padding: 2rem 0;
 }
 

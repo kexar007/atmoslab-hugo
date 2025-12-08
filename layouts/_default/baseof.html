@@ -46,6 +46,11 @@
     {{ if $publisherCardsStyle }}
     <link rel="stylesheet" href="{{ $publisherCardsStyle.RelPermalink }}" />
     {{ end }}
+
+    {{ $tocStyle := resources.Get "css/toc.css" }}
+    {{ if $tocStyle }}
+    <link rel="stylesheet" href="{{ $tocStyle.RelPermalink }}" />
+    {{ end }}
   </head>
   <body>
     <canvas id="animus"></canvas>

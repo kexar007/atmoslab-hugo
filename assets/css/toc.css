@@ -1,0 +1,85 @@
+/* TOC Desktop Sidebar */
+.toc-desktop {
+  margin-top: 0;
+  overflow-y: auto;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .toc-desktop {
+    display: block;
+  }
+}
+
+/* TOC Summary/Header */
+.toc-summary {
+  display: block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgb(245 245 245);
+  color: rgb(31 41 55);
+}
+
+@media (min-width: 1024px) {
+  .toc-summary {
+    display: none;
+  }
+}
+
+.dark .toc-summary {
+  background-color: rgb(55 65 81);
+  color: rgb(243 244 246);
+}
+
+/* TOC Content Container */
+.toc-content {
+  min-width: 14.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* TOC List Styling - Remove bullets and formatting */
+.toc-content ul,
+.toc-content ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clean up nested lists */
+.toc-content li {
+  margin: 0;
+  padding: 0;
+}
+
+/* TOC Link Base Colors */
+.toc-content a {
+  color: #7f7f7f;
+}
+
+.dark .toc-content a {
+  color: rgb(199 199 199);
+}
+
+/* TOC Link Hover and Active States */
+.toc-content a:hover {
+  color: rgb(59 130 246);
+}
+
+.dark .toc-content a:hover {
+  color: rgb(96 165 250);
+}
+
+.toc-link.active {
+  font-weight: 700;
+  color: rgb(59 130 246);
+}
+
+.dark .toc-link.active {
+  color: rgb(96 165 250);
+}

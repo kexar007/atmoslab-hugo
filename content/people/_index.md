@@ -20,3 +20,5 @@ draft: false
 
 ## Alumni
 {{< hexagon_profiles role="alumni" >}}
+
+

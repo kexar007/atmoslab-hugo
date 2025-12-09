@@ -90,7 +90,7 @@ body {
 }
 
 .nav-container {
-  max-width: 1200px;
+  
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -201,6 +201,16 @@ body {
   transition: 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Main Content */
 .main-content {
   min-height: calc(100vh - 140px);
@@ -208,7 +218,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -763,6 +773,10 @@ body {
     font-size: 1rem;
   }
 }
+
+
+
+
 
 /* Buttons */
 .btn {

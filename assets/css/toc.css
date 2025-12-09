@@ -1,17 +1,38 @@
+.wrapper-for-sidebar {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
 
 /* TOC Content Container */
 .toc-content {
   min-width: 10rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+
+      display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+ 
+}
+
+#TableOfContents {
+  padding-left: 10PX;
   position: sticky;
-  top: 50%;
-  left: 0%;
+  top: 60%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: #c3c3c3 1px solid;
 }
 
 /* TOC List Styling - Remove bullets and formatting */
-.toc-content ul,
-.toc-content ol {
+.toc-content ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -26,6 +47,8 @@
 /* TOC Link Base Colors */
 .toc-content a {
   color: #7f7f7f;
+  font-size:small;
+  padding-left: 10px;
 }
 
 .dark .toc-content a {
@@ -42,10 +65,16 @@
 }
 
 .toc-link.active {
-  font-weight: 700;
+  
   color: rgb(59 130 246);
 }
 
 .dark .toc-link.active {
   color: rgb(96 165 250);
 }
+
+@media (max-width: 768px) {
+  .toc-content {
+    display: none;
+  }
+} 

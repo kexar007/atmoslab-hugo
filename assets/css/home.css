@@ -1,6 +1,12 @@
 /* Styles for the homepage */
 #home{
 
+    
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+
 
 .hero-section {
     box-sizing: content-box;

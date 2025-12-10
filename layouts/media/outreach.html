@@ -3,11 +3,38 @@
 <div class="container" id="outreach">
   <section class="hero-section">
     <div class="page-header">
-      <h2>Our research team's OUTREACH activities</h2>
+      <h1>OUTREACH</h1>
     </div>
   </section>
-    <div class="card">
-        <div class="card-header">
-        <h2 class="card-title">Outreach</h2>
+    <div >
+        
+        <div >
+            
+            
+            <!-- Outreach Gallery Section -->
+            <div class="outreach-gallery">
+                <div class="gallery-header">
+                    <h3>Gallery</h3>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Get all images from outreach directory -->
+{{ $images := resources.Match "images/outreach/*" }}
+
+<!-- Pass image data to JavaScript -->
+<script>
+window.outreachImages = [{{ range $index, $image := $images }}{{ if ne $index 0 }},{{ end }}"{{ $image.RelPermalink }}"{{ end }}];
+</script>
+
+<!-- Include CSS and JavaScript for gallery -->
+{{ $css := resources.Get "css/outreach-gallery.css" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+{{ $js := resources.Get "js/outreach-gallery.js" }}
+<script src="{{ $js.RelPermalink }}"></script>
+
 {{ end }}

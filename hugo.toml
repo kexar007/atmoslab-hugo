@@ -47,6 +47,9 @@ archetypeDir = "archetypes"
   url = "/people/"
   weight = 2
 
+
+
+
 [[menu.main]]
   name = "About Us"
   url = "/about/"
@@ -56,6 +59,12 @@ archetypeDir = "archetypes"
   name = "Media"
   url = "/media/"
   weight = 4
+
+[[menu.main]]
+  name = "News Reports"
+  url = "/media/news-reports/"
+  parent = "Media"
+  weight = 1
 
 [[menu.main]]
   name = "Research"  

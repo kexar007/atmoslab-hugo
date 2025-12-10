@@ -51,6 +51,11 @@
     {{ if $tocStyle }}
     <link rel="stylesheet" href="{{ $tocStyle.RelPermalink }}" />
     {{ end }}
+
+    {{ $mediaStyle := resources.Get "css/media.css" }}
+    {{ if $mediaStyle }}
+    <link rel="stylesheet" href="{{ $mediaStyle.RelPermalink }}" />
+    {{ end }}
   </head>
   <body>
     <canvas id="animus"></canvas>

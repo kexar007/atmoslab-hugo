@@ -66,7 +66,7 @@ a {
    They do not support specific pixel widths or border-radius manipulation. */
 body {
   scrollbar-width: thin; /* Makes the scrollbar thinner than default */
-  scrollbar-color: #007bff; #f1f1f1 ; /* thumb color and track color */
+  scrollbar-color: #007bff #f1f1f1; /* thumb color and track color */
 }
 
 
@@ -200,6 +200,8 @@ body {
   margin: 3px 0;
   transition: 0.3s;
 }
+
+
 
 
 
@@ -778,6 +780,10 @@ body {
     font-size: 1rem;
   }
 }
+
+
+
+
 
 
 

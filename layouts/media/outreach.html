@@ -2,39 +2,71 @@
 
 <div class="container" id="outreach">
   <section class="hero-section">
-    <div class="page-header">
-      <h1>OUTREACH</h1>
-    </div>
+    
+      <h1 class="hero-title">Outreach</h1>
+    
   </section>
-    <div >
+  
+  
+     {{ $images := resources.Match "images/outreach/*" }}
+     {{/* Create a slice with image and its numeric value */}}
+        {{ $imageData := slice }}
+        {{ range $images }}
+          {{ $filename := .Name }}
+          {{ $number := 0 }}
+          
+          {{/* Extract number from filename using regex */}}
+          {{ with (findRE "[0-9]+" $filename 1) }}
+            {{ $number = (index . 0) | int }}
+          {{ end }}
+          
+          {{ $imageData = $imageData | append (dict "image" . "number" $number) }}
+        {{ end }}
         
-        <div >
-            
-            
-            <!-- Outreach Gallery Section -->
-            <div class="outreach-gallery">
-                <div class="gallery-header">
-                    <h3>Gallery</h3>
-                    
-                </div>
-            </div>
+        {{/* Sort by number in descending order and render */}}
+    
+      <div class="slider-section">
+      <div class="slider-outreach"> 
+        <div class="image-slide">
+
+        {{ range first 3 (sort $imageData "number" "desc") }}
+
+          
+            <img id="{{ printf "img-%d" .number }}" src="{{ .image.RelPermalink }}" alt="Outreach image" loading="lazy">
+                  
+        {{ end }}
+        </div> 
+        <div class="thumb">
+
+        {{ range first 3 (sort $imageData "number" "desc") }}
+
+         
+            <a href="#{{ printf "img-%d" .number }}">
+              <img src="{{ .image.RelPermalink }}" alt="Outreach thumbnail" loading="lazy">
+          
+        {{ end }}
         </div>
-    </div>
+
+      </div>
+      </div>
+
+      
+      
+      <!-- Simple Outreach Gallery with Numeric Sorting -->
+      <div class="outreach-gallery">
+       
+        
+        
+        {{ range sort $imageData "number" "desc" }}
+          <img src="{{ .image.RelPermalink }}" alt="Outreach image" loading="lazy">
+        {{ end }}
+      </div>
+    
+  
 </div>
 
-<!-- Get all images from outreach directory -->
-{{ $images := resources.Match "images/outreach/*" }}
-
-<!-- Pass image data to JavaScript -->
-<script>
-window.outreachImages = [{{ range $index, $image := $images }}{{ if ne $index 0 }},{{ end }}"{{ $image.RelPermalink }}"{{ end }}];
-</script>
-
-<!-- Include CSS and JavaScript for gallery -->
+<!-- Include minimal CSS for gallery -->
 {{ $css := resources.Get "css/outreach-gallery.css" }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-
-{{ $js := resources.Get "js/outreach-gallery.js" }}
-<script src="{{ $js.RelPermalink }}"></script>
 
 {{ end }}

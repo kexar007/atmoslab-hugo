@@ -36,20 +36,30 @@
                   
         {{ end }}
         </div> 
-        <div class="thumb">
+        
+        
+      </div>
+      </div>
 
-        {{ range first 3 (sort $imageData "number" "desc") }}
 
-         
-            <a href="#{{ printf "img-%d" .number }}">
-              <img src="{{ .image.RelPermalink }}" alt="Outreach thumbnail" loading="lazy">
-          
-        {{ end }}
+
+      <div class="gallery-container">
+        <div class="gallery-active-container">
+          <img class="gallery active" src="{{ "images/outreach/20.avif" | relURL }}" >
         </div>
+        <div class="gallery-thumbs">
+          <div class="thumbnail active" >
+            <img class="thumbnail-image" src="{{ "images/outreach/20.avif" | relURL }}" alt="Thumbnail 20" loading="lazy">
+          </div>
+          <div class="thumbnail" >
+            <img class="thumbnail-image" src="{{ "images/outreach/19.avif" | relURL }}" alt="Thumbnail 19" loading="lazy">
+          </div>
+          <div class="thumbnail" >
+            <img class="thumbnail-image" src="{{ "images/outreach/12.avif" | relURL }}" alt="Thumbnail 12" loading="lazy">
+          </div>
 
+        </div>
       </div>
-      </div>
-
       
       
       <!-- Simple Outreach Gallery with Numeric Sorting -->

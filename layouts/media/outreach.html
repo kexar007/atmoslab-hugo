@@ -25,27 +25,12 @@
         
         {{/* Sort by number in descending order and render */}}
     
-      <div class="slider-section">
-      <div class="slider-outreach"> 
-        <div class="image-slide">
-
-        {{ range first 3 (sort $imageData "number" "desc") }}
-
-          
-            <img id="{{ printf "img-%d" .number }}" src="{{ .image.RelPermalink }}" alt="Outreach image" loading="lazy">
-                  
-        {{ end }}
-        </div> 
-        
-        
-      </div>
-      </div>
-
+      
 
 
       <div class="gallery-container">
         <div class="gallery-active-container">
-          <img class="gallery active" src="{{ "images/outreach/20.avif" | relURL }}" >
+          <img class="gallery-active" src="{{ "images/outreach/20.avif" | relURL }}" >
         </div>
         <div class="gallery-thumbs">
           <div class="thumbnail active" >
@@ -55,7 +40,7 @@
             <img class="thumbnail-image" src="{{ "images/outreach/19.avif" | relURL }}" alt="Thumbnail 19" loading="lazy">
           </div>
           <div class="thumbnail" >
-            <img class="thumbnail-image" src="{{ "images/outreach/12.avif" | relURL }}" alt="Thumbnail 12" loading="lazy">
+            <img class="thumbnail-image" src="{{ "images/outreach/18.avif" | relURL }}" alt="Thumbnail 12" loading="lazy">
           </div>
 
         </div>

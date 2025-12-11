@@ -15,6 +15,9 @@ function updateActiveImage(img) {
         img.classList.remove('active');
    });
     img.classList.add('active');
+    console.log(img);
+    galleryActive.src = img.querySelector('img').src;
+    
 }
 
 

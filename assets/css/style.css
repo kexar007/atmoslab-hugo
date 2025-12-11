@@ -145,8 +145,11 @@ body {
   left: 0;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
+/* Desktop only - hover to show dropdown */
+@media screen and (min-width: 831px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 .dropdown-menu .nav-item {

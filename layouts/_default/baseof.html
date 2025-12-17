@@ -56,6 +56,12 @@
     {{ if $mediaStyle }}
     <link rel="stylesheet" href="{{ $mediaStyle.RelPermalink }}" />
     {{ end }}
+
+    {{ $interviewsStyle := resources.Get "css/interviews.css" }}
+    {{ if $interviewsStyle }}
+    <link rel="stylesheet" href="{{ $interviewsStyle.RelPermalink }}" />
+    {{ end }}
+    
   </head>
   <body>
     <canvas id="animus"></canvas>
